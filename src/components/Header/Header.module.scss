@@ -19,7 +19,15 @@ body.modalOpen {
       justify-content: space-between;
       align-items: center;
       .Header__logo {
+        display: flex;
+        align-items: center;
+        max-width: 180px;
         cursor: pointer;
+        font-weight: 600;
+        color: white;
+        img {
+          max-width: 50px;
+        }
       }
       .Header__info {
         min-width: 530px;
@@ -102,6 +110,7 @@ body.modalOpen {
             position: relative;
             cursor: pointer;
             .Header__modal {
+              overflow-x: hidden;
               position: fixed;
               display: flex;
               align-items: center;

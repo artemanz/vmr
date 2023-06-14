@@ -29,8 +29,11 @@ const Header = () => {
     <div className={styles.Header}>
       <div className={styles.Header__wrapper}>
         <div className={styles.Header__row}>
-          <div className={styles.Header__logo}>
-            <img src={Header_logo} alt="" />
+          <div
+            className={styles.Header__logo}
+            onClick={() => handleScrollTo(0)}
+          >
+            <img src={Header_logo} alt="" /> ВИДЕО МОНИТОРИНГ
           </div>
           <div className={styles.Header__info}>
             <div
