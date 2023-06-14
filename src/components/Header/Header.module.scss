@@ -110,7 +110,6 @@ body.modalOpen {
             position: relative;
             cursor: pointer;
             .Header__modal {
-              overflow-x: hidden;
               position: fixed;
               display: flex;
               align-items: center;
@@ -195,18 +194,70 @@ body.modalOpen {
     }
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .Header {
     .Header__wrapper {
       .Header__row {
         .Header__burger {
           .Header__burger__opened {
+            .Header__modal {
+              justify-content: flex-start;
+              padding-left: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__burger {
+          .Header__burger__opened {
+            .Header__modal {
+              justify-content: flex-start;
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__burger {
+          .Header__burger__opened {
+            .Header__modal {
+              justify-content: center;
+              padding-left: 0;
+            }
             ul {
               li {
                 &:nth-child(3) {
                   max-width: 220px;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__burger {
+          .Header__burger__opened {
+            .Header__modal {
+              justify-content: flex-start;
+              padding-left: 20px;
             }
           }
         }
