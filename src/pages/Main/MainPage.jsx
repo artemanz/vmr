@@ -7,7 +7,6 @@ import Block5 from '../../components/Block5/Block5';
 const MainPage = () => {
     return (
         <div className={styles.MainPage}>
-            <Header />
             <Block1 />
             <Block2 />
             <Block5 />
