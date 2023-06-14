@@ -63,33 +63,28 @@ const Header = () => {
           </div>
           <div className={styles.Header__burger}>
             {isBurgerOpened ? (
-              <div className={styles.Header__burger__opened}>
-                <div className={styles.Header__modal}>
-                  <ul>
-                    <li onClick={() => handleScrollTo(0)}>Подробнее</li>
-                    <li onClick={() => handleScrollTo(0)}>Для кого</li>
-                    <li onClick={() => handleScrollTo(0)}>
-                      Какие задачи мы решаем
-                    </li>
-                    <li onClick={() => handleScrollTo(0)}>Цены</li>
-                  </ul>
-
-                  <div
-                    className={styles.Header__burger__clicker}
-                    onClick={handleCloseBurger}
-                  >
-                    <div className={styles.Header__burger__line}></div>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className={styles.Header__burger__closed}>
+              <div className={styles.Header__modal}>
+                <ul>
+                  <li onClick={() => handleScrollTo(0)}>Подробнее</li>
+                  <li onClick={() => handleScrollTo(0)}>Для кого</li>
+                  <li onClick={() => handleScrollTo(0)}>
+                    Какие задачи мы решаем
+                  </li>
+                  <li onClick={() => handleScrollTo(0)}>Цены</li>
+                </ul>
                 <div
-                  className={styles.Header__burger__clicker}
-                  onClick={handleOpenBurger}
+                  className={styles.Header__burger__opened}
+                  onClick={handleCloseBurger}
                 >
                   <div className={styles.Header__burger__line}></div>
                 </div>
+              </div>
+            ) : (
+              <div
+                className={styles.Header__burger__closed}
+                onClick={handleOpenBurger}
+              >
+                <div className={styles.Header__burger__line}></div>
               </div>
             )}
           </div>
