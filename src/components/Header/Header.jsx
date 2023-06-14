@@ -70,21 +70,22 @@ const Header = () => {
                     </li>
                     <li onClick={() => handleScrollTo(0)}>Цены</li>
                   </ul>
-                  <div className={styles.Header__burger__clicker}>
-                    <div
-                      className={styles.Header__burger__line}
-                      onClick={handleCloseBurger}
-                    ></div>
-                  </div>  
+
+                  <div
+                    className={styles.Header__burger__clicker}
+                    onClick={handleCloseBurger}
+                  >
+                    <div className={styles.Header__burger__line}></div>
+                  </div>
                 </div>
               </div>
             ) : (
               <div className={styles.Header__burger__closed}>
-                <div className={styles.Header__burger__clicker}>
-                  <div
-                    className={styles.Header__burger__line}
-                    onClick={handleOpenBurger}
-                  ></div>
+                <div
+                  className={styles.Header__burger__clicker}
+                  onClick={handleOpenBurger}
+                >
+                  <div className={styles.Header__burger__line}></div>
                 </div>
               </div>
             )}
