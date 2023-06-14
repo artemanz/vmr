@@ -1,0 +1,217 @@
+.Block7{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 20px 20px;
+    &_Price{
+        max-width: 37%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &_Info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            &_text {
+                margin-bottom: 40px;
+                font-size: 18px;
+                font-weight: 400;
+                span{
+                    background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
+                    font-size: 20px;
+                }
+            }
+        }
+        button{
+            max-width: 250px;
+            cursor: pointer;
+            margin-top: 50px;
+            padding: 20px;
+            color: white;
+            border: #00e6de;
+            background: linear-gradient(193deg, rgba(0,230,222,1) 0%, rgba(0,153,173,1) 93%);
+            border-radius: 40px;
+            transition: background 0.4s ease;
+            &:hover {
+          
+                background: linear-gradient(193deg, rgb(4, 196, 189) 0%, rgb(4, 170, 192) 93%);
+            }
+            :active{
+                background: linear-gradient(193deg, rgb(4, 196, 189) 0%, rgb(4, 170, 192) 93%);
+            }
+        }
+    }
+    &_Info_Block{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 60%;
+        background: linear-gradient(193deg, rgb(0, 230, 222) 0%, rgb(0, 153, 173) 93%);
+         padding: 25px 10px;
+         border-radius: 34px;
+        color: white;
+        &_Element{
+            font-size: 18px;
+            margin-bottom: 20px;
+            span{
+                    font-size: 19px;
+                    font-weight: 700;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        // Ваши стили для мобильных устройств
+        width: 100%;
+        flex-direction: column;
+        &_Price{
+            max-width: 100%;
+            &_Info{
+                &_text {
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+            button{
+                max-width: 180px;
+                margin: 0px 0 40px 0;
+                padding: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 20px;
+        }
+
+      }
+      &_Info_Block{
+        max-width: 100%;
+         padding: 25px 10px;
+         border-radius: 34px;
+        color: white;
+        &_Element{
+            font-size: 16px;
+            margin-bottom: 20px;
+            span{
+                font-size: 17px;
+            }
+        }
+    }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        &_Price{
+            max-width: 100%;
+            &_Info{
+                &_text {
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+            button{
+                max-width: 250px;
+                margin: 20px 0;
+                padding: 10px;
+                border-radius: 20px;
+        }
+
+      }
+      &_Info_Block{
+        max-width: 100%;
+         padding: 25px 10px;
+         border-radius: 34px;
+        color: white;
+        &_Element{
+            font-size: 16px;
+            margin-bottom: 20px;
+            span{
+                font-size: 17px;
+            }
+        }
+    }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1000px) {
+        // Ваши стили для планшетов
+        flex-direction: column;
+        &_Price{
+            max-width: 100%;
+            &_Info{
+                &_text {
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+            button{
+                max-width: 250px;
+                margin: 20px 0;
+                padding: 15px;
+                border-radius: 40px;
+        }
+
+      }
+      &_Info_Block{
+        max-width: 100%;
+         padding: 25px 10px;
+         border-radius: 34px;
+        color: white;
+        &_Element{
+            font-size: 16px;
+            margin-bottom: 20px;
+            span{
+                font-size: 17px;
+            }
+        }
+    }
+      }
+      @media only screen and (min-width: 1000px) and (max-width: 1440px) {
+        // Ваши стили для небольших ноутбуков и десктопов
+
+        &_Price{
+            max-width: 37%;
+            &_Info{
+                &_text {
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+            button{
+                max-width: 250px;
+                margin-top: 50px;
+                padding: 15px;
+                border-radius: 40px;
+        }
+
+      }
+      &_Info_Block{
+        max-width: 60%;
+         padding: 25px 10px;
+         border-radius: 34px;
+        color: white;
+        &_Element{
+            font-size: 16px;
+            margin-bottom: 20px;
+            span{
+                font-size: 17px;
+            }
+        }
+    }
+}
+}
