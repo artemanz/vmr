@@ -1,0 +1,250 @@
+.Block34 {
+    width: 70%;
+    padding: 20px 20px 190px 20px;
+    background-image: url('../../assets/img/Background/back2.png');
+    background-position-y: 113px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    h1 {
+        font-size: 40px;
+        background: linear-gradient(253deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%); // Градиентный фон
+        -webkit-background-clip: text; // Задаем тексту свойство background-clip
+        -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+    }
+
+    &_Info {
+        max-width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_Element {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 50px;
+
+            img {
+                max-width: 75px;
+            }
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 480px) {
+        // Ваши стили для мобильных устройств
+        padding: 20px 20px 30px 20px;
+        background-image: none;
+        width: 100%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        &_Info {
+            max-width: 100%;
+            margin-top: 25px;
+
+            &_Element {
+                margin-bottom: 15px;
+
+                img {
+                    max-width: 45px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        // Ваши стили для планшетов
+        padding: 20px 20px 30px 20px;
+        background-image: none;
+        width: 100%;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        &_Info {
+            max-width: 100%;
+            margin-top: 25px;
+
+            &_Element {
+                margin-bottom: 15px;
+
+                img {
+                    max-width: 45px;
+                    margin-right: 5px;
+                }
+
+                span {
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 900px) {
+        // Ваши стили для небольших ноутбуков и десктопов
+        padding: 20px 20px 30px 20px;
+        background-image: none;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        &_Info {
+            max-width: 100%;
+            margin-top: 25px;
+
+            &_Element {
+                margin-bottom: 25px;
+
+                img {
+                    max-width: 39px;
+                    margin-right: 20px;
+                }
+
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1020px) {
+        // Ваши стили для небольших ноутбуков и десктопов
+        padding: 20px 20px 6px 20px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        &_Info {
+            max-width: 60%;
+            margin-top: 25px;
+
+            &_Element {
+                margin-bottom: 20px;
+
+                img {
+                    max-width: 39px;
+                    margin-right: 20px;
+                }
+
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1020px) and (max-width: 1120px) {
+
+        // Ваши стили для небольших ноутбуков и десктопов
+        h1 {
+            font-size: 30px;
+        }
+
+        &_Info {
+            max-width: 60%;
+            margin-top: 70px;
+
+            &_Element {
+                margin-bottom: 20px;
+
+                img {
+                    max-width: 43px;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1120px) and (max-width: 1220px) {
+
+        // Ваши стили для небольших ноутбуков и десктопов
+        &_Info {
+            max-width: 50%;
+            margin-top: 70px;
+
+            &_Element {
+
+                margin-bottom: 20px;
+
+                img {
+                    max-width: 48px;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1220px) and (max-width: 1620px) {
+        // Ваши стили для небольших ноутбуков и десктопов
+
+        &_Info {
+            max-width: 50%;
+            margin-top: 50px;
+
+            &_Element {
+
+                margin-bottom: 30px;
+
+                img {
+                    max-width: 48px;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1620px) and (max-width: 1820px) {
+
+        // Ваши стили для небольших ноутбуков и десктопов
+        &_Info {
+            max-width: 50%;
+            margin-top: 20px;
+
+            &_Element {
+
+                margin-bottom: 50px;
+
+                img {
+                    max-width: 55px;
+                }
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1820px) {
+        // Ваши стили для средних и больших десктопов
+    }
+}
