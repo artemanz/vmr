@@ -178,7 +178,26 @@ body.modalOpen {
         .Header__burger__opened {
           .Header__modal {
             .Header__burger__clicker {
-              right: 20px!important;
+              right: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__burger {
+          .Header__burger__opened {
+            ul {
+              li {
+                &:nth-child(3) {
+                  max-width: 220px;
+                }
+              }
             }
           }
         }
