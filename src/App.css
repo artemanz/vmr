@@ -4,3 +4,14 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+scrollbar-width {
+  :-webkit-scrollbar {
+    width: 13px; /* ширина полосы прокрутки */
+  }
+  
+  /* Применяется к ползунку */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 40px; /* изменение формы ползунка */
+  }
+}
