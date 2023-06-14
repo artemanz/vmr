@@ -1,0 +1,186 @@
+// Отключение прокрутки у body при открытом модальном окне
+body.modalOpen {
+  overflow: hidden;
+}
+.Header {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 230, 222, 1) 0%,
+    rgba(0, 153, 173, 1) 100%
+  );
+  .Header__wrapper {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    .Header__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .Header__logo {
+        cursor: pointer;
+      }
+      .Header__info {
+        min-width: 530px;
+        display: flex;
+        justify-content: space-between;
+        .Header__info__text {
+          font-size: 17px;
+          cursor: pointer;
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+      .Header__burger {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__info {
+          min-width: 480px;
+          .Header__info__text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .Header {
+    .Header__wrapper {
+      .Header__row {
+        .Header__info {
+          display: none;
+        }
+        .Header__burger {
+          display: block;
+          .Header__burger__closed {
+            position: relative;
+            cursor: pointer;
+            .Header__burger__clicker {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              border: 2px solid #ffffff;
+              width: 50px;
+              height: 50px;
+              .Header__burger__line {
+                width: 25px;
+                height: 2px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                &::after {
+                  position: absolute;
+                  bottom: 14px;
+                  content: "";
+                  width: 25px;
+                  height: 2px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                }
+                &::before {
+                  position: absolute;
+                  top: 14px;
+                  content: "";
+                  width: 25px;
+                  height: 2px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+          .Header__burger__opened {
+            position: relative;
+            cursor: pointer;
+            .Header__modal {
+              position: fixed;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(
+                180deg,
+                rgba(0, 230, 222, 1) 0%,
+                rgba(0, 153, 173, 1) 100%
+              );
+              ul {
+                li {
+                  color: #ffffff;
+                  font-weight: 500;
+                  margin-bottom: 40px;
+                  font-size: 24px;
+                  list-style: none;
+                  &:nth-child(1) {
+                    max-width: 150px;
+                  }
+                  &:nth-child(2) {
+                    max-width: 115px;
+                  }
+                  &:nth-child(4) {
+                    max-width: 70px;
+                  }
+                }
+              }
+              .Header__burger__clicker {
+                position: absolute;
+                top: 22px;
+                right: 17%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 2px solid #ffffff;
+                width: 50px;
+                height: 50px;
+                .Header__burger__line {
+                  width: 25px;
+                  height: 2px;
+                  background-color: #ffffff;
+                  border-radius: 5px;
+                  transform: rotate(45deg);
+                  z-index: 2;
+                  &::after {
+                    position: absolute;
+                    bottom: 0px;
+                    content: "";
+                    width: 25px;
+                    height: 2px;
+                    background-color: #ffffff;
+                    border-radius: 5px;
+                    transform: rotate(90deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Header {
+    .Header__wrapper {
+      width: 100%;
+      .Header__burger {
+        .Header__burger__opened {
+          .Header__modal {
+            .Header__burger__clicker {
+              right: 20px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
