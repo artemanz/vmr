@@ -1,11 +1,14 @@
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import MainPage from "./pages/Main/MainPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
+    <div>
+      <Header />
+      <MainPage />
     </div>
   );
-}
+};
 
 export default App;
