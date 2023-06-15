@@ -41,24 +41,28 @@ const Header = () => {
               onClick={() => handleScrollTo(0)}
             >
               Подробнее
+              <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
               onClick={() => handleScrollTo(0)}
             >
               Для кого
+              <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
               onClick={() => handleScrollTo(0)}
             >
               Какие задачи мы решаем
+              <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
               onClick={() => handleScrollTo(0)}
             >
               Цены
+              <div className={styles.Header__info__underline}></div>
             </div>
           </div>
           <div className={styles.Header__burger}>
