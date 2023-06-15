@@ -1,17 +1,15 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block7.module.scss";
 
 const Block7 = () => {
-  React.useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className={styles.Block7}>
-      <div className={styles.Block7_Price} data-aos="fade-right">
+      <div
+        className={styles.Block7_Price}
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <div className={styles.Block7_Price_Info}>
           <div className={styles.Block7_Price_Info_text}>
             <span>ВИДЕОМОНИТОРИНГ</span>
@@ -27,7 +25,11 @@ const Block7 = () => {
         </div>
         <button>Получить ценовое предложение</button>
       </div>
-      <div className={styles.Block7_Info_Block} data-aos="fade-left">
+      <div
+        className={styles.Block7_Info_Block}
+        data-aos="fade-left"
+        delay="300"
+      >
         <div className={styles.Block7_Info_Block_Element}>
           <span>Что влияет на формирование цены:</span> <br /> Наличие камер
           видео наблюдения Если у Вас еще не установлены камеры Вы можете

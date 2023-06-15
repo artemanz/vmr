@@ -1,22 +1,24 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block9.module.scss";
 
 const Block9 = () => {
-  React.useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <div className={styles.Block9} data-aos="fade-up-left">
+    <div
+      className={styles.Block9}
+      data-aos="fade-up-left"
+      data-aos-duration="1500"
+    >
       <div className={styles.Block9__wrapper}>
         <div className={styles.Block9__bText}>КЕЙС ТЕЛЕКОММУНИКАЦИИ</div>
         <div className={styles.Block9__sbText}>
           Обеспечение качества сервиса в Розничной сети продаж
         </div>
-        <div className={styles.Block9__texts} data-aos="fade-right" delay="500">
+        <div
+          className={styles.Block9__texts}
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div className={styles.Block9__text__row}>
             <div className={styles.Block9__tochka}></div>
             <div className={styles.Block9__text}>

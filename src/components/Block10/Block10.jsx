@@ -6,18 +6,28 @@ import styles from "./Block10.module.scss";
 
 const Block10 = () => {
   React.useEffect(() => {
-    AOS.init();
+    if (window.innerWidth >= 768) {
+      AOS.init();
+    }
+    // Отключение AOS при размонтировании компонента
+    return () => {
+      AOS.refreshHard();
+    };
   }, []);
 
   return (
-    <div className={styles.Block10} data-aos="fade-up">
+    <div className={styles.Block10} data-aos="fade-up" data-aos-duration="1500">
       <div className={styles.Block10__wrapper}>
         <div className={styles.Block10__bText}>КЕЙС АЗС</div>
         <div className={styles.Block10__sbText}>
           Как увеличить доп. продажи и улучшить качество выполнения стандартов?
         </div>
         <div className={styles.Block10__row}>
-          <div className={styles.Block10__column} data-aos="fade-right">
+          <div
+            className={styles.Block10__column}
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div className={styles.Block10__text__row}>
               <div className={styles.Block10__tochka}></div>
               <div className={styles.Block10__text}>

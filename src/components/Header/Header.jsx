@@ -7,10 +7,8 @@ const Header = () => {
   const [isBurgerOpened, setIsBurgerOpened] = React.useState(false);
 
   const handleScrollTo = (px) => {
-    window.scrollTo({
-      top: px,
-      behavior: "smooth",
-    });
+    const a = document.querySelector("#Block5");
+    a.scrollIntoView({ behavior: "smooth", block: 'start' });
     setIsBurgerOpened(false);
     document.body.classList.remove(styles.modalOpen);
   };
@@ -45,21 +43,21 @@ const Header = () => {
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(0)}
+              onClick={() => handleScrollTo(1260)}
             >
               Для кого
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(0)}
+              onClick={() => handleScrollTo(2160)}
             >
               Какие задачи мы решаем
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(0)}
+              onClick={() => handleScrollTo(4790)}
             >
               Цены
               <div className={styles.Header__info__underline}></div>
