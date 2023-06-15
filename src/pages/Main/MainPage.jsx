@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import Block1 from "../../components/Block1/Block1";
 import Block2 from "../../components/Block2/Block2";
@@ -12,6 +14,10 @@ import Block9 from "../../components/Block9/Block9";
 import Block10 from "../../components/Block10/Block10";
 
 const MainPage = () => {
+  React.useEffect(() => {
+    AOS.init({disable: 'mobile'})
+  }, []);
+
   return (
     <div className={styles.MainPage}>
       <Block1 />

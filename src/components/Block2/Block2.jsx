@@ -1,6 +1,4 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block2.module.scss";
 import Block2_1 from "../../assets/img/Block2/Block2_1.png";
@@ -13,12 +11,8 @@ import Block2_7 from "../../assets/img/Block2/Block2_7.png";
 import Block2_8 from "../../assets/img/Block2/Block2_8.png";
 
 const Block2 = () => {
-  React.useEffect(() => {
-    AOS.init(); // Инициализация AOS
-  }, []);
-
   return (
-    <div className={styles.Block2} data-aos="fade-right">
+    <div className={styles.Block2} data-aos="fade-right" data-aos-duration="1500">
       <div className={styles.Block2__wrapper}>
         <div className={styles.Block2__bText}>
           ПРОЦЕСС ИСПОЛЬЗОВАНИЯ УСЛУГИ ВИДЕОНАБЛЮДЕНИЯ
