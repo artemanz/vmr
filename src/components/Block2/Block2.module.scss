@@ -4,7 +4,7 @@
   margin: auto;
   overflow: hidden;
   .Block2__wrapper {
-    padding: 20px;
+    padding: 50px 20px;
     .Block2__bText {
       text-align: center;
       font-size: 32px;
@@ -19,12 +19,11 @@
       margin-bottom: 50px;
     }
     .Block2__grid {
-  
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 10px;
-      grid-row-gap: 10px;
+      grid-row-gap: 80px;
       align-items: start;
       .Block2__cell {
         text-align: center;
@@ -84,9 +83,17 @@
         font-size: 24px;
       }
       .Block2__grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
         grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        .Block2__cell {
+          .Blo
+          .Block2__img {
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
       }
     }
   }
