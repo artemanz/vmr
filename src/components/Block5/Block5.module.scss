@@ -1,12 +1,12 @@
 .Block5 {
-    width: 70%;
+    width: 70%;           
     margin-top: 2%;
     background-image: url('../../assets/img/Background/back3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 145%;
     padding: 0 20px;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
     h1 {
         font-size: 40px;
         text-align: center;
@@ -21,14 +21,15 @@
         border: 2px solid transparent;
         border-radius: 80px;
         box-shadow: 0 0 0 2px  #00e6de , 0 0 0 2px #0099ad;
-        padding: 40px 40px 140px 40px;
+        padding: 40px 40px 100px 40px;
         background-color: white;
         ul {
             max-width: 70%;
             list-style-type: none;
             li {
-                font-size: 23px;
+                font-size: 25px;
                 margin-bottom: 10px;
+                line-height: 51px;
 
                 &::before{
                     content: "▶";
@@ -213,7 +214,7 @@
                 max-width: 100%;
 
                 li {
-                    font-size: 16px;
+                    font-size: 18px;
                     margin-bottom: 5px;
 
                 }
@@ -244,7 +245,7 @@
                 max-width: 100%;
 
                 li {
-                    font-size: 17px;
+                    font-size: 22px;
                     margin-bottom: 5px;
 
                 }
@@ -303,10 +304,10 @@
 
         &_List_Block {
             ul {
-                max-width: 70%;
+                max-width: 100%;
 
                 li {
-                    font-size: 16px;
+                    font-size: 25px;
 
                 }
             }
@@ -333,10 +334,10 @@
 
         &_List_Block {
             ul {
-                max-width: 70%;
+                max-width: 100%;
 
                 li {
-                    font-size: 18px;
+                    font-size: 25px;
 
                 }
             }
@@ -363,10 +364,10 @@
 
         &_List_Block {
             ul {
-                max-width: 70%;
+                max-width: 100%;
 
                 li {
-                    font-size: 20px;
+                    font-size: 25px;
 
                 }
             }
@@ -376,7 +377,8 @@
     @media screen and (min-width: 1720px) and (max-width: 1980px) {
         background-size: 160%;
         background-position-y: -129px;
-        padding-bottom: 20px;
+        padding-bottom: 2%  ;
+        height: auto;
         h1 {
             font-size: 40px;
             margin-bottom: 80px;
@@ -387,7 +389,7 @@
                 max-width: 70%;
 
                 li {
-                    font-size: 20px;
+                    font-size: 25px;
 
                 }
             }
