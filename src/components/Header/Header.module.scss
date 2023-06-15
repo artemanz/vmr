@@ -7,8 +7,8 @@ body.modalOpen {
   top: 0;
   z-index: 12;
   background: linear-gradient(
-    180deg,
-    rgba(0, 230, 222, 1) 0%,
+    0deg,
+    rgba(0, 191, 185, 1) 0%,
     rgba(0, 153, 173, 1) 100%
   );
   .Header__wrapper {
@@ -39,6 +39,22 @@ body.modalOpen {
           cursor: pointer;
           color: #ffffff;
           font-weight: 500;
+          height: 22px;
+          .Header__info__underline {
+            width: 0;
+          }
+          &:hover {
+            .Header__info__underline {
+              height: 3px;
+              width: 100%;
+              background: linear-gradient(
+                180deg,
+                rgb(0 252 243) 100%,
+                rgb(0, 153, 173) 100%
+              );
+              transition: 0.3s ease;
+            }
+          }
         }
       }
       .Header__burger {

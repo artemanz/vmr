@@ -7,6 +7,8 @@ import Block34 from "../../components/Block34/Block34";
 import Block6 from "../../components/Block6/Block6";
 import Block7 from "../../components/Block7/Block7";
 import Block8 from "../../components/Block8/Block8";
+import Block9 from "../../components/Block9/Block9";
+import Block10 from "../../components/Block10/Block10";
 
 const MainPage = () => {
   return (
@@ -18,6 +20,8 @@ const MainPage = () => {
       <Block6 />
       <Block7 />
       <Block8 />
+      <Block9 />
+      <Block10 />
     </div>
   );
 };
