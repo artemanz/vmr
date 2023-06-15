@@ -1,11 +1,17 @@
 .Block34 {
     width: 70%;
-    padding: 20px 20px 190px 20px;
+    padding: 20px 20px 100px 20px;
     background-image: url('../../assets/img/Background/back2.png');
     background-position-y: 113px;
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
+    @media screen and (min-width: 1770px) {
+    height: 1100px;
+        }
+        @media screen and (min-width: 1470px) {
+            height: 900px;
+                }
     h1 {
         font-size: 40px;
         background: linear-gradient(253deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%); // Градиентный фон
@@ -17,10 +23,11 @@
        
         max-width: 50%;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 70px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
+       
 
         &_Element {
             display: flex;
@@ -33,7 +40,7 @@
             }
 
             span {
-                font-size: 24px;
+                font-size: 23px;
             }
         }
     }
@@ -155,7 +162,7 @@
     }
 
     @media only screen and (min-width: 1020px) and (max-width: 1120px) {
-
+        height: auto;
         // Ваши стили для небольших ноутбуков и десктопов
         h1 {
             font-size: 30px;
@@ -182,9 +189,10 @@
     @media only screen and (min-width: 1120px) and (max-width: 1220px) {
 
         // Ваши стили для небольших ноутбуков и десктопов
+        padding: 20px 20px 70px 20px;
         &_Info {
             max-width: 50%;
-            margin-top: 70px;
+            margin-top: 8c0px;
 
             &_Element {
 
@@ -206,29 +214,30 @@
 
         &_Info {
             max-width: 50%;
-            margin-top: 50px;
+            margin-top: 60px;
 
             &_Element {
-
+               
                 margin-bottom: 30px;
 
                 img {
-                    max-width: 48px;
+                    max-width: 65px;
                 }
 
                 span {
-                    font-size: 18px;
+                    font-size: 17px;
+                    font-weight: 500;
                 }
             }
         }
     }
 
     @media only screen and (min-width: 1620px) and (max-width: 1820px) {
-
         // Ваши стили для небольших ноутбуков и десктопов
+        background-position-x: -30px;
         &_Info {
             max-width: 50%;
-            margin-top: 20px;
+            margin-top: 100px;
 
             &_Element {
 
