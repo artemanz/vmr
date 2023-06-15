@@ -5,15 +5,16 @@
     background-position-y: 113px;
     background-repeat: no-repeat;
     background-size: contain;
-
+    overflow: hidden;
     h1 {
         font-size: 40px;
         background: linear-gradient(253deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%); // Градиентный фон
         -webkit-background-clip: text; // Задаем тексту свойство background-clip
         -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
     }
-
+   
     &_Info {
+       
         max-width: 50%;
         margin: auto;
         margin-top: 20px;

@@ -5,6 +5,7 @@ body.modalOpen {
 .Header {
   position: sticky;
   top: 0;
+  z-index: 12;
   background: linear-gradient(
     180deg,
     rgba(0, 230, 222, 1) 0%,

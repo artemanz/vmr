@@ -2,6 +2,7 @@
   width: 70%;
   background-color: white;
   margin: auto;
+  overflow: hidden;
   .Block2__wrapper {
     padding: 20px;
     .Block2__bText {
@@ -18,6 +19,7 @@
       margin-bottom: 50px;
     }
     .Block2__grid {
+  
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
