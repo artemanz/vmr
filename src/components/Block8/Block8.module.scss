@@ -52,7 +52,9 @@
                 }
 
                 span {
-                    strong {}
+                    strong { background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;}
                 }
             }
 
@@ -83,7 +85,10 @@
                 span {
                     width: 80%;
 
-                    strong {}
+                    strong {
+                        background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;}
                 }
             }
 
@@ -98,6 +103,17 @@
         background-image: none;
      
     
+        &_H1 {
+            h1{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            span{
+                font-size: 22px;
+                font-weight: 500;
+            }
+           
+        }
         
         &_Info {
             display: flex;
@@ -120,7 +136,9 @@
                     }
 
                     span {
-                        strong {}
+                        strong {
+
+                        }
                     }
                 }
 
@@ -152,12 +170,9 @@
 
     @media only screen and (min-width: 481px) and (max-width: 768px) {
         // Ваши стили для планшетов
-
         width: 100%;
         background-image: none;
-     
-    
-        
+
         &_Info {
             display: flex;
             flex-direction: column;

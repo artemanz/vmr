@@ -47,6 +47,8 @@
         &_Button{
              text-align: end;
             button{
+                cursor: pointer;
+
                 padding: 20px;
                 color: white;
                 border: #00e6de;
@@ -82,8 +84,10 @@
                 max-width: 100%;
 
                 li {
+                    margin-bottom: 18px;
+                    font-weight: 400;
                     font-size: 18px;
-                   line-height: 15px;
+                    line-height: 15px;
 
                 }
             }
@@ -118,9 +122,10 @@
                 max-width: 100%;
 
                 li {
+                    margin-bottom: 10px;
+                    font-weight: 400;
                     font-size: 18px;
-                   line-height: 15px;
-
+                    line-height: 31px;
                 }
             }
             &_Button{
