@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "aos": "^2.3.4",
     "gh-pages": "^5.0.0",
     "sass": "^1.63.3"
   }
