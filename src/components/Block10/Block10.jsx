@@ -1,17 +1,23 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block10.module.scss";
 
 const Block10 = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className={styles.Block10}>
+    <div className={styles.Block10} data-aos="fade-up">
       <div className={styles.Block10__wrapper}>
         <div className={styles.Block10__bText}>КЕЙС АЗС</div>
         <div className={styles.Block10__sbText}>
           Как увеличить доп. продажи и улучшить качество выполнения стандартов?
         </div>
         <div className={styles.Block10__row}>
-          <div className={styles.Block10__column}>
+          <div className={styles.Block10__column} data-aos="fade-right">
             <div className={styles.Block10__text__row}>
               <div className={styles.Block10__tochka}></div>
               <div className={styles.Block10__text}>
@@ -39,7 +45,7 @@ const Block10 = () => {
               </div>
             </div>
           </div>
-          <div className={styles.Block10__column}>
+          <div className={styles.Block10__column} data-aos="fade-left">
             <div className={styles.Block10__text__row}>
               <div className={styles.Block10__tochka}></div>
               <div className={styles.Block10__text}>

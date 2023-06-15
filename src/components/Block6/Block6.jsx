@@ -1,10 +1,16 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block6.module.scss";
 
 const Block6 = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className={styles.Block6}>
+    <div className={styles.Block6} data-aos="fade-up-right">
       <div className={styles.Block6__wrapper}>
         <div className={styles.Block6__bText}>
           Бесспорные преимущества работы с нами

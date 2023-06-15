@@ -1,4 +1,5 @@
 import React from "react";
+
 import Block1 from "../../components/Block1/Block1";
 import Block2 from "../../components/Block2/Block2";
 import styles from "./MainPage.module.scss";
