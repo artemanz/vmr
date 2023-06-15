@@ -2,7 +2,6 @@
     width: 70%;
     height: 669px;
     display: flex;
-    margin-top: 2%;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
@@ -81,11 +80,12 @@
             }
             
             span {
-                font-size: 13px;
+                font-size: 17px;
+                line-height: 24px;
                 height: 10%;
                 margin-bottom: 0;
                 strong {
-                    font-size: 14px;
+                    font-size: 17px;
                 }
             }
             
@@ -110,9 +110,8 @@
             span {
                 font-size: 17px;
                 height: 10%;
-
                 strong {
-                    font-size: 18px;
+                    font-size: 17px;
                 }
             }
         }

@@ -8,6 +8,7 @@
     .Block2__bText {
       text-align: center;
       font-size: 32px;
+      font-weight: 700;
       background: linear-gradient(
         180deg,
         rgba(0, 230, 222, 1) 0%,
@@ -81,6 +82,7 @@
     .Block2__wrapper {
       .Block2__bText {
         font-size: 24px;
+        text-align: start;  
       }
       .Block2__grid {
         grid-row-gap: 20px;
@@ -103,6 +105,7 @@
     .Block2__wrapper {
       .Block2__bText {
         font-size: 22px;
+        text-align: start;
       }
     }
   }
