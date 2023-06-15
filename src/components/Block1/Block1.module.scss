@@ -1,7 +1,7 @@
 .Block1 {
     width: 70%;
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
@@ -11,9 +11,10 @@
     background-size: 50%;
     background-position: 0% 100%;
     background-repeat: no-repeat;
-
+    overflow: hidden;
     &_Info {
         display: flex;
+     
         flex-direction: column;
         width: 30%;
         height: auto;
@@ -35,6 +36,7 @@
 
     &_Img {
         width: 40%;
+        overflow: hidden;
 
         // text-align: center;
         img {
