@@ -1,16 +1,24 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
+
 import styles from "./Block34.module.scss";
 import Img1 from "../../assets/img/Block34/image1.png";
 import Img2 from "../../assets/img/Block34/image2.png";
 import Img3 from "../../assets/img/Block34/image3.png";
 import Img4 from "../../assets/img/Block34/image4.png";
 import Img5 from "../../assets/img/Block34/image5.png";
+
 const Block34 = () => {
+  React.useEffect(() => {
+    AOS.init(); // Инициализация AOS
+  }, []);
+
   return (
-    <div className={styles.Block34}>
+    <div className={styles.Block34} data-aos="fade-right">
       <h1>КОМУ ПОДХОДИТ ВМР</h1>
 
-      <div className={styles.Block34_Info}>
+      <div className={styles.Block34_Info} data-aos="fade-up">
         <div className={styles.Block34_Info_Element}>
           <img src={Img1} alt="Img1" />
           <span>Тем, у кого уже есть камеры со звуком</span>

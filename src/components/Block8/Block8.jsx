@@ -1,4 +1,7 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
+
 import styles from "./Block8.module.scss";
 import Img from "../../assets/img/Block8/Picture1.png";
 import Img2 from "../../assets/img/Block8/Picture2.png";
@@ -9,14 +12,18 @@ import Img6 from "../../assets/img/Block8/Picture6.png";
 import Img7 from "../../assets/img/Block8/Picture7.png";
 
 const Block8 = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className={styles.Block8}>
+    <div className={styles.Block8} data-aos='fade-up'>
       <div className={styles.Block8_H1}>
         <h1>КЕЙС ОПТИКА</h1>
         <span>Контроль соблюдения операционной модели</span>
       </div>
       <div className={styles.Block8_Info}>
-        <div className={styles.Block8_Info_Item}>
+        <div className={styles.Block8_Info_Item} data-aos='fade-up-left'>
           <div className={styles.Block8_Info_Item_elements}>
             <div className={styles.Block8_Info_Item_elements_img}>
               <img src={Img} alt="Picture1" />
@@ -49,7 +56,7 @@ const Block8 = () => {
         </div>
 
         {/* // Left */}
-        <div className={styles.Block8_Info_Item_2}>
+        <div className={styles.Block8_Info_Item_2} data-aos='fade-up-right'>
           <div className={styles.Block8_Info_Item_2_elements_2}>
             <div className={styles.Block8_Info_Item_2_elements_2_img}>
               <img src={Img4} alt="Picture4" />
