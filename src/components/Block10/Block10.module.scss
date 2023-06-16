@@ -7,9 +7,12 @@
   background-position: 100% 90%;
   .Block10__wrapper {
     padding: 20px;
+    
     .Block10__bText {
       font-size: 32px;
+      
       background: linear-gradient(
+        
         180deg,
         rgb(0, 230, 222) 60%,
         rgb(0, 153, 173) 99%
@@ -35,6 +38,8 @@
         font-weight: 500;
         &:nth-child(1) {
           color: white;
+          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
+
           background: linear-gradient(
             355deg,
             rgb(0, 230, 222) 0%,
