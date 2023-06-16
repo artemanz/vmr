@@ -104,8 +104,8 @@
     }
   }
   &_button {
-    margin-top: 30px;
-    text-align: right;
+    text-align: left;
+    margin-bottom: 20px;
     button {
       padding: 20px;
       cursor: pointer;
@@ -150,7 +150,7 @@
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 40px 0;
+      padding: 20px 0 0px 0;
 
       &_Item {
         margin-bottom: 0px;
@@ -176,7 +176,9 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-
+          &:last-child{
+            margin-bottom: 0px;
+          }
           &_img {
             margin-right: 2%;
 
@@ -196,6 +198,8 @@
     }
     &_button {
       text-align: left;
+      margin-top: 20px;
+      padding-bottom: 30px;
       button {
         font-size: 14px;
         border-radius: 10px;
@@ -214,11 +218,12 @@
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 40px 0;
+      padding: 20px 0 0px 0;
 
       &_Item {
         margin-bottom: 0px;
         &_elements {
+         
           margin-bottom: 45px;
 
           &_img {
@@ -240,7 +245,9 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-
+          &:last-child{
+            margin-bottom: 0px;
+          }
           &_img {
             margin-right: 2%;
 
@@ -256,6 +263,16 @@
             }
           }
         }
+      }
+    }
+    &_button {
+      text-align: left;
+      padding-bottom: 30px;
+      margin-top: 20px;
+      button {
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 10px;
       }
     }
   }
@@ -275,7 +292,7 @@
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 40px 0;
+      padding: 20px 0 0px 0;
 
       &_Item {
         margin-bottom: 0px;
@@ -301,7 +318,9 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-
+          &:last-child{
+            margin-bottom: 0px;
+          }
           &_img {
             margin-right: 2%;
 
@@ -317,6 +336,16 @@
             }
           }
         }
+      }
+    }
+    &_button {
+      text-align: left;
+      padding-bottom: 30px;
+      margin-top: 20px;
+      button {
+        font-size: 17px;
+        border-radius: 10px;
+        padding: 15px;
       }
     }
   }
