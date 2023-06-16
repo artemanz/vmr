@@ -6,7 +6,12 @@ import ImgW from "../../assets/img/Eye/eyeWhite.png";
 
 const Block1 = () => {
   return (
-    <div className={styles.Block1} data-aos="fade-right" data-aos-duration="1500">
+    <div
+      className={styles.Block1}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      id="Block1"
+    >
       <div className={styles.Block1_Info}>
         <span>
           <strong className={styles.Block1_Info_Tee}>ВИДЕОМОНИТОРИНГ</strong>–

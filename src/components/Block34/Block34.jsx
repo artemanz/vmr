@@ -13,6 +13,7 @@ const Block34 = () => {
       className={styles.Block34}
       data-aos="fade-right"
       data-aos-duration="1500"
+      id="Block34"
     >
       <h1>КОМУ ПОДХОДИТ ВМР</h1>
 
