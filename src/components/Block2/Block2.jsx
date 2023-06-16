@@ -20,7 +20,7 @@ const Block2 = () => {
   return (
     <div
       className={styles.Block2}
-      data-aos="fade-right"
+      data-aos="fade-left"
       data-aos-duration="1500"
     >
       <div className={styles.Block2__wrapper}>
