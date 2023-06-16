@@ -1,6 +1,7 @@
 .Block2 {
   width: 70%;
   background-color: white;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
   margin: auto;
   overflow: hidden;
   .Block2__wrapper {
@@ -80,6 +81,7 @@
 @media (max-width: 500px) {
   .Block2 {
     .Block2__wrapper {
+      padding: 20px 20px;
       .Block2__bText {
         font-size: 24px;
         text-align: start;  
@@ -103,6 +105,7 @@
 @media (max-width: 375px) {
   .Block2 {
     .Block2__wrapper {
+      padding: 20px 20px;
       .Block2__bText {
         font-size: 22px;
         text-align: start;

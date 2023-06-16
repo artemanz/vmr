@@ -1,11 +1,11 @@
 .Block5 {
     width: 70%;           
-    margin-top: 2%;
     background-image: url('../../assets/img/Background/back3.png');
-    background-repeat: no-repeat;
     background-position: center;
+    background-position-y: -200px;
     background-size: 145%;
     padding: 0 20px;
+    padding: 2%;
     padding-bottom: 2%;
     h1 {
         font-size: 40px;
@@ -21,6 +21,7 @@
         border: 2px solid transparent;
         border-radius: 80px;
         box-shadow: 0 0 0 2px  #00e6de , 0 0 0 2px #0099ad;
+        
         padding: 40px 40px 100px 40px;
         background-color: white;
         ul {

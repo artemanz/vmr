@@ -106,7 +106,12 @@
 }
 @media (max-width: 940px) {
   .Block9 {
+    background-image: none;
+    margin-bottom: 25px;
+   
     .Block9__wrapper {
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
+
       .Block9__bText {
         font-size: 28px;
       }
@@ -115,8 +120,13 @@
       }
       .Block9__text__row {
         .Block9__text {
-          font-size: 16px;
-          max-width: 450px;
+          padding: 10px;
+          font-size: 18px;
+          max-width: 100%;
+        }
+        .Block9__tochka {
+          display: none;
+
         }
       }
     }
@@ -125,6 +135,9 @@
 @media (max-width: 768px) {
   .Block9 {
     width: 100%;
+    background-image: none;
+    margin-bottom: 0px;
+
     background-position: 107% 78%;
     .Block9__wrapper {
       .Block9__bText {
@@ -135,7 +148,11 @@
       }
       .Block9__text__row {
         .Block9__text {
-          max-width: 500px;
+          max-width: 100%;
+          font-size: 17px;
+          span{
+            font-weight: 700;
+          }
         }
       }
     }
@@ -143,6 +160,8 @@
 }
 @media (max-width: 630px) {
   .Block9 {
+ 
+
     background-image: none;
     .Block9__wrapper {
       .Block9__bText {
@@ -153,7 +172,11 @@
       }
       .Block9__text__row {
         .Block9__text {
-          max-width: 95%;
+          max-width: 100%;
+          font-size: 17px;
+          span{
+            font-weight: 700;
+          }
         }
       }
     }
@@ -170,7 +193,11 @@
         }
         .Block9__text__row {
           .Block9__text {
-            max-width: 90%;
+            max-width: 100%;
+            font-size: 17px;
+            span{
+              font-weight: 700;
+            }
           }
         }
       }
