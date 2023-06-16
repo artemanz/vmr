@@ -3,6 +3,12 @@ import React from "react";
 import styles from "./Block9.module.scss";
 
 const Block9 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div
       className={styles.Block9}
@@ -95,6 +101,9 @@ const Block9 = () => {
               Объем более <span>15000</span> анкет ежемесячно
             </div>
           </div>
+        </div>
+        <div className={styles.Block9__button}>
+          <button onClick={scrollToForm}>Задать вопрос</button>
         </div>
       </div>
     </div>

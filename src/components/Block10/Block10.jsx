@@ -5,15 +5,11 @@ import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 import styles from "./Block10.module.scss";
 
 const Block10 = () => {
-  React.useEffect(() => {
-    if (window.innerWidth >= 768) {
-      AOS.init();
-    }
-    // Отключение AOS при размонтировании компонента
-    return () => {
-      AOS.refreshHard();
-    };
-  }, []);
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
 
   return (
     <div className={styles.Block10} data-aos="fade-up" data-aos-duration="1500">
@@ -86,6 +82,9 @@ const Block10 = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.Block10__button}>
+          <button onClick={scrollToForm}>Задать вопрос</button>
         </div>
       </div>
     </div>

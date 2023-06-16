@@ -8,6 +8,12 @@ import Img4 from "../../assets/img/Block34/image4.png";
 import Img5 from "../../assets/img/Block34/image5.png";
 
 const Block34 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div
       className={styles.Block34}
@@ -16,7 +22,6 @@ const Block34 = () => {
       id="Block34"
     >
       <h1>КОМУ ПОДХОДИТ ВМР</h1>
-
       <div
         className={styles.Block34_Info}
         data-aos="fade-up"
@@ -47,6 +52,9 @@ const Block34 = () => {
             имеющимся видам проверок)
           </span>
         </div>
+      </div>
+      <div className={styles.Block34_button}>
+        <button onClick={scrollToForm}>Задать вопрос</button>
       </div>
     </div>
   );
