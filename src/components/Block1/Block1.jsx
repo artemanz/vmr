@@ -1,18 +1,12 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block1.module.scss";
 import Img from "../../assets/img/Eye/eye.png";
 import ImgW from "../../assets/img/Eye/eyeWhite.png";
 
 const Block1 = () => {
-  React.useEffect(() => {
-    AOS.init(); // Инициализация AOS
-  }, []);
-
   return (
-    <div className={styles.Block1} data-aos="fade-right">
+    <div className={styles.Block1} data-aos="fade-right" data-aos-duration="1500">
       <div className={styles.Block1_Info}>
         <span>
           <strong className={styles.Block1_Info_Tee}>ВИДЕОМОНИТОРИНГ</strong>–

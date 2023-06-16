@@ -1,18 +1,12 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block5.module.scss";
 
 const Block5 = () => {
-  React.useEffect(() => {
-    AOS.init(); // Инициализация AOS
-  }, []);
-
   return (
-    <div className={styles.Block5} data-aos="fade-right">
+    <div className={styles.Block5} data-aos="fade-right" data-aos-duration="1500" id="Block5">
       <h1>ЗАДАЧИ, РЕШАЕМЫЕ С ПОМОЩЬЮ ВМР</h1>
-      <div className={styles.Block5_List_Block} data-aos="fade-up">
+      <div className={styles.Block5_List_Block} data-aos="fade-up" data-aos-duration="400">
         <ul>
           <li>Подсчет трафика клиентов</li>
           <li>Контроль своевременности открытия/закрытия точек</li>
