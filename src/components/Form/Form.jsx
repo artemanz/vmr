@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./BitrixForm.scss";
 
 const BitrixForm = () => {
@@ -8,35 +9,35 @@ const BitrixForm = () => {
   const [email, setEmail] = useState("");
   const [question, setQuestion] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-    // Получите ссылку на ваш URL-обработчик формы в Битрикс 24
-    const formActionUrl = "https://your-bitrix-url.com/rest/your-form-handler";
+    try {
+      const response = await axios.post(
+        "https://b24-kfndgj.bitrix24.ru/rest/1/iz2f3oijpvr2kf4j/crm.lead.add",
+        {
+          fields: {
+            TITLE: "Новый лид",
+            NAME: name,
+            LAST_NAME: lastName,
+            PHONE: [{ VALUE: phone, VALUE_TYPE: "WORK" }],
+            EMAIL: [{ VALUE: email, VALUE_TYPE: "WORK" }],
+            COMMENTS: question,
+          },
+        }
+      );
 
-    // Соберите данные формы
-    const formData = new FormData(e.target);
+      console.log("Лид успешно создан в Bitrix24", response.data);
 
-    // Отправьте данные на URL-обработчик с помощью Fetch API или другой метод отправки данных
-    fetch(formActionUrl, {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => {
-        // Обработка успешного ответа от сервера
-        console.log("Данные успешно отправлены:", response);
-
-        // Очистка полей формы после отправки
-        setName("");
-        setLastName("");
-        setPhone("");
-        setEmail("");
-        setQuestion("");
-      })
-      .catch((error) => {
-        // Обработка ошибки при отправке данных
-        console.error("Ошибка отправки данных:", error);
-      });
+      // Очистка полей формы после отправки
+      setName("");
+      setLastName("");
+      setPhone("");
+      setEmail("");
+      setQuestion("");
+    } catch (error) {
+      console.error("Ошибка при создании лида", error);
+    }
   };
 
   return (
@@ -84,7 +85,7 @@ const BitrixForm = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
