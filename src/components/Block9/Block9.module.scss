@@ -9,14 +9,14 @@
     padding: 20px;
     .Block9__bText {
       font-size: 32px;
+      font-weight: 700;
       background: linear-gradient(
         180deg,
-        rgb(0, 230, 222) 60%,
-        rgb(0, 153, 173) 99%
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: 600;
       text-align: center;
       margin-bottom: 15px;
     }
@@ -47,6 +47,30 @@
         background: #0099ad;
       }
     }
+    .Block9__button {
+      margin-top: 30px;
+      text-align: right;
+      button {
+        padding: 20px;
+        cursor: pointer;
+        color: white;
+        border: #00e6de;
+        background: linear-gradient(
+          193deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 93%
+        );
+        border-radius: 25px;
+        transition: 0.4s ease;
+        &:hover {
+          background: linear-gradient(
+            193deg,
+            rgb(4, 196, 189) 0%,
+            rgb(4, 170, 192) 93%
+          );
+        }
+      }
+    }
   }
 }
 @media (max-width: 1440px) {
@@ -55,6 +79,12 @@
       .Block9__text__row {
         .Block9__text {
           max-width: 700px;
+        }
+      }
+      .Block9__button {
+        button {
+          font-size: 13px;
+          padding: 15px;
         }
       }
     }
@@ -104,11 +134,22 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .Block9 {
+    .Block9__wrapper {
+      .Block9__button {
+        button {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 940px) {
   .Block9 {
     background-image: none;
     margin-bottom: 25px;
-   
+
     .Block9__wrapper {
       box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
 
@@ -126,7 +167,6 @@
         }
         .Block9__tochka {
           display: none;
-
         }
       }
     }
@@ -150,9 +190,15 @@
         .Block9__text {
           max-width: 100%;
           font-size: 17px;
-          span{
+          span {
             font-weight: 700;
           }
+        }
+      }
+      .Block9__button {
+        button {
+          font-size: 14px;
+          border-radius: 10px;
         }
       }
     }
@@ -160,8 +206,6 @@
 }
 @media (max-width: 630px) {
   .Block9 {
- 
-
     background-image: none;
     .Block9__wrapper {
       .Block9__bText {
@@ -174,7 +218,7 @@
         .Block9__text {
           max-width: 100%;
           font-size: 17px;
-          span{
+          span {
             font-weight: 700;
           }
         }
@@ -183,23 +227,32 @@
   }
 }
 @media (max-width: 450px) {
-    .Block9 {
-      .Block9__wrapper {
-        .Block9__bText {
-          font-size: 22px;
-        }
-        .Block9__sbText {
-          font-size: 18px;
-        }
-        .Block9__text__row {
-          .Block9__text {
-            max-width: 100%;
-            font-size: 17px;
-            span{
-              font-weight: 700;
-            }
+  .Block9 {
+    .Block9__wrapper {
+      .Block9__bText {
+        font-size: 22px;
+      }
+      .Block9__sbText {
+        font-size: 18px;
+      }
+      .Block9__text__row {
+        .Block9__text {
+          max-width: 100%;
+          font-size: 17px;
+          span {
+            font-weight: 700;
           }
         }
       }
     }
   }
+}
+@media (max-width: 425px) {
+  .Block9 {
+    .Block9__wrapper {
+      .Block9__button {
+        text-align: left;
+      }
+    }
+  }
+}

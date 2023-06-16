@@ -1,591 +1,631 @@
 .Block8 {
-    background-image: url('../../assets/img/Block8/Picture8.png');
-    background-repeat: no-repeat;
-    width: 70%;
-    padding: 0 20px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: 44px;
-    background-size: 350px;
-    width: 70%;
-    margin: 0 20px;
+  background-image: url("../../assets/img/Block8/Picture8.png");
+  background-repeat: no-repeat;
+  width: 70%;
+  padding: 0 20px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 44px;
+  background-size: 350px;
+  width: 70%;
+  margin: 0 20px;
 
-    &_H1 {
-        h1{
-            font-size: 28px;
-            background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
+  &_H1 {
+    h1 {
+      font-size: 28px;
+      background: linear-gradient(
+        180deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+    span {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  &_Info {
+    display: flex;
+    background-image: url("../../assets/img/Block8/Picture9.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 140px;
+    background-size: 240px;
+    justify-content: space-between;
+    padding: 90px 0 160px 0;
+
+    &_Item {
+      &_elements {
+        margin-bottom: 45px;
+        margin-bottom: 45px;
+        display: flex;
+        align-items: center;
+
+        &_img {
+          margin-right: 2%;
+
+          img {
+            width: 55px;
+          }
+        }
+
+        span {
+          strong {
+            background: linear-gradient(
+              180deg,
+              rgb(0, 230, 222) 60%,
+              rgb(0, 153, 173) 99%
+            );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 700;
+          }
         }
-        span{
-            font-size: 22px;
-            font-weight: 600;
+      }
+    }
+
+    &_Item_2 {
+      max-width: 30%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &_elements_2 {
+        margin-bottom: 45px;
+        margin-bottom: 45px;
+        display: flex;
+        align-items: center;
+
+        &_img {
+          margin-right: 2%;
+
+          img {
+            width: 55px;
+          }
         }
-       
+
+        span {
+          width: 80%;
+
+          strong {
+            background: linear-gradient(
+              180deg,
+              rgb(0, 230, 222) 60%,
+              rgb(0, 153, 173) 99%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  &_button {
+    margin-top: 30px;
+    text-align: right;
+    button {
+      padding: 20px;
+      cursor: pointer;
+      color: white;
+      border: #00e6de;
+      background: linear-gradient(
+        193deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 93%
+      );
+      border-radius: 25px;
+      transition: 0.4s ease;
+      &:hover {
+        background: linear-gradient(
+          193deg,
+          rgb(4, 196, 189) 0%,
+          rgb(4, 170, 192) 93%
+        );
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    // Ваши стили для мобильных устройств
+
+    width: 100%;
+    background-image: none;
+
+    &_H1 {
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 22px;
+        font-weight: 500;
+      }
     }
 
     &_Info {
-        display: flex;
-        background-image: url('../../assets/img/Block8/Picture9.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-y: 140px;
-        background-size: 240px;
-        justify-content: space-between;
-        padding: 90px 0 160px 0;
+      display: flex;
+      flex-direction: column;
+      background-image: none;
 
-        &_Item {
-            
-            &_elements {
-                margin-bottom: 45px;
-                margin-bottom: 45px;
-                display: flex;
-                align-items: center;
+      padding: 20px 0 40px 0;
 
-                &_img {
-                    margin-right: 2%;
+      &_Item {
+        margin-bottom: 0px;
+        &_elements {
+          margin-bottom: 45px;
 
-                    img {
-                        width: 55px;
-                    }
-                }
+          &_img {
+            margin-right: 2%;
 
-                span {
-                    strong { background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;}
-                }
+            img {
+              width: 55px;
             }
+          }
 
-        }
-
-        &_Item_2 {
-            max-width: 30%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-
-            &_elements_2 {
-                margin-bottom: 45px;
-                margin-bottom: 45px;
-                display: flex;
-                align-items: center;
-
-                &_img {
-                    margin-right: 2%;
-
-                    img {
-                        width: 55px;
-
-                    }
-
-                }
-
-                span {
-                    width: 80%;
-
-                    strong {
-                        background: linear-gradient(180deg, rgb(0, 230, 222) 60%, rgb(0, 153, 173) 99%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;}
-                }
+          span {
+            strong {
             }
-
+          }
         }
+      }
+
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            width: 80%;
+
+            strong {
+            }
+          }
+        }
+      }
     }
-
-
-    @media only screen and (max-width: 480px) {
-        // Ваши стили для мобильных устройств
-        
-        width: 100%;
-        background-image: none;
-     
-    
-        &_H1 {
-            h1{
-                font-size: 24px;
-                font-weight: 700;
-            }
-            span{
-                font-size: 22px;
-                font-weight: 500;
-            }
-           
-        }
-        
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: none;
-
-            padding: 20px 0 40px 0;
-
-            &_Item {
-                margin-bottom: 0px;
-                &_elements {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {
-
-                        }
-                    }
-                }
-
-            }
-
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
-            }
-        }
+    &_button {
+      text-align: left;
+      button {
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 10px;
+      }
     }
+  }
 
-    @media only screen and (min-width: 481px) and (max-width: 768px) {
-        // Ваши стили для планшетов
-        width: 100%;
-        background-image: none;
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    // Ваши стили для планшетов
+    width: 100%;
+    background-image: none;
 
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: none;
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      background-image: none;
 
-            padding: 20px 0 40px 0;
+      padding: 20px 0 40px 0;
 
-            &_Item {
-                margin-bottom: 0px;
-                &_elements {
-                    margin-bottom: 45px;
+      &_Item {
+        margin-bottom: 0px;
+        &_elements {
+          margin-bottom: 45px;
 
-                    &_img {
-                        margin-right: 2%;
+          &_img {
+            margin-right: 2%;
 
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+          span {
+            strong {
             }
+          }
         }
-    }
-    @media only screen and (min-width: 768px) and (max-width: 900px) {
-        // Ваши стили для небольших ноутбуков и десктопов
+      }
 
-        background-image: none;
-     
-    
-        
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: none;
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
 
-            padding: 20px 0 40px 0;
+          &_img {
+            margin-right: 2%;
 
-            &_Item {
-                margin-bottom: 0px;
-                &_elements {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
+          span {
+            width: 80%;
 
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+            strong {
             }
+          }
         }
+      }
     }
-    @media only screen and (min-width: 900px) and (max-width: 1100px) {
-        // Ваши стили для небольших ноутбуков и десктопов
-        background-image: url('../../assets/img/Block8/Picture10.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        // background-position-y: 40px;
-        background-size: 200px;
-    
-        
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: url('../../assets/img/Block8/Picture8.png');
-            background-image: none;
-            background-repeat: no-repeat;
-            background-position: left;
-            background-position-y: 304px;
-            background-position-x: 151px;
-            background-size: 150px;  
-            padding: 20px 0 40px 0;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+    // Ваши стили для небольших ноутбуков и десктопов
 
-            &_Item {
-                margin-bottom: 30px;
-                &_elements {
-                    margin-bottom: 45px;
+    background-image: none;
+    &_button {
+      button {
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    }
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      background-image: none;
 
-                    &_img {
-                        margin-right: 2%;
+      padding: 20px 0 40px 0;
 
-                        img {
-                            width: 55px;
-                        }
-                    }
+      &_Item {
+        margin-bottom: 0px;
+        &_elements {
+          margin-bottom: 45px;
 
-                    span {
-                        strong {}
-                    }
-                }
+          &_img {
+            margin-right: 2%;
 
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+          span {
+            strong {
             }
+          }
         }
-    }
-    @media only screen and (min-width: 1100px) and (max-width: 1300px) {
-        // Ваши стили для небольших ноутбуков и десктопов
-        background-image: url('../../assets/img/Block8/Picture10.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        // background-position-y: 40px;
-        background-size: 200px;
-    
-        
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: url('../../assets/img/Block8/Picture8.png');
-            background-image: none;
-            background-repeat: no-repeat;
-            background-position: left;
-            background-position-y: 304px;
-            background-position-x: 151px;
-            background-size: 150px;  
-            padding: 20px 0 40px 0;
+      }
 
-            &_Item {
-                margin-bottom: 30px;
-                &_elements {
-                    margin-bottom: 45px;
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
 
-                    &_img {
-                        margin-right: 2%;
+          &_img {
+            margin-right: 2%;
 
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
+          span {
+            width: 80%;
 
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+            strong {
             }
+          }
         }
+      }
     }
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1100px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    background-image: url("../../assets/img/Block8/Picture10.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    // background-position-y: 40px;
+    background-size: 200px;
+    &_button {
+      button {
+        padding: 10px;
+        font-size: 13px;
+      }
+    }
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../../assets/img/Block8/Picture8.png");
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: 304px;
+      background-position-x: 151px;
+      background-size: 150px;
+      padding: 20px 0 40px 0;
 
-    @media only screen and (min-width: 1300px) and (max-width: 1500px) {
-        // Ваши стили для небольших ноутбуков и десктопов
-        background-image: url('../../assets/img/Block8/Picture10.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-position-y: 40px;
-        background-size: 251px;
-    
-        
-        &_Info {
-            display: flex;
-            flex-direction: column;
-            background-image: url('../../assets/img/Block8/Picture8.png');
-            background-image: none;
-            background-repeat: no-repeat;
-            background-position: left;
-            background-position-y: 304px;
-            background-position-x: 151px;
-            background-size: 150px;  
-            padding: 20px 0 40px 0;
+      &_Item {
+        margin-bottom: 30px;
+        &_elements {
+          margin-bottom: 45px;
 
-            &_Item {
-                margin-bottom: 30px;
-                &_elements {
-                    margin-bottom: 45px;
+          &_img {
+            margin-right: 2%;
 
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 100%;
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+          span {
+            strong {
             }
+          }
         }
-    }
-    @media only screen and (min-width: 1500px) and (max-width: 1600px) {
+      }
 
-        // Ваши стили для небольших ноутбуков и десктопов
-        &_Info {
-            display: flex;
-            background-image: url('../../assets/img/Block8/Picture9.png');
-            background-repeat: no-repeat;
-            background-position: left;
-            background-position-y: 375px;
-            background-position-x: 151px;
-            background-size: 150px;
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
 
-            &_Item {
-                &_elements {
-                    margin-bottom: 45px;
+          &_img {
+            margin-right: 2%;
 
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 30%;
+          span {
+            width: 80%;
 
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+            strong {
             }
+          }
         }
+      }
     }
+  }
+  @media only screen and (min-width: 1100px) and (max-width: 1300px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    background-image: url("../../assets/img/Block8/Picture10.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    // background-position-y: 40px;
+    background-size: 200px;
 
-    @media only screen and (min-width: 1600px) and (max-width: 1748px) {
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../../assets/img/Block8/Picture8.png");
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: 304px;
+      background-position-x: 151px;
+      background-size: 150px;
+      padding: 20px 0 40px 0;
 
-        // Ваши стили для небольших ноутбуков и десктопов
-        &_Info {
-            display: flex;
-            background-image: url('../../assets/img/Block8/Picture9.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-position-y: 20px;
-            background-position-x: 540px;
-            background-size: 190px;
+      &_Item {
+        margin-bottom: 30px;
+        &_elements {
+          margin-bottom: 45px;
 
-            &_Item {
-                &_elements {
-                    margin-bottom: 45px;
+          &_img {
+            margin-right: 2%;
 
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        strong {}
-                    }
-                }
-
+            img {
+              width: 55px;
             }
+          }
 
-            &_Item_2 {
-                max-width: 30%;
-
-                &_elements_2 {
-                    margin-bottom: 45px;
-
-                    &_img {
-                        margin-right: 2%;
-
-                        img {
-                            width: 55px;
-                        }
-                    }
-
-                    span {
-                        width: 80%;
-
-                        strong {}
-                    }
-                }
-
+          span {
+            strong {
             }
+          }
         }
-    }
+      }
 
-    @media only screen and (min-width: 1025px) {
-        // Ваши стили для средних и больших десктопов
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            width: 80%;
+
+            strong {
+            }
+          }
+        }
+      }
     }
+  }
+
+  @media only screen and (min-width: 1300px) and (max-width: 1500px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    background-image: url("../../assets/img/Block8/Picture10.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 40px;
+    background-size: 251px;
+
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../../assets/img/Block8/Picture8.png");
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: 304px;
+      background-position-x: 151px;
+      background-size: 150px;
+      padding: 20px 0 40px 0;
+
+      &_Item {
+        margin-bottom: 30px;
+        &_elements {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            strong {
+            }
+          }
+        }
+      }
+
+      &_Item_2 {
+        max-width: 100%;
+        &_elements_2 {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            width: 80%;
+
+            strong {
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1500px) and (max-width: 1600px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    &_Info {
+      display: flex;
+      background-image: url("../../assets/img/Block8/Picture9.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-position-y: 375px;
+      background-position-x: 151px;
+      background-size: 150px;
+
+      &_Item {
+        &_elements {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            strong {
+            }
+          }
+        }
+      }
+
+      &_Item_2 {
+        max-width: 30%;
+
+        &_elements_2 {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            width: 80%;
+
+            strong {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1600px) and (max-width: 1748px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    &_Info {
+      display: flex;
+      background-image: url("../../assets/img/Block8/Picture9.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 20px;
+      background-position-x: 540px;
+      background-size: 190px;
+
+      &_Item {
+        &_elements {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            strong {
+            }
+          }
+        }
+      }
+
+      &_Item_2 {
+        max-width: 30%;
+
+        &_elements_2 {
+          margin-bottom: 45px;
+
+          &_img {
+            margin-right: 2%;
+
+            img {
+              width: 55px;
+            }
+          }
+
+          span {
+            width: 80%;
+
+            strong {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    // Ваши стили для средних и больших десктопов
+  }
 }

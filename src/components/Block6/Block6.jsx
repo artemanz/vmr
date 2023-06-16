@@ -3,6 +3,12 @@ import React from "react";
 import styles from "./Block6.module.scss";
 
 const Block6 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div
       className={styles.Block6}
@@ -58,6 +64,9 @@ const Block6 = () => {
               возможно даже в самом удаленном уголке страны и за ее пределами
             </div>
           </div>
+        </div>
+        <div className={styles.Block6__button}>
+          <button onClick={scrollToForm}>Задать вопрос</button>
         </div>
       </div>
     </div>

@@ -9,11 +9,12 @@
   .Block6__wrapper {
     padding: 20px;
     .Block6__bText {
+      font-weight: 700;
       font-size: 32px;
       background: linear-gradient(
         180deg,
-        rgba(0, 230, 222, 1) 0%,
-        rgba(0, 153, 173, 1) 100%
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
       );
       // Градиентный фон
       -webkit-background-clip: text; // Задаем тексту свойство background-clip
@@ -66,15 +67,42 @@
         }
       }
     }
+    .Block6__button {
+      margin-top: 30px;
+      text-align: right;
+      button {
+        padding: 20px;
+        cursor: pointer;
+        color: white;
+        border: #00e6de;
+        background: linear-gradient(
+          193deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 93%
+        );
+        border-radius: 25px;
+        transition: 0.4s ease;
+        &:hover {
+          background: linear-gradient(
+            193deg,
+            rgb(4, 196, 189) 0%,
+            rgb(4, 170, 192) 93%
+          );
+        }
+      }
+    }
   }
 }
 @media (max-width: 1440px) {
-  
   .Block6 {
+    background-size: 40%;
+    background-position: 40% 65%;
     .Block6__wrapper {
       .Block6__grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 15%;
+        grid-row-gap: 20px;
+        grid-column-gap: 12%;
+
         .Block6__cell {
           &:nth-child(1) {
             grid-area: 1 / 1 / 2 / 2;
@@ -96,17 +124,11 @@
           }
         }
       }
-    }
-  }
-}
-@media (max-width: 1440px) {
-  .Block6 {
-    background-size: 40%;
-    background-position: 40% 65%;
-    .Block6__wrapper {
-      .Block6__grid {
-        grid-row-gap: 20px;
-        grid-column-gap: 12%;
+      .Block6__button {
+        button {
+          font-size: 13px;
+          padding: 15px;
+        }
       }
     }
   }
@@ -160,6 +182,11 @@
           &:nth-child(6) {
             grid-area: 4 / 2 / 5 / 3;
           }
+        }
+      }
+      .Block6__button {
+        button {
+          padding: 10px;
         }
       }
     }
@@ -225,6 +252,12 @@
           }
         }
       }
+      .Block6__button {
+        button {
+          font-size: 14px;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }
@@ -240,6 +273,9 @@
       .Block6__bText {
         font-size: 24px;
         font-weight: 700;
+      }
+      .Block6__button {
+        text-align: left;
       }
     }
   }

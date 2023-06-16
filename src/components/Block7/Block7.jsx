@@ -10,14 +10,13 @@ const Block7 = () => {
   };
 
   return (
-    <div className={styles.Block7}>
+    <div className={styles.Block7} id="Block7">
       <div className={styles.Block7_bText}>Цены</div>
       <div className={styles.Block7_row}>
         <div
           className={styles.Block7_Price}
           data-aos="fade-right"
           data-aos-duration="1500"
-          id="Block7"
         >
           <div className={styles.Block7_Price_Info}>
             <div className={styles.Block7_Price_Info_text}>

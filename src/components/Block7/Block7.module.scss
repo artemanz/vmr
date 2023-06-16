@@ -3,10 +3,11 @@
   padding: 40px 20px;
   &_bText {
     font-size: 32px;
+    font-weight: 700;
     background: linear-gradient(
       180deg,
-      rgba(0, 230, 222, 1) 0%,
-      rgba(0, 153, 173, 1) 100%
+      rgb(0, 230, 222) 0%,
+      rgb(0, 153, 173) 100%
     );
     // Градиентный фон
     -webkit-background-clip: text; // Задаем тексту свойство background-clip
@@ -83,6 +84,7 @@
       rgb(0, 230, 222) 0%,
       rgb(0, 153, 173) 93%
     );
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
     padding: 25px 10px;
     border-radius: 34px;
     color: white;

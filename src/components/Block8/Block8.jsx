@@ -10,6 +10,12 @@ import Img6 from "../../assets/img/Block8/Picture6.png";
 import Img7 from "../../assets/img/Block8/Picture7.png";
 
 const Block8 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div className={styles.Block8} data-aos="fade-up" data-aos-duration="1500">
       <div className={styles.Block8_H1}>
@@ -90,6 +96,9 @@ const Block8 = () => {
             <span>Расчет процента реальных покупателей (заказов)</span>
           </div>
         </div>
+      </div>
+      <div className={styles.Block8_button}>
+        <button onClick={scrollToForm}>Задать вопрос</button>
       </div>
     </div>
   );

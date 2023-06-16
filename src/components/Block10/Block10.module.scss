@@ -7,19 +7,16 @@
   background-position: 100% 90%;
   .Block10__wrapper {
     padding: 20px;
-    
     .Block10__bText {
       font-size: 32px;
-      
+      font-weight: 700;
       background: linear-gradient(
-        
         180deg,
-        rgb(0, 230, 222) 60%,
-        rgb(0, 153, 173) 99%
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: 600;
       margin-bottom: 15px;
     }
     .Block10__sbText {
@@ -73,6 +70,42 @@
         }
       }
     }
+    .Block10__button {
+      margin-top: 30px;
+      text-align: right;
+      button {
+        padding: 20px;
+        cursor: pointer;
+        color: white;
+        border: #00e6de;
+        background: linear-gradient(
+          193deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 93%
+        );
+        border-radius: 25px;
+        transition: 0.4s ease;
+        &:hover {
+          background: linear-gradient(
+            193deg,
+            rgb(4, 196, 189) 0%,
+            rgb(4, 170, 192) 93%
+          );
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .Block10 {
+    .Block10__wrapper {
+      .Block10__button {
+        button {
+          font-size: 13px;
+          padding: 15px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1300px) {
@@ -109,6 +142,11 @@
           }
         }
       }
+      .Block10__button {
+        button {
+          padding: 10px;
+        }
+      }
     }
   }
 }
@@ -139,6 +177,12 @@
           max-width: 500px;
         }
       }
+      .Block10__button {
+        button {
+          font-size: 14px;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }
@@ -162,6 +206,9 @@
           }
         }
       }
+    }
+    .Block9__button {
+      text-align: left;
     }
   }
 }

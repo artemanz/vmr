@@ -12,8 +12,8 @@
       font-weight: 700;
       background: linear-gradient(
         180deg,
-        rgba(0, 230, 222, 1) 0%,
-        rgba(0, 153, 173, 1) 100%
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
       );
       // Градиентный фон
       -webkit-background-clip: text; // Задаем тексту свойство background-clip
@@ -38,6 +38,30 @@
         }
       }
     }
+    .Block2__button {
+      margin-top: 30px;
+      text-align: right;
+      button {
+        padding: 20px;
+        cursor: pointer;
+        color: white;
+        border: #00e6de;
+        background: linear-gradient(
+          193deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 93%
+        );
+        border-radius: 25px;
+        transition: 0.4s ease;
+        &:hover {
+          background: linear-gradient(
+            193deg,
+            rgb(4, 196, 189) 0%,
+            rgb(4, 170, 192) 93%
+          );
+        }
+      }
+    }
   }
 }
 @media (max-width: 1600px) {
@@ -50,6 +74,29 @@
         justify-items: center;
         .Block2__cell {
           max-width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .Block2 {
+    .Block2__wrapper {
+      .Block2__button {
+        button {
+          font-size: 13px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .Block2 {
+    .Block2__wrapper {
+      .Block2__button {
+        button {
+          padding: 10px;
         }
       }
     }
@@ -70,6 +117,12 @@
   .Block2 {
     width: 100%;
     .Block2__wrapper {
+      .Block2__button {
+        button {
+          font-size: 14px;
+          border-radius: 10px;
+        }
+      }
       .Block2__grid {
         .Block2__cell {
           max-width: 230px;
@@ -84,20 +137,28 @@
       padding: 20px 20px;
       .Block2__bText {
         font-size: 24px;
-        text-align: start;  
+        text-align: start;
       }
       .Block2__grid {
         grid-row-gap: 20px;
         grid-column-gap: 10px;
         .Block2__cell {
-          .Blo
-          .Block2__img {
+          .Blo .Block2__img {
             img {
               width: 50px;
               height: 50px;
             }
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .Block2 {
+    .Block2__wrapper {
+      .Block2__button {
+        text-align: left;
       }
     }
   }

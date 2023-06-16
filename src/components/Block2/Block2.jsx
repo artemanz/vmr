@@ -11,8 +11,18 @@ import Block2_7 from "../../assets/img/Block2/Block2_7.png";
 import Block2_8 from "../../assets/img/Block2/Block2_8.png";
 
 const Block2 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
-    <div className={styles.Block2} data-aos="fade-right" data-aos-duration="1500">
+    <div
+      className={styles.Block2}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <div className={styles.Block2__wrapper}>
         <div className={styles.Block2__bText}>
           ПРОЦЕСС ИСПОЛЬЗОВАНИЯ УСЛУГИ ВИДЕОНАБЛЮДЕНИЯ
@@ -83,6 +93,9 @@ const Block2 = () => {
               статисткой продаж
             </div>
           </div>
+        </div>
+        <div className={styles.Block2__button}>
+          <button onClick={scrollToForm}>Задать вопрос</button>
         </div>
       </div>
     </div>
