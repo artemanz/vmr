@@ -3,10 +3,25 @@ import React from "react";
 import styles from "./Block5.module.scss";
 
 const Block5 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
-    <div className={styles.Block5} data-aos="fade-right" data-aos-duration="1500" id="Block5">
+    <div
+      className={styles.Block5}
+      data-aos="fade-right"
+      data-aos-duration="1500"
+      id="Block5"
+    >
       <h1>ЗАДАЧИ, РЕШАЕМЫЕ С ПОМОЩЬЮ ВМР</h1>
-      <div className={styles.Block5_List_Block} data-aos="fade-up" data-aos-duration="400">
+      <div
+        className={styles.Block5_List_Block}
+        data-aos="fade-up"
+        data-aos-duration="400"
+      >
         <ul>
           <li>Подсчет трафика клиентов</li>
           <li>Контроль своевременности открытия/закрытия точек</li>
@@ -40,7 +55,7 @@ const Block5 = () => {
           <li>Кассовая аналитика и видеоархив операций</li>
         </ul>
         <div className={styles.Block5_List_Block_Button}>
-          <button>ОБСУДИТЬ ВАШУ ЗАДАЧУ</button>
+          <button onClick={scrollToForm}>ОБСУДИТЬ ВАШУ ЗАДАЧУ</button>
         </div>
       </div>
     </div>

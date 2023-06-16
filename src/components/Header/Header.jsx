@@ -6,9 +6,11 @@ import Header_logo from "../../assets/img/Header/Header_logo.png";
 const Header = () => {
   const [isBurgerOpened, setIsBurgerOpened] = React.useState(false);
 
-  const handleScrollTo = (px) => {
-    const a = document.querySelector("#Block5");
-    a.scrollIntoView({ behavior: "smooth", block: 'start' });
+  const handleScrollTo = (Block) => {
+    const neededBlock = document.querySelector(Block);
+    const headerHeight = headerRef.current.offsetHeight;
+    const topOffset = neededBlock.offsetTop - headerHeight;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
     setIsBurgerOpened(false);
     document.body.classList.remove(styles.modalOpen);
   };
@@ -23,41 +25,43 @@ const Header = () => {
     document.body.classList.remove(styles.modalOpen);
   };
 
+  const headerRef = React.useRef(null);
+
   return (
-    <div className={styles.Header}>
+    <div className={styles.Header} ref={headerRef}>
       <div className={styles.Header__wrapper}>
         <div className={styles.Header__row}>
           <div
             className={styles.Header__logo}
-            onClick={() => handleScrollTo(0)}
+            onClick={() => handleScrollTo("#Block1")}
           >
             <img src={Header_logo} alt="" /> ВИДЕО МОНИТОРИНГ
           </div>
           <div className={styles.Header__info}>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(0)}
+              onClick={() => handleScrollTo("#Block1")}
             >
               Подробнее
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(1260)}
+              onClick={() => handleScrollTo("#Block34")}
             >
               Для кого
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(2160)}
+              onClick={() => handleScrollTo("#Block5")}
             >
               Какие задачи мы решаем
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo(4790)}
+              onClick={() => handleScrollTo("#Block7")}
             >
               Цены
               <div className={styles.Header__info__underline}></div>
@@ -67,12 +71,12 @@ const Header = () => {
             {isBurgerOpened ? (
               <div className={styles.Header__modal}>
                 <ul>
-                  <li onClick={() => handleScrollTo(0)}>Подробнее</li>
-                  <li onClick={() => handleScrollTo(0)}>Для кого</li>
-                  <li onClick={() => handleScrollTo(0)}>
+                  <li onClick={() => handleScrollTo("#Block1")}>Подробнее</li>
+                  <li onClick={() => handleScrollTo("#Block34")}>Для кого</li>
+                  <li onClick={() => handleScrollTo("#Block5")}>
                     Какие задачи мы решаем
                   </li>
-                  <li onClick={() => handleScrollTo(0)}>Цены</li>
+                  <li onClick={() => handleScrollTo("#Block7")}>Цены</li>
                 </ul>
                 <div
                   className={styles.Header__burger__opened}

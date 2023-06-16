@@ -3,12 +3,19 @@ import React from "react";
 import styles from "./Block7.module.scss";
 
 const Block7 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div className={styles.Block7}>
       <div
         className={styles.Block7_Price}
         data-aos="fade-right"
         data-aos-duration="1500"
+        id="Block7"
       >
         <div className={styles.Block7_Price_Info}>
           <div className={styles.Block7_Price_Info_text}>
@@ -23,7 +30,7 @@ const Block7 = () => {
             <span>УСТАНОВКА ВИДЕО КАМЕР</span>– от 8000 руб
           </div>
         </div>
-        <button>Получить ценовое предложение</button>
+        <button onClick={scrollToForm}>Получить ценовое предложение</button>
       </div>
       <div
         className={styles.Block7_Info_Block}

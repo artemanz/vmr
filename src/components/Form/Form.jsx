@@ -40,12 +40,12 @@ const BitrixForm = () => {
   };
 
   return (
-    <div className="bitrix-form">
+    <div className="bitrix-form" id="bitrix-form">
       <div className="bitrix-form_h2">
         <h1>Обратная связь</h1>
       </div>
 
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input
             type="text"
