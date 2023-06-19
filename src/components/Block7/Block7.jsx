@@ -40,7 +40,7 @@ const Block7 = () => {
         >
           <div className={styles.Block7_Info_Block_Element}>
             <span>Что влияет на формирование цены:</span> <br /> Наличие камер
-            видео наблюдения Если у Вас еще не установлены камеры Вы можете
+            видеонаблюдения Если у Вас еще не установлены камеры Вы можете
             поручить эту задачу нам.
           </div>
           <div className={styles.Block7_Info_Block_Element}>
