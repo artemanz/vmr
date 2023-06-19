@@ -16,7 +16,7 @@ const Block9 = () => {
       data-aos-duration="1500"
     >
       <div className={styles.Block9__wrapper}>
-        <div className={styles.Block9__bText}>КЕЙС ТЕЛЕКОММУНИКАЦИИ</div>
+        <div className={styles.Block9__bText}>ТЕЛЕКОММУНИКАЦИИ</div>
         <div className={styles.Block9__sbText}>
           Обеспечение качества сервиса в Розничной сети продаж
         </div>

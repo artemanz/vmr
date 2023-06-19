@@ -14,7 +14,7 @@ const BitrixForm = () => {
 
     try {
       const response = await axios.post(
-        "https://b24-kfndgj.bitrix24.ru/rest/1/iz2f3oijpvr2kf4j/crm.lead.add",
+        "https://servizoria.bitrix24.ru/rest/835/rb7btdk8jpicf7nk/",
         {
           fields: {
             TITLE: "Новый лид",

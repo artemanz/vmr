@@ -1,5 +1,4 @@
 import React from "react";
-import AOS from "aos";
 import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 
 import styles from "./Block10.module.scss";
@@ -14,7 +13,7 @@ const Block10 = () => {
   return (
     <div className={styles.Block10} data-aos="fade-up" data-aos-duration="1500">
       <div className={styles.Block10__wrapper}>
-        <div className={styles.Block10__bText}>КЕЙС АЗС</div>
+        <div className={styles.Block10__bText}>АЗС</div>
         <div className={styles.Block10__sbText}>
           Как увеличить доп. продажи и улучшить качество выполнения стандартов?
         </div>

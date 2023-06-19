@@ -6,9 +6,9 @@
   background-repeat: no-repeat;
   background-position: 107% 75%;
   .Block9__wrapper {
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     .Block9__bText {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 700;
       background: linear-gradient(
         180deg,
@@ -17,13 +17,11 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-align: center;
       margin-bottom: 15px;
     }
     .Block9__sbText {
-      font-size: 28px;
-      text-align: center;
-      font-weight: 500;
+      font-size: 22px;
+      font-weight: 600;
       margin-bottom: 30px;
     }
     .Block9__text__row {
@@ -50,10 +48,11 @@
     }
     .Block9__button {
       margin-top: 30px;
-      text-align: left;
+      text-align: center;
       button {
+        font-weight: 600;
         padding: 20px;
-        
+        font-size: 20px;
         cursor: pointer;
         color: white;
         border: #00e6de;
@@ -62,7 +61,7 @@
           rgb(0, 230, 222) 0%,
           rgb(0, 153, 173) 93%
         );
-        border-radius: 25px;
+        border-radius: 10px;
         transition: 0.4s ease;
         &:hover {
           background: linear-gradient(
@@ -83,39 +82,12 @@
           max-width: 700px;
         }
       }
-      .Block9__button {
-        button {
-          font-size: 13px;
-          padding: 15px;
-        }
-      }
     }
   }
 }
 @media (max-width: 1300px) {
   .Block9 {
     .Block9__wrapper {
-      .Block9__sbText {
-        font-size: 25px;
-      }
-      .Block9__text__row {
-        .Block9__text {
-          font-size: 17px;
-          max-width: 600px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1160px) {
-  .Block9 {
-    .Block9__wrapper {
-      .Block9__bText {
-        font-size: 28px;
-      }
-      .Block9__sbText {
-        font-size: 24px;
-      }
       .Block9__text__row {
         .Block9__text {
           font-size: 17px;
@@ -136,31 +108,12 @@
     }
   }
 }
-@media (max-width: 1024px) {
-  .Block9 {
-    .Block9__wrapper {
-      .Block9__button {
-        button {
-          padding: 10px;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 940px) {
   .Block9 {
     background-image: none;
     margin-bottom: 25px;
-
     .Block9__wrapper {
       box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
-
-      .Block9__bText {
-        font-size: 28px;
-      }
-      .Block9__sbText {
-        font-size: 24px;
-      }
       .Block9__text__row {
         .Block9__text {
           padding: 10px;
@@ -182,12 +135,6 @@
 
     background-position: 107% 78%;
     .Block9__wrapper {
-      .Block9__bText {
-        font-size: 26px;
-      }
-      .Block9__sbText {
-        font-size: 22px;
-      }
       .Block9__text__row {
         .Block9__text {
           max-width: 100%;
@@ -199,8 +146,7 @@
       }
       .Block9__button {
         button {
-          font-size: 14px;
-          border-radius: 10px;
+          padding: 10px;
         }
       }
     }
@@ -210,12 +156,6 @@
   .Block9 {
     background-image: none;
     .Block9__wrapper {
-      .Block9__bText {
-        font-size: 26px;
-      }
-      .Block9__sbText {
-        font-size: 22px;
-      }
       .Block9__text__row {
         .Block9__text {
           max-width: 100%;
@@ -235,7 +175,8 @@
         font-size: 22px;
       }
       .Block9__sbText {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 500;
       }
       .Block9__text__row {
         .Block9__text {
@@ -245,15 +186,6 @@
             font-weight: 700;
           }
         }
-      }
-    }
-  }
-}
-@media (max-width: 425px) {
-  .Block9 {
-    .Block9__wrapper {
-      .Block9__button {
-        text-align: left;
       }
     }
   }
