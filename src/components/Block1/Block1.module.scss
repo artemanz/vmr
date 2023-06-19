@@ -11,12 +11,38 @@
   background-position: 190% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin-bottom: 40px;
   &_Info {
     display: flex;
     flex-direction: column;
     width: 30%;
     height: auto;
     user-select: none;
+    button {
+      margin: auto;
+      margin-top: 20px;
+      font-weight: 600;
+      padding: 20px;
+      width: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      color: white;
+      border: #00e6de;
+      background: linear-gradient(
+        193deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 93%
+      );
+      border-radius: 10px;
+      transition: 0.4s ease;
+      &:hover {
+        background: linear-gradient(
+          193deg,
+          rgb(4, 196, 189) 0%,
+          rgb(4, 170, 192) 93%
+        );
+      }
+    }
     &_Tee {
       font-weight: 700;
       background: linear-gradient(
@@ -66,7 +92,9 @@
       width: 100%;
       height: auto;
       flex-direction: column;
-
+      button {
+        padding: 10px;
+      }
       &_Img {
         background: linear-gradient(
           193deg,

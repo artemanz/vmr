@@ -4,6 +4,7 @@
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
   margin: auto;
   overflow: hidden;
+  margin-bottom: 40px;
   .Block2__wrapper {
     padding: 50px 20px;
     .Block2__bText {
@@ -40,9 +41,11 @@
     }
     .Block2__button {
       margin-top: 30px;
-      text-align: right;
+      text-align: center;
       button {
         padding: 20px;
+        font-size: 20px;
+       
         cursor: pointer;
         color: white;
         border: #00e6de;
@@ -51,7 +54,7 @@
           rgb(0, 230, 222) 0%,
           rgb(0, 153, 173) 93%
         );
-        border-radius: 25px;
+        border-radius: 10px;
         transition: 0.4s ease;
         &:hover {
           background: linear-gradient(
@@ -83,10 +86,10 @@
   .Block2 {
     .Block2__wrapper {
       .Block2__button {
-        button {
-          font-size: 13px;
-          padding: 15px;
-        }
+        // button {
+        //   font-size: 13px;
+        //   padding: 15px;
+        // }
       }
     }
   }
@@ -116,13 +119,13 @@
 }
 @media (max-width: 768px) {
   .Block2 {
+    margin-bottom: 0px;
     width: 100%;
     .Block2__wrapper {
       .Block2__button {
         button {
-          font-size: 14px;
-          border-radius: 10px;
-          border-radius: 10px;
+          font-size: 20px;
+
         }
       }
       .Block2__grid {
@@ -135,8 +138,15 @@
 }
 @media (max-width: 500px) {
   .Block2 {
+    margin-bottom: 0px;
     .Block2__wrapper {
       padding: 20px 20px;
+      .Block2__button {
+        text-align: center;
+        button{
+          font-size: 20px;
+        }
+      }
       .Block2__bText {
         font-size: 24px;
         text-align: start;
@@ -158,9 +168,15 @@
 }
 @media (max-width: 425px) {
   .Block2 {
+    margin-bottom: 0px;
+    padding: 30px 20px 30px 20px;
     .Block2__wrapper {
       .Block2__button {
-        text-align: left;
+        text-align: center;
+        button{
+          font-weight: 600;
+          font-size: 20px;
+        }
       }
     }
   }
@@ -168,10 +184,17 @@
 @media (max-width: 375px) {
   .Block2 {
     .Block2__wrapper {
+      margin-bottom: 40px;
       padding: 20px 20px;
       .Block2__bText {
         font-size: 22px;
         text-align: start;
+      }
+      .Block2__button {
+        text-align: center;
+        button{
+          font-size: 20px;
+        }
       }
     }
   }

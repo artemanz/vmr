@@ -8,9 +8,10 @@
   overflow: hidden;
   &_button {
     margin-top: 30px;
-    text-align: right;
+    text-align: center;
     button {
       padding: 20px;
+      font-size: 20px;
       cursor: pointer;
       color: white;
       border: #00e6de;
@@ -19,7 +20,7 @@
         rgb(0, 230, 222) 0%,
         rgb(0, 153, 173) 93%
       );
-      border-radius: 25px;
+      border-radius: 10px;
       transition: 0.4s ease;
       &:hover {
         background: linear-gradient(
@@ -73,14 +74,17 @@
 
   @media only screen and (max-width: 480px) {
     // Ваши стили для мобильных устройств
-    padding: 20px 20px 30px 20px;
+    padding: 20px 20px 40px 20px;
     background-image: none;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
     width: 100%;
     &_button {
-      text-align: left;
+      text-align: center;
       button {
-        font-size: 14px;
+        font-size: 20px;
         border-radius: 10px;
+        font-weight: 600;
         padding: 10px;
       }
     }
@@ -111,7 +115,7 @@
 
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     // Ваши стили для планшетов
-    padding: 20px 20px 30px 20px;
+    padding: 20px 20px 40px 20px;
     background-image: none;
     width: 100%;
 
@@ -145,7 +149,7 @@
     background-image: none;
     &_button {
       button {
-        font-size: 14px;
+        font-size: 20px;
         border-radius: 10px;
         padding: 10px;
       }
