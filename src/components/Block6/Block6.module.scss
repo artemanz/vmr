@@ -264,11 +264,13 @@
 @media (max-width: 600px) {
   .Block6 {
     background: none;
+    box-shadow: none;
   }
 }
 @media (max-width: 425px) {
   .Block6 {
     background: none;
+    box-shadow: none;
     .Block6__wrapper {
       .Block6__bText {
         font-size: 24px;

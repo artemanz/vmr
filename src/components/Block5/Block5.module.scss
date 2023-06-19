@@ -85,6 +85,7 @@
   }
   @media screen and (max-width: 425px) {
     width: 100%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
     padding: 0 20px;
     background-image: none;
     h1 {
@@ -121,6 +122,7 @@
 
   @media screen and (min-width: 425px) and (max-width: 500px) {
     width: 100%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
     padding: 0 20px;
     background-image: none;
     h1 {
@@ -157,6 +159,7 @@
   @media screen and (min-width: 500px) and (max-width: 768px) {
     background-image: none;
     width: 100%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
     padding: 0 20px;
     h1 {
       text-align: start;
@@ -172,12 +175,12 @@
 
         li {
           font-size: 17px;
-          line-height: 15px;
+          line-height: 20px;
         }
       }
       &_Button {
         text-align: end;
-
+        margin-top: 20px;
         button {
           font-size: 14px;
           padding: 10px;
@@ -201,8 +204,8 @@
         max-width: 100%;
 
         li {
-          font-size: 16px;
-          line-height: 15px;
+          font-size: 18px;
+          line-height:20px;
         }
       }
       &_Button {
