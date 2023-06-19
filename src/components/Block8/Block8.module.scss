@@ -12,7 +12,20 @@
 
   &_H1 {
     h1 {
-      font-size: 28px;
+      text-align: center;
+      font-size: 32px;
+      background: linear-gradient(
+        180deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 30px;
       background: linear-gradient(
         180deg,
         rgb(0, 230, 222) 0%,
@@ -104,9 +117,11 @@
     }
   }
   &_button {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
     button {
+      font-weight: 600;
+      font-size: 20px;
       padding: 20px;
       cursor: pointer;
       color: white;
@@ -116,7 +131,7 @@
         rgb(0, 230, 222) 0%,
         rgb(0, 153, 173) 93%
       );
-      border-radius: 25px;
+      border-radius: 10px;
       transition: 0.4s ease;
       &:hover {
         background: linear-gradient(
@@ -139,8 +154,11 @@
         font-size: 24px;
         font-weight: 700;
       }
-      span {
+      h2 {
         font-size: 22px;
+      }
+      span {
+        font-size: 20px;
         font-weight: 500;
       }
     }
@@ -150,7 +168,7 @@
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 0px 0;
+      padding: 20px 0 40px 0;
 
       &_Item {
         margin-bottom: 0px;
@@ -176,7 +194,7 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-          &:last-child{
+          &:last-child {
             margin-bottom: 0px;
           }
           &_img {
@@ -197,12 +215,8 @@
       }
     }
     &_button {
-      text-align: left;
-      margin-top: 20px;
-      padding-bottom: 30px;
+      margin-bottom: 50px;
       button {
-        font-size: 14px;
-        border-radius: 10px;
         padding: 10px;
       }
     }
@@ -218,12 +232,11 @@
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 0px 0;
+      padding: 20px 0 40px 0;
 
       &_Item {
         margin-bottom: 0px;
         &_elements {
-         
           margin-bottom: 45px;
 
           &_img {
@@ -245,7 +258,7 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-          &:last-child{
+          &:last-child {
             margin-bottom: 0px;
           }
           &_img {
@@ -266,33 +279,19 @@
       }
     }
     &_button {
-      text-align: left;
-      padding-bottom: 30px;
-      margin-top: 20px;
-      button {
-        font-size: 14px;
-        border-radius: 10px;
-        padding: 10px;
-      }
+      margin-bottom: 50px;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 900px) {
     // Ваши стили для небольших ноутбуков и десктопов
 
     background-image: none;
-    &_button {
-      button {
-        font-size: 14px;
-        border-radius: 10px;
-        padding: 10px;
-      }
-    }
     &_Info {
       display: flex;
       flex-direction: column;
       background-image: none;
 
-      padding: 20px 0 0px 0;
+      padding: 20px 0 40px 0;
 
       &_Item {
         margin-bottom: 0px;
@@ -318,7 +317,7 @@
         max-width: 100%;
         &_elements_2 {
           margin-bottom: 45px;
-          &:last-child{
+          &:last-child {
             margin-bottom: 0px;
           }
           &_img {
@@ -336,16 +335,6 @@
             }
           }
         }
-      }
-    }
-    &_button {
-      text-align: left;
-      padding-bottom: 30px;
-      margin-top: 20px;
-      button {
-        font-size: 17px;
-        border-radius: 10px;
-        padding: 15px;
       }
     }
   }
@@ -356,12 +345,6 @@
     background-position: right;
     // background-position-y: 40px;
     background-size: 200px;
-    &_button {
-      button {
-        padding: 10px;
-        font-size: 13px;
-      }
-    }
     &_Info {
       display: flex;
       flex-direction: column;

@@ -2,13 +2,13 @@
   width: 70%;
   background-color: white;
   background-image: url("../../assets/img/Block10/Block10_fon.png");
-  background-size: 35%;
+  background-size: 30%;
   background-repeat: no-repeat;
-  background-position: 100% 90%;
+  background-position: 100% 70%;
   .Block10__wrapper {
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     .Block10__bText {
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 700;
       background: linear-gradient(
         180deg,
@@ -20,8 +20,8 @@
       margin-bottom: 15px;
     }
     .Block10__sbText {
-      font-size: 28px;
-      font-weight: 500;
+      font-size: 22px;
+      font-weight: 600;
       margin-bottom: 30px;
     }
     .Block10__row {
@@ -72,9 +72,11 @@
     }
     .Block10__button {
       margin-top: 30px;
-      text-align: left;
+      text-align: center;
       button {
+        font-weight: 600;
         padding: 20px;
+        font-size: 20px;
         cursor: pointer;
         color: white;
         border: #00e6de;
@@ -83,7 +85,7 @@
           rgb(0, 230, 222) 0%,
           rgb(0, 153, 173) 93%
         );
-        border-radius: 25px;
+        border-radius: 10px;
         transition: 0.4s ease;
         &:hover {
           background: linear-gradient(
@@ -96,33 +98,9 @@
     }
   }
 }
-@media (max-width: 1440px) {
-  .Block10 {
-    .Block10__wrapper {
-      .Block10__button {
-        button {
-          font-size: 13px;
-          padding: 15px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1300px) {
-  .Block10 {
-    .Block10__wrapper {
-      .Block10__sbText {
-        font-size: 24px;
-      }
-    }
-  }
-}
 @media (max-width: 1160px) {
   .Block10 {
     .Block10__wrapper {
-      .Block10__bText {
-        font-size: 28px;
-      }
       .Block10__row {
         height: 450px;
       }
@@ -142,17 +120,13 @@
           }
         }
       }
-      .Block10__button {
-        button {
-          padding: 10px;
-        }
-      }
     }
   }
 }
 @media (max-width: 1000px) {
   .Block10 {
-    background-position: 100% 95%;
+    background-position: 100% 73%;
+    background-size: 50%;
     .Block10__wrapper {
       .Block10__row {
         height: 100%;
@@ -164,25 +138,20 @@
 @media (max-width: 768px) {
   .Block10 {
     width: 100%;
+    background-size: 40%;
+    background-position: 100% 75%;
     .Block10__wrapper {
-      .Block10__bText {
-        font-size: 26px;
-      }
-      .Block10__sbText {
-        font-size: 22px;
-      }
       .Block10__row {
         align-items: center;
+        margin-bottom: 0;
         .Block10__column {
           max-width: 500px;
-          
         }
       }
       .Block10__button {
-        text-align: left;
+        margin-top: 0;
         button {
-          font-size: 14px;
-          border-radius: 10px;
+          padding: 10px;
         }
       }
     }
@@ -193,29 +162,28 @@
     background-image: none;
     .Block10__wrapper {
       .Block10__bText {
-        font-size: 24px;
+        font-size: 22px;
       }
       .Block10__sbText {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 500;
       }
       .Block10__row {
         margin-bottom: 0;
         .Block10__column {
-          &:last-child{
+          &:last-child {
             padding: 40px 20px 0px 20px;
           }
-         
           .Block10__text__row {
-            
+            .Block10__tochka {
+              display: none;
+            }
             .Block10__text {
-              font-size: 16px;
+              max-width: 100%;
             }
           }
         }
       }
-    }
-    .Block9__button {
-      text-align: left;
     }
   }
 }

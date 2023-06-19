@@ -19,7 +19,8 @@ const Block8 = () => {
   return (
     <div className={styles.Block8} data-aos="fade-up" data-aos-duration="1500">
       <div className={styles.Block8_H1}>
-        <h1>КЕЙС ОПТИКА</h1>
+        <h1>КЕЙСЫ</h1>
+        <h2>ОПТИКА</h2>
         <span>Контроль соблюдения операционной модели</span>
       </div>
       <div className={styles.Block8_Info}>
