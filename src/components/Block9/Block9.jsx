@@ -103,7 +103,7 @@ const Block9 = () => {
           </div>
         </div>
         <div className={styles.Block9__button}>
-          <button onClick={scrollToForm}>Задать вопрос</button>
+          <button onClick={scrollToForm}>Оставить заявку</button>
         </div>
       </div>
     </div>

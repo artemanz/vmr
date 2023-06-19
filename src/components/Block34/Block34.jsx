@@ -54,7 +54,7 @@ const Block34 = () => {
         </div>
       </div>
       <div className={styles.Block34_button}>
-        <button onClick={scrollToForm}>Задать вопрос</button>
+        <button onClick={scrollToForm}>Оставить заявку</button>
       </div>
     </div>
   );

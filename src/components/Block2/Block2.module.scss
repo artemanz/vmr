@@ -1,12 +1,11 @@
 .Block2 {
   width: 70%;
   background-color: white;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
   margin: auto;
   overflow: hidden;
   margin-bottom: 40px;
   .Block2__wrapper {
-    padding: 50px 20px;
+    padding: 10px 20px 50px 20px;
     .Block2__bText {
       text-align: center;
       font-size: 32px;
@@ -140,7 +139,7 @@
   .Block2 {
     margin-bottom: 0px;
     .Block2__wrapper {
-      padding: 20px 20px;
+      padding: 0;
       .Block2__button {
         text-align: center;
         button{
@@ -148,7 +147,7 @@
         }
       }
       .Block2__bText {
-        font-size: 24px;
+        font-size: 23px;
         text-align: start;
       }
       .Block2__grid {
@@ -185,7 +184,6 @@
   .Block2 {
     .Block2__wrapper {
       margin-bottom: 40px;
-      padding: 20px 20px;
       .Block2__bText {
         font-size: 22px;
         text-align: start;
