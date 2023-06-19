@@ -52,11 +52,12 @@
       }
     }
     &_Button {
-      text-align: end;
+      text-align: center;
       button {
         cursor: pointer;
-
         padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
         color: white;
         border: #00e6de;
         background: linear-gradient(
@@ -64,7 +65,7 @@
           rgba(0, 230, 222, 1) 0%,
           rgba(0, 153, 173, 1) 93%
         );
-        border-radius: 25px;
+        border-radius: 10px;
         transition: background 0.4s ease;
         &:hover {
           background: linear-gradient(
@@ -86,7 +87,8 @@
   @media screen and (max-width: 425px) {
     width: 100%;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
-    padding: 0 20px;
+    padding: 20px 20px 0px 20px;
+    background-color: white;
     background-image: none;
     h1 {
       margin-top: 10px;
@@ -110,9 +112,10 @@
         }
       }
       &_Button {
-        text-align: start;
+        text-align: center;
+        margin-top: 20px;
         button {
-          font-size: 14px;
+          font-size: 18px;
           padding: 10px;
           border-radius: 10px;
         }
@@ -122,8 +125,10 @@
 
   @media screen and (min-width: 425px) and (max-width: 500px) {
     width: 100%;
+    box-shadow: none;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
-    padding: 0 20px;
+    padding: 20px 20px 30px 20px;
+    background-color: white;
     background-image: none;
     h1 {
       text-align: start;
@@ -146,10 +151,11 @@
         }
       }
       &_Button {
-        text-align: end;
+        text-align: center;
 
         button {
-          font-size: 14px;
+          font-size: 20px;
+          font-weight: 600;
           padding: 10px;
           border-radius: 10px;
         }
@@ -159,8 +165,9 @@
   @media screen and (min-width: 500px) and (max-width: 768px) {
     background-image: none;
     width: 100%;
+    background-color: white;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.3);
-    padding: 0 20px;
+    padding: 20px 20px 30px 20px;
     h1 {
       text-align: start;
       font-size: 28px;
@@ -168,7 +175,7 @@
     }
 
     &_List_Block {
-      padding: 40px 0px 60px 0px;
+      padding: 40px 0px 20px 0px;
       box-shadow: none;
       ul {
         max-width: 100%;
@@ -179,10 +186,10 @@
         }
       }
       &_Button {
-        text-align: end;
-        margin-top: 20px;
+        text-align: center;
+        margin-top: 30px;
         button {
-          font-size: 14px;
+          font-size: 20px;
           padding: 10px;
           border-radius: 10px;
         }
@@ -199,7 +206,7 @@
     }
 
     &_List_Block {
-      padding: 40px 20px 80px 30px;
+      padding: 40px 20px 40px 30px;
       ul {
         max-width: 100%;
 
@@ -209,10 +216,10 @@
         }
       }
       &_Button {
-        text-align: end;
-
+        text-align: center;
+        margin-top: 35px;
         button {
-          font-size: 14px;
+          font-size: 20px;
           padding: 10px;
           border-radius: 10px;
         }
@@ -230,7 +237,7 @@
     }
 
     &_List_Block {
-      padding: 40px 20px 140px 30px;
+      padding: 40px 20px 50px 30px;
       ul {
         max-width: 100%;
 
@@ -240,12 +247,12 @@
         }
       }
       &_Button {
-        text-align: end;
+        text-align: center;
 
         button {
-          font-size: 13px;
+          font-size: 20px;
           padding: 10px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
       }
     }
@@ -260,7 +267,7 @@
     }
 
     &_List_Block {
-      padding: 40px 20px 140px 30px;
+      padding: 40px 20px 50px 30px;
       ul {
         max-width: 100%;
 
@@ -270,12 +277,12 @@
         }
       }
       &_Button {
-        text-align: end;
-
+        text-align: center;
+        margin-top: 35px;
         button {
-          font-size: 13px;
+          font-size: 20px;
           padding: 10px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
       }
     }
@@ -290,7 +297,7 @@
     }
 
     &_List_Block {
-      padding: 40px 20px 140px 30px;
+      padding: 40px 20px 50px 30px;
       ul {
         max-width: 100%;
 
@@ -300,12 +307,12 @@
         }
       }
       &_Button {
-        text-align: end;
-
+        text-align: center;
+        margin-top: 35px;
         button {
-          font-size: 13px;
+          font-size: 20px;
           padding: 15px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
       }
     }
@@ -329,12 +336,12 @@
         }
       }
       &_Button {
-        text-align: end;
-
+        text-align: center;
+        margin-top: 35px;
         button {
-          font-size: 13px;
+          font-size: 20px;
           padding: 15px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
       }
     }
@@ -358,12 +365,12 @@
         }
       }
       &_Button {
-        text-align: end;
-
+        text-align: center;
+        margin-top: 35px;
         button {
-          font-size: 13px;
+          font-size: 20px;
           padding: 15px;
-          border-radius: 25px;
+          border-radius: 10px;
         }
       }
     }
