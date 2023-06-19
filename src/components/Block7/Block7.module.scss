@@ -28,6 +28,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    
       &_text {
         margin-bottom: 40px;
         font-size: 18px;
@@ -88,15 +89,20 @@
       rgb(0, 230, 222) 0%,
       rgb(0, 153, 173) 93%
     );
-    padding: 25px 10px;
+    padding: 25px 20px;
     border-radius: 34px;
     color: white;
+    h1{
+     font-size: 27px;
+     font-weight: 800;
+     margin-bottom: 2%;
+    }
     &_Element {
       font-size: 18px;
       margin-bottom: 20px;
       span {
         font-size: 19px;
-        font-weight: 700;
+        font-weight: 600;
       }
     }
   }
@@ -132,9 +138,12 @@
     }
     &_Info_Block {
       max-width: 100%;
-      padding: 25px 10px;
+      padding: 25px 20px;
       border-radius: 34px;
       color: white;
+      h1{
+        font-size: 20px;
+       }
       &_Element {
         font-size: 16px;
         margin-bottom: 20px;
@@ -172,14 +181,17 @@
     }
     &_Info_Block {
       max-width: 100%;
-      padding: 25px 10px;
+      padding: 25px 20px;
       border-radius: 34px;
       color: white;
+      h1{
+        font-size: 24px;
+       }
       &_Element {
         font-size: 16px;
         margin-bottom: 20px;
         span {
-          font-size: 17px;
+          font-size: 19px;
         }
       }
     }
@@ -208,14 +220,17 @@
     }
     &_Info_Block {
       max-width: 100%;
-      padding: 25px 10px;
+      padding: 25px 20px;
       border-radius: 34px;
       color: white;
+      h1{
+        font-size: 24px;
+       }
       &_Element {
         font-size: 16px;
         margin-bottom: 20px;
         span {
-          font-size: 17px;
+          font-size: 19px;
         }
       }
     }
@@ -238,9 +253,12 @@
     }
     &_Info_Block {
       max-width: 100%;
-      padding: 25px 10px;
+      padding: 25px 20px;
       border-radius: 34px;
       color: white;
+      h1{
+        font-size: 20px;
+       }
       &_Element {
         font-size: 16px;
         margin-bottom: 20px;
@@ -273,9 +291,12 @@
     }
     &_Info_Block {
       max-width: 60%;
-      padding: 25px 10px;
+      padding: 25px 20px;
       border-radius: 34px;
       color: white;
+      h1{
+        font-size: 20px;
+       }
       &_Element {
         font-size: 16px;
         margin-bottom: 20px;
