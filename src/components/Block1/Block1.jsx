@@ -5,6 +5,12 @@ import Img from "../../assets/img/Eye/eye.png";
 import ImgW from "../../assets/img/Eye/eyeWhite.png";
 
 const Block1 = () => {
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
+
   return (
     <div
       className={styles.Block1}
@@ -30,7 +36,7 @@ const Block1 = () => {
           актуальной информации на местах, а проработка алгоритмов персонального
           обслуживания успешно повысит конверсию посетителей в покупателей
         </span>
-        <button>Заказать сейчас</button>
+        <button onClick={scrollToForm}>Заказать сейчас</button>
       </div>
       <div className={styles.Block1_Img}>
         <img src={Img} alt="eye" />
