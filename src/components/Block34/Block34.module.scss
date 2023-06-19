@@ -10,6 +10,7 @@
     margin-top: 30px;
     text-align: center;
     button {
+      font-weight: 600;
       padding: 20px;
       font-size: 20px;
       cursor: pointer;
@@ -78,11 +79,7 @@
     background-image: none;
     width: 100%;
     &_button {
-      text-align: center;
       button {
-        font-size: 20px;
-        border-radius: 10px;
-        font-weight: 600;
         padding: 10px;
       }
     }
@@ -116,7 +113,11 @@
     padding: 20px 20px 40px 20px;
     background-image: none;
     width: 100%;
-
+    &_button {
+      button {
+        padding: 10px;
+      }
+    }
     h1 {
       font-size: 28px;
     }
@@ -145,13 +146,6 @@
     // Ваши стили для небольших ноутбуков и десктопов
     padding: 20px 20px 30px 20px;
     background-image: none;
-    &_button {
-      button {
-        font-size: 20px;
-        border-radius: 10px;
-        padding: 10px;
-      }
-    }
     h1 {
       font-size: 30px;
     }
@@ -203,12 +197,6 @@
   }
 
   @media only screen and (min-width: 1020px) and (max-width: 1120px) {
-    &_button {
-      button {
-        padding: 10px;
-        font-size: 13px;
-      }
-    }
     height: auto;
     // Ваши стили для небольших ноутбуков и десктопов
     h1 {
@@ -256,12 +244,6 @@
 
   @media only screen and (min-width: 1220px) and (max-width: 1620px) {
     // Ваши стили для небольших ноутбуков и десктопов
-    &_button {
-      button {
-        font-size: 13px;
-        padding: 15px;
-      }
-    }
 
     &_Info {
       max-width: 50%;
@@ -301,9 +283,5 @@
         }
       }
     }
-  }
-
-  @media only screen and (min-width: 1820px) {
-    // Ваши стили для средних и больших десктопов
   }
 }

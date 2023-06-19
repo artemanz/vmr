@@ -42,9 +42,9 @@
       margin-top: 30px;
       text-align: center;
       button {
+        font-weight: 600;
         padding: 20px;
         font-size: 20px;
-       
         cursor: pointer;
         color: white;
         border: #00e6de;
@@ -81,30 +81,6 @@
     }
   }
 }
-@media (max-width: 1440px) {
-  .Block2 {
-    .Block2__wrapper {
-      .Block2__button {
-        // button {
-        //   font-size: 13px;
-        //   padding: 15px;
-        // }
-      }
-    }
-  }
-}
-@media (max-width: 1024px) {
-  .Block2 {
-    .Block2__wrapper {
-      .Block2__button {
-        button {
-          padding: 10px;
-          border-radius: 10px;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 850px) {
   .Block2 {
     .Block2__wrapper {
@@ -123,8 +99,7 @@
     .Block2__wrapper {
       .Block2__button {
         button {
-          font-size: 20px;
-
+          padding: 10px;
         }
       }
       .Block2__grid {
@@ -139,13 +114,6 @@
   .Block2 {
     margin-bottom: 0px;
     .Block2__wrapper {
-      padding: 0;
-      .Block2__button {
-        text-align: center;
-        button{
-          font-size: 20px;
-        }
-      }
       .Block2__bText {
         font-size: 23px;
         text-align: start;
@@ -168,16 +136,6 @@
 @media (max-width: 425px) {
   .Block2 {
     margin-bottom: 0px;
-    padding: 30px 20px 30px 20px;
-    .Block2__wrapper {
-      .Block2__button {
-        text-align: center;
-        button{
-          font-weight: 600;
-          font-size: 20px;
-        }
-      }
-    }
   }
 }
 @media (max-width: 375px) {
@@ -187,12 +145,6 @@
       .Block2__bText {
         font-size: 22px;
         text-align: start;
-      }
-      .Block2__button {
-        text-align: center;
-        button{
-          font-size: 20px;
-        }
       }
     }
   }

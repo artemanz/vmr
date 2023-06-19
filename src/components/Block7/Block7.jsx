@@ -31,7 +31,7 @@ const Block7 = () => {
               <span>УСТАНОВКА ВИДЕО КАМЕР</span>– от 8000 руб
             </div>
           </div>
-          <button onClick={scrollToForm}>Получить ценовое предложение</button>
+          <button onClick={scrollToForm}>Заказать сейчас</button>
         </div>
         <div
           className={styles.Block7_Info_Block}

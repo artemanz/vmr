@@ -25,7 +25,6 @@
     border: 2px solid transparent;
     border-radius: 80px;
 
-    
     padding: 40px 40px 100px 40px;
     background-color: white;
     ul {
@@ -111,12 +110,9 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 20px;
         button {
-          font-size: 18px;
           padding: 10px;
-          border-radius: 10px;
         }
       }
     }
@@ -147,13 +143,8 @@
         }
       }
       &_Button {
-        text-align: center;
-
         button {
-          font-size: 20px;
-          font-weight: 600;
           padding: 10px;
-          border-radius: 10px;
         }
       }
     }
@@ -180,12 +171,9 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 30px;
         button {
-          font-size: 20px;
           padding: 10px;
-          border-radius: 10px;
         }
       }
     }
@@ -206,17 +194,11 @@
 
         li {
           font-size: 18px;
-          line-height:20px;
+          line-height: 20px;
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 35px;
-        button {
-          font-size: 20px;
-          padding: 10px;
-          border-radius: 10px;
-        }
       }
     }
   }
@@ -238,15 +220,6 @@
         li {
           font-size: 18px;
           margin-bottom: 5px;
-        }
-      }
-      &_Button {
-        text-align: center;
-
-        button {
-          font-size: 20px;
-          padding: 10px;
-          border-radius: 10px;
         }
       }
     }
@@ -271,13 +244,7 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 35px;
-        button {
-          font-size: 20px;
-          padding: 10px;
-          border-radius: 10px;
-        }
       }
     }
   }
@@ -301,13 +268,7 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 35px;
-        button {
-          font-size: 20px;
-          padding: 15px;
-          border-radius: 10px;
-        }
       }
     }
   }
@@ -330,13 +291,7 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 35px;
-        button {
-          font-size: 20px;
-          padding: 15px;
-          border-radius: 10px;
-        }
       }
     }
   }
@@ -359,13 +314,7 @@
         }
       }
       &_Button {
-        text-align: center;
         margin-top: 35px;
-        button {
-          font-size: 20px;
-          padding: 15px;
-          border-radius: 10px;
-        }
       }
     }
   }
