@@ -47,7 +47,7 @@
     }
   }
   button {
-    max-width: 250px;
+    max-width: 215px;
     cursor: pointer;
     margin-top: 50px;
     padding: 20px;
@@ -55,6 +55,7 @@
     color: white;
     border: #00e6de;
     font-weight: 600;
+    font-size: 20px;
     background: linear-gradient(
       193deg,
       rgba(0, 230, 222, 1) 0%,
@@ -125,12 +126,8 @@
       button {
         text-align: center;
         margin: auto;
-        max-width: 180px;
         margin-bottom: 30px;
-        font-weight: 600;
-        font-size: 15px;
         padding: 10px;
-        border-radius: 10px;
       }
     }
     &_Info_Block {
@@ -168,11 +165,8 @@
         }
       }
       button {
-        border-radius: 10px;
         margin: auto;
         margin-bottom: 30px;
-        padding: 10px;
-        border-radius: 10px;
       }
     }
     &_Info_Block {
@@ -208,10 +202,7 @@
         }
       }
       button {
-        max-width: 250px;
         margin: 20px 0;
-        padding: 15px;
-        border-radius: 20px;
       }
     }
     &_Info_Block {
@@ -242,12 +233,6 @@
             font-size: 20px;
           }
         }
-      }
-      button {
-        max-width: 250px;
-        margin: 20px 0;
-        padding: 15px;
-        border-radius: 10px;
       }
     }
     &_Info_Block {
@@ -282,10 +267,7 @@
         }
       }
       button {
-        max-width: 250px;
         margin-top: 50px;
-        padding: 15px;
-        border-radius: 40px;
       }
     }
     &_Info_Block {

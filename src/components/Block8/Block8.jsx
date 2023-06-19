@@ -10,16 +10,16 @@ import Img6 from "../../assets/img/Block8/Picture6.png";
 import Img7 from "../../assets/img/Block8/Picture7.png";
 
 const Block8 = () => {
-  const scrollToForm = () => {
-    const form = document.querySelector("#bitrix-form");
-    const topOffset = form.offsetTop - 91;
-    window.scrollTo({ top: topOffset, behavior: "smooth" });
-  };
+  // const scrollToForm = () => {
+  //   const form = document.querySelector("#bitrix-form");
+  //   const topOffset = form.offsetTop - 91;
+  //   window.scrollTo({ top: topOffset, behavior: "smooth" });
+  // };
 
   return (
     <div className={styles.Block8} data-aos="fade-up" data-aos-duration="1500">
       <div className={styles.Block8_H1}>
-        <h1>КЕЙСЫ</h1>
+        <h1>НАШИ КЕЙСЫ</h1>
         <h2>ОПТИКА</h2>
         <span>Контроль соблюдения операционной модели</span>
       </div>
@@ -98,9 +98,9 @@ const Block8 = () => {
           </div>
         </div>
       </div>
-      <div className={styles.Block8_button}>
+      {/* <div className={styles.Block8_button}>
         <button onClick={scrollToForm}>Оставить заявку</button>
-      </div>
+      </div> */}
     </div>
   );
 };

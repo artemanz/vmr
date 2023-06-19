@@ -3,11 +3,11 @@ import React from "react";
 import styles from "./Block9.module.scss";
 
 const Block9 = () => {
-  const scrollToForm = () => {
-    const form = document.querySelector("#bitrix-form");
-    const topOffset = form.offsetTop - 91;
-    window.scrollTo({ top: topOffset, behavior: "smooth" });
-  };
+  // const scrollToForm = () => {
+  //   const form = document.querySelector("#bitrix-form");
+  //   const topOffset = form.offsetTop - 91;
+  //   window.scrollTo({ top: topOffset, behavior: "smooth" });
+  // };
 
   return (
     <div
@@ -102,9 +102,9 @@ const Block9 = () => {
             </div>
           </div>
         </div>
-        <div className={styles.Block9__button}>
+        {/* <div className={styles.Block9__button}>
           <button onClick={scrollToForm}>Оставить заявку</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

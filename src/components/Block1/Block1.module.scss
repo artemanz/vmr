@@ -23,8 +23,7 @@
       margin-top: 20px;
       font-weight: 600;
       padding: 20px;
-      width: 70%;
-      font-size: 18px;
+      font-size: 20px;
       cursor: pointer;
       color: white;
       border: #00e6de;
@@ -87,13 +86,12 @@
     background-position: -10% 100%;
     background-image: none;
     flex-direction: column-reverse;
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
     &_Info {
       width: 100%;
       height: auto;
       flex-direction: column;
       button {
-        width: 50%;
         padding: 10px;
       }
       &_Img {
@@ -141,11 +139,6 @@
     &_Info {
       width: 70%;
       height: auto;
-      button{
-        width: 80%;
-        padding: 10px;
-        font-size: 20px;
-      }
       span {
         font-size: 17px;
         height: 10%;
@@ -175,7 +168,9 @@
     &_Info {
       width: 70%;
       height: auto;
-
+      button{
+        padding: 10px;
+      }
       span {
         font-size: 18px;
         height: 10%;
