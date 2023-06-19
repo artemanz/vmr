@@ -23,8 +23,8 @@
       margin-top: 20px;
       font-weight: 600;
       padding: 20px;
-      width: 50%;
-      font-size: 20px;
+      width: 70%;
+      font-size: 18px;
       cursor: pointer;
       color: white;
       border: #00e6de;
@@ -93,6 +93,7 @@
       height: auto;
       flex-direction: column;
       button {
+        width: 50%;
         padding: 10px;
       }
       &_Img {
@@ -135,11 +136,16 @@
     background-size: 80%;
     background-position: -10% 100%;
     background-image: none;
+    height: auto;
 
     &_Info {
       width: 70%;
       height: auto;
-
+      button{
+        width: 80%;
+        padding: 10px;
+        font-size: 20px;
+      }
       span {
         font-size: 17px;
         height: 10%;
