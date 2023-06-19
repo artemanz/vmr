@@ -99,7 +99,7 @@ const Block8 = () => {
         </div>
       </div>
       <div className={styles.Block8_button}>
-        <button onClick={scrollToForm}>Задать вопрос</button>
+        <button onClick={scrollToForm}>Оставить заявку</button>
       </div>
     </div>
   );

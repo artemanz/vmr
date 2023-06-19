@@ -66,7 +66,7 @@ const Block6 = () => {
           </div>
         </div>
         <div className={styles.Block6__button}>
-          <button onClick={scrollToForm}>Задать вопрос</button>
+          <button onClick={scrollToForm}>Начать прямо сейчас  </button>
         </div>
       </div>
     </div>

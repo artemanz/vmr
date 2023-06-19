@@ -12,7 +12,7 @@ import Block2_8 from "../../assets/img/Block2/Block2_8.png";
 
 const Block2 = () => {
   const scrollToForm = () => {
-    const form = document.querySelector("#bitrix-form");
+    const form = document.querySelector("#Block7");
     const topOffset = form.offsetTop - 91;
     window.scrollTo({ top: topOffset, behavior: "smooth" });
   };
@@ -95,7 +95,7 @@ const Block2 = () => {
           </div>
         </div>
         <div className={styles.Block2__button}>
-          <button onClick={scrollToForm}>Задать вопрос</button>
+          <button onClick={scrollToForm}>Узнать цену</button>
         </div>
       </div>
     </div>
