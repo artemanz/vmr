@@ -9,7 +9,7 @@
     padding: 20px;
     .Block6__bText {
       font-weight: 700;
-      font-size: 32px;
+      font-size: 40px;
       background: linear-gradient(
         180deg,
         rgb(0, 230, 222) 0%,
@@ -57,11 +57,11 @@
           -webkit-background-clip: text; // Задаем тексту свойство background-clip
           -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
           margin-bottom: 15px;
-          font-size: 27px;
-          font-weight: 700;
+          font-size: 20px;
+          font-weight: 800;
         }
         .Block6__text {
-          font-size: 22px;
+          font-size: 18px;
           max-width: 550px;
         }
       }
@@ -99,6 +99,9 @@
     background-size: 40%;
     background-position: 40% 65%;
     .Block6__wrapper {
+      .Block6__bText {
+        font-size: 40px;
+      }
       .Block6__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 20px;
@@ -134,6 +137,9 @@
       .Block6__grid {
         grid-column-gap: 8%;
       }
+      .Block6__bText {
+        font-size: 40px;
+      }
     }
   }
 }
@@ -153,7 +159,7 @@
     background-position: 120% 64%;
     .Block6__wrapper {
       .Block6__bText {
-        font-size: 26px;
+        font-size: 30px;
       }
       .Block6__grid {
         grid-template-rows: repeat(4, 1fr);
@@ -177,6 +183,10 @@
           &:nth-child(6) {
             grid-area: 4 / 2 / 5 / 3;
           }
+          .Block6__sbText {
+            font-size: 20px;
+            font-weight: 500;
+          }
         }
       }
     }
@@ -187,7 +197,7 @@
     background: none;
     .Block6__wrapper {
       .Block6__bText {
-        font-size: 26px;
+        font-size: 25px;
       }
       .Block6__grid {
         grid-template-columns: 1fr;
@@ -213,6 +223,10 @@
           &:nth-child(6) {
             grid-area: 6 / 1 / 7 / 2;
           }
+          .Block6__sbText {
+            font-size: 20px;
+            font-weight: 500;
+          }
         }
       }
     }
@@ -227,6 +241,10 @@
     padding-bottom: 30px;
     background-position: 105% 50%;
     .Block6__wrapper {
+      .Block6__bText {
+        font-size: 22px;
+        font-weight: 700;
+      }
       .Block6__grid {
         display: block;
         row-gap: 0;
@@ -238,7 +256,7 @@
             font-weight: 500;
           }
           .Block6__sbText {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 500;
           }
         }
@@ -251,21 +269,28 @@
     }
   }
 }
+
 @media (max-width: 600px) {
-  .Block6 {
-    background: none;
-    padding-bottom: 30px;
-  }
-}
-@media (max-width: 425px) {
   .Block6 {
     background: none;
     padding-bottom: 30px;
     .Block6__wrapper {
       .Block6__bText {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 700;
       }
     }
   }
 }
+// @media (max-width: 425px) {
+//   .Block6 {
+//     background: none;
+//     padding-bottom: 30px;
+//     .Block6__wrapper {
+//       .Block6__bText {
+//         font-size: 22px;
+//         font-weight: 700;
+//       }
+//     }
+//   }
+// }

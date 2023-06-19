@@ -55,7 +55,7 @@ const Block5 = () => {
           <li>Кассовая аналитика и видеоархив операций</li>
         </ul>
         <div className={styles.Block5_List_Block_Button}>
-          <button onClick={scrollToForm}>ОБСУДИТЬ ВАШУ ЗАДАЧУ</button>
+          <button onClick={scrollToForm}>Обсудить вашу задачу</button>
         </div>
       </div>
     </div>

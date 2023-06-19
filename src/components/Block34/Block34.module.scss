@@ -73,7 +73,7 @@
     }
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 440px) {
     // Ваши стили для мобильных устройств
     padding: 20px 20px 40px 20px;
     background-image: none;
@@ -84,7 +84,7 @@
       }
     }
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
     }
 
@@ -101,14 +101,15 @@
         }
 
         span {
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: normal;
         }
       }
     }
   }
+ 
 
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+  @media only screen and (min-width: 440px) and (max-width: 768px) {
     // Ваши стили для планшетов
     padding: 20px 20px 40px 20px;
     background-image: none;
@@ -119,7 +120,7 @@
       }
     }
     h1 {
-      font-size: 28px;
+      font-size: 22px;
     }
 
     &_Info {
@@ -135,8 +136,8 @@
         }
 
         span {
-          font-size: 19px;
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: normal;
         }
       }
     }
@@ -147,7 +148,7 @@
     padding: 20px 20px 30px 20px;
     background-image: none;
     h1 {
-      font-size: 30px;
+      font-size: 25px;
     }
 
     &_Info {
@@ -163,7 +164,7 @@
         }
 
         span {
-          font-size: 17px;
+          font-size: 18px;
         }
       }
     }
@@ -190,7 +191,7 @@
         }
 
         span {
-          font-size: 17px;
+          font-size: 18px;
         }
       }
     }
@@ -257,8 +258,8 @@
         }
 
         span {
-          font-size: 17px;
-          font-weight: 500;
+          font-size: 18px;
+         
         }
       }
     }
