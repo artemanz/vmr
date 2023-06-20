@@ -7,8 +7,10 @@
   padding-bottom: 30px;
   .Block6__wrapper {
     padding: 20px;
+    padding-top: 40px;
     .Block6__bText {
       font-weight: 700;
+      text-align: center;
       font-size: 40px;
       background: linear-gradient(
         180deg,
@@ -135,6 +137,16 @@
       }
       .Block6__bText {
         font-size: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 1120px) {
+  .Block6 {
+    background-position: 50% 65%;
+    .Block6__wrapper {
+      .Block6__bText {
+        font-size: 30px;
       }
     }
   }

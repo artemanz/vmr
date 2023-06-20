@@ -10,7 +10,7 @@
   color: white;
   &_bText {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 30px;
   }
   &_row {
@@ -61,7 +61,7 @@
         font-size: 18px;
         font-weight: 400;
         span {
-          font-weight: 800;
+          font-weight: 700;
           font-size: 20px;
         }
       }
@@ -281,7 +281,7 @@
       }
     }
   }
-  @media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  @media only screen and (min-width: 1000px) and (max-width: 1120px) {
     // Ваши стили для небольших ноутбуков и десктопов
     &_row {
       button {
@@ -290,6 +290,53 @@
     }
     &_bText {
       font-size: 30px;
+    }
+    &_Price {
+      max-width: 37%;
+      ._OneBut {
+        display: block;
+      }
+      &_Info {
+        &_text {
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 400;
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+      button {
+        margin-top: 50px;
+      }
+    }
+    &_Info_Block {
+      max-width: 60%;
+      padding: 25px 20px;
+      border-radius: 34px;
+      h1 {
+        font-size: 20px;
+        font-weight: 800;
+      }
+      &_Element {
+        font-size: 18;
+        margin-bottom: 20px;
+        span {
+          font-size: 18;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1120px) and (max-width: 1440px) {
+    // Ваши стили для небольших ноутбуков и десктопов
+    &_row {
+      button {
+        display: none;
+      }
+    }
+    &_bText {
+      font-size: 40px;
     }
     &_Price {
       max-width: 37%;

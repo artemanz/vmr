@@ -17,7 +17,7 @@ const Block8 = () => {
   // };
 
   return (
-    <div className={styles.Block8} data-aos="fade-up" data-aos-duration="1500">
+    <div className={styles.Block8} data-aos="fade-up" data-aos-duration="1500"  id="Block8">
       <div className={styles.Block8_H1}>
         <h1>НАШИ КЕЙСЫ</h1>
         <h2>ОПТИКА</h2>
