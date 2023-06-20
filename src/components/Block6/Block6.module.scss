@@ -82,13 +82,9 @@
           rgb(0, 153, 173) 93%
         );
         border-radius: 10px;
-        transition: 0.4s ease;
+        transition: box-shadow 0.4s ease;
         &:hover {
-          background: linear-gradient(
-            193deg,
-            rgb(4, 196, 189) 0%,
-            rgb(4, 170, 192) 93%
-          );
+          box-shadow: 1px 1px 20px #00E6De;
         }
       }
     }
