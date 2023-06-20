@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./Block5.module.scss";
+import BlockCarousel5 from "./BlockCarousel5";
 
 const Block5 = () => {
   const scrollToForm = () => {
@@ -54,6 +55,9 @@ const Block5 = () => {
           </li>
           <li>Кассовая аналитика и видеоархив операций</li>
         </ul>
+        <div className={styles._Carousel}>
+          <BlockCarousel5 />
+        </div>
         <div className={styles.Block5_List_Block_Button}>
           <button onClick={scrollToForm}>Обсудить вашу задачу</button>
         </div>
