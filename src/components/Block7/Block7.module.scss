@@ -1,57 +1,50 @@
 .Block7 {
   width: 70%;
   padding: 40px 20px;
-  background-color: white;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 230, 222) 0%,
+    rgb(0, 153, 173) 100%
+  );
+  border-radius: 10px;
+  color: white;
   &_bText {
     font-size: 40px;
     font-weight: 700;
-    background: linear-gradient(
-      180deg,
-      rgb(0, 230, 222) 0%,
-      rgb(0, 153, 173) 100%
-    );
-    // Градиентный фон
-    -webkit-background-clip: text; // Задаем тексту свойство background-clip
-    -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
     margin-bottom: 30px;
   }
   &_row {
     display: flex;
     justify-content: space-between;
-      button {
-        max-width: 215px;
-        display: block;
-        cursor: pointer;
-        margin-top: 50px;
-        padding: 20px;
-        border-radius: 10px;
-        color: white;
-        border: #00e6de;
+    button {
+      span {
+        background: linear-gradient(
+          180deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 100%
+        );
+        // Градиентный фон
+        -webkit-background-clip: text; // Задаем тексту свойство background-clip
+        -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
         font-weight: 600;
         font-size: 20px;
-        background: linear-gradient(
-          193deg,
-          rgba(0, 230, 222, 1) 0%,
-          rgba(0, 153, 173, 1) 93%
-        );
-        border-radius: 10px;
-        transition: background 0.4s ease;
-        &:hover {
-          background: linear-gradient(
-            193deg,
-            rgb(4, 196, 189) 0%,
-            rgb(4, 170, 192) 93%
-          );
-        }
-        :active {
-          background: linear-gradient(
-            193deg,
-            rgb(4, 196, 189) 0%,
-            rgb(4, 170, 192) 93%
-          );
-        }
-     display: none;
       }
+      max-width: 215px;
+      display: block;
+      cursor: pointer;
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+      border: #00e6de;
+      background-color: white;
+      border-radius: 10px;
+      transition: box-shadow 0.4s ease;
+      &:hover {
+        box-shadow: 1px 1px 20px white;
+      }
+      display: none;
+    }
   }
   &_Price {
     max-width: 37%;
@@ -62,19 +55,12 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-    
+
       &_text {
         margin-bottom: 40px;
         font-size: 18px;
         font-weight: 400;
         span {
-          background: linear-gradient(
-            180deg,
-            rgb(0, 230, 222) 60%,
-            rgb(0, 153, 173) 99%
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
           font-weight: 800;
           font-size: 20px;
         }
@@ -82,36 +68,33 @@
     }
   }
   ._OneBut {
+    span {
+      background: linear-gradient(
+        180deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
+      );
+      // Градиентный фон
+      -webkit-background-clip: text; // Задаем тексту свойство background-clip
+      -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+      font-size: 20px;
+    }
     max-width: 215px;
     display: block;
     cursor: pointer;
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
-    color: white;
     border: #00e6de;
     font-weight: 600;
-    font-size: 20px;
-    background: linear-gradient(
-      193deg,
-      rgba(0, 230, 222, 1) 0%,
-      rgba(0, 153, 173, 1) 93%
-    );
+    background-color: white;
     border-radius: 10px;
-    transition: background 0.4s ease;
+    transition: box-shadow 0.4s ease;
     &:hover {
-      background: linear-gradient(
-        193deg,
-        rgb(4, 196, 189) 0%,
-        rgb(4, 170, 192) 93%
-      );
+      box-shadow: 1px 1px 20px white;
     }
     :active {
-      background: linear-gradient(
-        193deg,
-        rgb(4, 196, 189) 0%,
-        rgb(4, 170, 192) 93%
-      );
+      box-shadow: 1px 1px 20px white;
     }
   }
   &_Info_Block {
@@ -119,19 +102,14 @@
     flex-direction: column;
     justify-content: flex-start;
     max-width: 60%;
-    background: linear-gradient(
-      355deg,
-      rgb(0, 230, 222) 0%,
-      rgb(0, 153, 173) 93%
-    );
+    background-color: white;
     padding: 25px 20px;
     border-radius: 34px;
-    color: white;
-    h1{
-     font-size: 20px;
-     font-weight: 800;
-     margin-bottom: 2%;
-     
+    color: black;
+    h1 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 2%;
     }
     &_Element {
       font-size: 18px;
@@ -164,7 +142,7 @@
     }
     &_Price {
       max-width: 100%;
-      ._OneBut{
+      ._OneBut {
         display: none;
       }
       &_Info {
@@ -178,17 +156,15 @@
           }
         }
       }
-    
     }
     &_Info_Block {
       max-width: 100%;
       padding: 25px 20px;
       border-radius: 34px;
-      color: white;
-      h1{
+      h1 {
         font-size: 22px;
         font-weight: 800;
-       }
+      }
       &_Element {
         font-size: 18px;
         margin-bottom: 20px;
@@ -217,7 +193,7 @@
     }
     &_Price {
       max-width: 100%;
-      ._OneBut{
+      ._OneBut {
         display: none;
       }
       &_Info {
@@ -230,17 +206,15 @@
           }
         }
       }
- 
     }
     &_Info_Block {
       max-width: 100%;
       padding: 25px 20px;
       border-radius: 34px;
-      color: white;
-      h1{
+      h1 {
         font-size: 22px;
         font-weight: 800;
-       }
+      }
       &_Element {
         font-size: 18px;
         margin-bottom: 20px;
@@ -254,7 +228,7 @@
 
   @media only screen and (min-width: 768px) and (max-width: 1000px) {
     // Ваши стили для планшетов
-  
+
     &_row {
       display: flex;
       flex-direction: column;
@@ -272,10 +246,10 @@
     &_bText {
       font-size: 25px;
     }
-    
+
     &_Price {
       max-width: 100%;
-      ._OneBut{
+      ._OneBut {
         display: none;
       }
       &_Info {
@@ -293,11 +267,10 @@
       max-width: 100%;
       padding: 25px 20px;
       border-radius: 34px;
-      color: white;
-      h1{
+      h1 {
         font-size: 25px;
         font-weight: 800;
-       }
+      }
       &_Element {
         font-size: 18px;
         margin-bottom: 20px;
@@ -312,7 +285,7 @@
     // Ваши стили для небольших ноутбуков и десктопов
     &_row {
       button {
-     display: none;
+        display: none;
       }
     }
     &_bText {
@@ -320,7 +293,7 @@
     }
     &_Price {
       max-width: 37%;
-      ._OneBut{
+      ._OneBut {
         display: block;
       }
       &_Info {
@@ -341,11 +314,10 @@
       max-width: 60%;
       padding: 25px 20px;
       border-radius: 34px;
-      color: white;
-      h1{
+      h1 {
         font-size: 20px;
         font-weight: 800;
-       }
+      }
       &_Element {
         font-size: 18;
         margin-bottom: 20px;

@@ -4,11 +4,11 @@ import "aos/dist/aos.css"; // Импортируйте CSS-файл AOS
 import styles from "./Block10.module.scss";
 
 const Block10 = () => {
-  const scrollToForm = () => {
-    const form = document.querySelector("#bitrix-form");
-    const topOffset = form.offsetTop - 91;
-    window.scrollTo({ top: topOffset, behavior: "smooth" });
-  };
+  // const scrollToForm = () => {
+  //   const form = document.querySelector("#bitrix-form");
+  //   const topOffset = form.offsetTop - 91;
+  //   window.scrollTo({ top: topOffset, behavior: "smooth" });
+  // };
 
   return (
     <div className={styles.Block10} data-aos="fade-up" data-aos-duration="1500">
@@ -82,9 +82,9 @@ const Block10 = () => {
             </div>
           </div>
         </div>
-        <div className={styles.Block10__button}>
+        {/* <div className={styles.Block10__button}>
           <button onClick={scrollToForm}>Оставить заявку</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

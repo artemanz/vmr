@@ -20,18 +20,18 @@ const Block7 = () => {
         >
           <div className={styles.Block7_Price_Info}>
             <div className={styles.Block7_Price_Info_text}>
-              <span>ВИДЕОМОНИТОРИНГ</span>
-              –Стоимость 1 оценки c от 220 рублей
+              <span>ВИДЕОМОНИТОРИНГ </span>– Стоимость 1 оценки c от 220 рублей
             </div>
             <div className={styles.Block7_Price_Info_text}>
-              <span> ВИДЕОАНАЛИТИКА</span>
-              –Стоимость 1 минуты – от 7 рублей
+              <span>ВИДЕОАНАЛИТИКА </span>– Стоимость 1 минуты – от 7 рублей
             </div>
             <div className={styles.Block7_Price_Info_text}>
-              <span>УСТАНОВКА ВИДЕО КАМЕР</span>– от 8000 руб
+              <span>УСТАНОВКА ВИДЕО КАМЕР</span> – от 8000 руб
             </div>
           </div>
-          <button className={styles._OneBut} onClick={scrollToForm}>Заказать сейчас</button>
+          <button className={styles._OneBut} onClick={scrollToForm}>
+            <span>Заказать сейчас</span>
+          </button>
         </div>
         <div
           className={styles.Block7_Info_Block}
@@ -40,8 +40,8 @@ const Block7 = () => {
         >
           <h1>Что влияет на формирование цены:</h1>
           <div className={styles.Block7_Info_Block_Element}>
-            <span>Наличие камер видеонаблюдения </span> <br /> Если у Вас еще не установлены
-            камеры Вы можете поручить эту задачу нам.
+            <span>Наличие камер видеонаблюдения </span> <br /> Если у Вас еще не
+            установлены камеры Вы можете поручить эту задачу нам.
           </div>
           <div className={styles.Block7_Info_Block_Element}>
             <span>Количество локаций и оценок</span> <br />В зависимости от
@@ -63,7 +63,7 @@ const Block7 = () => {
             По итогам мы предлагаем отчетность с разным уровнем детализации
           </div>
         </div>
-          <button  onClick={scrollToForm}>Заказать сейчас</button>
+        <button onClick={scrollToForm}><span>Заказать сейчас</span></button>
       </div>
     </div>
   );
