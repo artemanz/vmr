@@ -1,6 +1,9 @@
 .Block6 {
   width: 70%;
   background-image: url("../../assets/img/Block6/Block6_fon.png");
+  @media screen and (max-width: 768px) {
+    background-image: none;
+  }
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -29,8 +32,37 @@
       justify-items: center;
       align-items: start;
       grid-row-gap: 140px;
+
+      .BlockCarousel6 {
+        display: block;
+        .Block6__cell {
+          display: block;
+          .Block6__sbText {
+            color: white;
+            background: white;
+            -webkit-background-clip: text; // Задаем тексту свойство background-clip
+            -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 800;
+          }
+          .Block6__text {
+            color: white;
+            font-size: 18px;
+            max-width: 550px;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          display: none;
+          
+        }
+      }
       .Block6__cell {
         max-width: 500px;
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
         &:nth-child(1) {
           grid-area: 1 / 1 / 2 / 2;
         }
@@ -50,6 +82,7 @@
           grid-area: 3 / 3 / 4 / 4;
         }
         .Block6__sbText {
+          
           background: linear-gradient(
             180deg,
             rgba(0, 230, 222, 1) 0%,
@@ -243,7 +276,7 @@
 @media (max-width: 768px) {
   .Block6 {
     width: 100%;
-    background-image: url("../../assets/img/Block6/Block6_fon.png");
+    background-image: none;
     background-size: 60%;
     background-repeat: no-repeat;
     padding-bottom: 30px;

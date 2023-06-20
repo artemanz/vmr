@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./Block6.module.scss";
+import BlockCarousel6 from "./BlockCarousel6";
 
 const Block6 = () => {
   const scrollToForm = () => {
@@ -63,6 +64,9 @@ const Block6 = () => {
               Теперь не важно, где расположены локации, произвести оценку
               возможно даже в самом удаленном уголке страны и за ее пределами
             </div>
+          </div>
+          <div className={styles.BlockCarousel6}>
+            <BlockCarousel6 />
           </div>
         </div>
         <div className={styles.Block6__button}>
