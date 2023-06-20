@@ -13,7 +13,7 @@
   &_H1 {
     h1 {
       text-align: center;
-      font-size: 32px;
+      font-size: 40px;
       background: linear-gradient(
         180deg,
         rgb(0, 230, 222) 0%,
@@ -25,7 +25,7 @@
       margin-bottom: 30px;
     }
     h2 {
-      font-size: 30px;
+      font-size: 20px;
       background: linear-gradient(
         180deg,
         rgb(0, 230, 222) 0%,
@@ -36,7 +36,7 @@
       font-weight: 700;
     }
     span {
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
@@ -52,6 +52,7 @@
     padding: 90px 0 160px 0;
 
     &_Item {
+    
       &_elements {
         margin-bottom: 45px;
         margin-bottom: 45px;
@@ -67,7 +68,9 @@
         }
 
         span {
+          font-size: 18px;
           strong {
+            font-size: 18px;
             background: linear-gradient(
               180deg,
               rgb(0, 230, 222) 60%,
@@ -102,8 +105,9 @@
 
         span {
           width: 80%;
-
+          font-size: 18px;
           strong {
+            font-size: 18px;
             background: linear-gradient(
               180deg,
               rgb(0, 230, 222) 60%,
@@ -148,17 +152,19 @@
 
     width: 100%;
     background-image: none;
-
+    padding-top: 30px;
     &_H1 {
       h1 {
-        font-size: 24px;
-        font-weight: 700;
+        text-align: start;
+        font-size: 22px;
+        font-weight: 800;
       }
       h2 {
-        font-size: 22px;
+        font-size: 20px;
+        font-weight: 700;
       }
       span {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
       }
     }
@@ -184,7 +190,9 @@
           }
 
           span {
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -207,8 +215,9 @@
 
           span {
             width: 80%;
-
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -227,6 +236,22 @@
     width: 100%;
     background-image: none;
 
+    &_H1 {
+      h1 {
+        text-align: start;
+        font-size: 22px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
     &_Info {
       display: flex;
       flex-direction: column;
@@ -248,7 +273,9 @@
           }
 
           span {
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -271,8 +298,9 @@
 
           span {
             width: 80%;
-
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -286,6 +314,25 @@
     // Ваши стили для небольших ноутбуков и десктопов
 
     background-image: none;
+
+    &_H1 {
+      h1 {
+        text-align: start;
+        font-size: 25px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+
+
     &_Info {
       display: flex;
       flex-direction: column;
@@ -307,7 +354,9 @@
           }
 
           span {
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -330,8 +379,9 @@
 
           span {
             width: 80%;
-
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -345,6 +395,23 @@
     background-position: right;
     // background-position-y: 40px;
     background-size: 200px;
+
+    &_H1 {
+      h1 {
+        text-align: start;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
     &_Info {
       display: flex;
       flex-direction: column;
@@ -357,6 +424,7 @@
       background-size: 150px;
       padding: 20px 0 40px 0;
 
+     
       &_Item {
         margin-bottom: 30px;
         &_elements {
@@ -371,7 +439,9 @@
           }
 
           span {
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -392,8 +462,9 @@
 
           span {
             width: 80%;
-
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -408,6 +479,21 @@
     // background-position-y: 40px;
     background-size: 200px;
 
+    &_H1 {
+      h1 {
+        text-align: start;
+        font-size: 40px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
     &_Info {
       display: flex;
       flex-direction: column;
@@ -434,7 +520,9 @@
           }
 
           span {
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -455,8 +543,9 @@
 
           span {
             width: 80%;
-
+            font-size: 18px;
             strong {
+              font-size: 18px;
             }
           }
         }
@@ -471,6 +560,22 @@
     background-position: right;
     background-position-y: 40px;
     background-size: 251px;
+
+    &_H1 {
+      h1 {
+        text-align: start;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
 
     &_Info {
       display: flex;

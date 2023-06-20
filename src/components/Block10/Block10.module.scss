@@ -7,7 +7,7 @@
   .Block10__wrapper {
     padding: 20px 20px 50px 20px;
     .Block10__bText {
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 700;
       background: linear-gradient(
         180deg,
@@ -19,7 +19,7 @@
       margin-bottom: 15px;
     }
     .Block10__sbText {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -61,10 +61,14 @@
           height: 5px;
           border-radius: 50%;
           background-color: black;
+
         }
         .Block10__text {
           max-width: 90%;
           font-size: 18px;
+          span{
+            font-size: 18px;
+          }
         }
       }
     }
@@ -99,8 +103,55 @@
 @media (max-width: 1160px) {
   .Block10 {
     .Block10__wrapper {
+      .Block10__bText {
+        font-size: 40px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
       .Block10__row {
         height: 450px;
+        .Block10__column {
+          font-size: 18px;
+          .Block10__text__row {
+            .Block10__tochka {
+              display: none;
+            }
+            .Block10__text {
+              max-width: 100%;
+              font-size: 18px;
+              span{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .Block10 {
+    .Block10__wrapper {
+      .Block10__bText {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .Block10__row {
+        height: 400px;
+        .Block10__column {
+          .Block10__text__row {
+            .Block10__text {
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }
@@ -108,12 +159,20 @@
 @media (max-width: 1024px) {
   .Block10 {
     .Block10__wrapper {
+      .Block10__bText {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
       .Block10__row {
         height: 400px;
         .Block10__column {
           .Block10__text__row {
             .Block10__text {
-              font-size: 17px;
+              font-size: 18px;
             }
           }
         }
@@ -126,24 +185,113 @@
     background-position: 100% 73%;
     background-size: 50%;
     .Block10__wrapper {
+      .Block10__bText {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
       .Block10__row {
         height: 100%;
         flex-direction: column;
+        .Block10__column {
+          font-size: 18px;
+          .Block10__text__row {
+            .Block10__tochka {
+              display: none;
+            }
+            .Block10__text {
+              max-width: 100%;
+              font-size: 18px;
+              span{
+                font-size: 18px;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+@media (max-width: 900px) {
+  .Block10 {
+    background-size: 40%;
+    background-position: 100% 85%;
+    .Block10__wrapper {
+      .Block10__bText {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .Block10__row {
+        align-items: center;
+        margin-bottom: 0;
+        
+        .Block10__column {
+          max-width: 500px;
+          font-size: 18px;
+          .Block10__text__row {
+            .Block10__tochka {
+              display: none;
+            }
+            .Block10__text {
+              max-width: 100%;
+              font-size: 18px;
+              span{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .Block10__button {
+        margin-top: 0;
+        button {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .Block10 {
     width: 100%;
     background-size: 40%;
     background-position: 100% 75%;
     .Block10__wrapper {
+      .Block10__bText {
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .Block10__sbText {
+        font-size: 20px;
+        font-weight: 500;
+      }
       .Block10__row {
         align-items: center;
         margin-bottom: 0;
+        
         .Block10__column {
           max-width: 500px;
+          font-size: 18px;
+          .Block10__text__row {
+            .Block10__tochka {
+              display: none;
+            }
+            .Block10__text {
+              max-width: 100%;
+              font-size: 18px;
+              span{
+                font-size: 18px;
+              }
+            }
+          }
         }
       }
       .Block10__button {
@@ -161,6 +309,7 @@
     .Block10__wrapper {
       .Block10__bText {
         font-size: 22px;
+        font-weight: 800;
       }
       .Block10__sbText {
         font-size: 20px;
@@ -178,6 +327,10 @@
             }
             .Block10__text {
               max-width: 100%;
+              font-size: 18px;
+              span{
+                font-size: 18px;
+              }
             }
           }
         }
