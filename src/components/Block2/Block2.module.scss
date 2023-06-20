@@ -8,7 +8,7 @@
     padding: 10px 20px 50px 20px;
     .Block2__bText {
       text-align: center;
-      font-size: 32px;
+      font-size: 40px;
       font-weight: 700;
       background: linear-gradient(
         180deg,
@@ -29,6 +29,7 @@
       align-items: start;
       .Block2__cell {
         text-align: center;
+        font-size: 18px;
         .Block2__img {
           margin-bottom: 10px;
           img {
@@ -69,6 +70,7 @@
 @media (max-width: 1600px) {
   .Block2 {
     .Block2__wrapper {
+  
       .Block2__grid {
         grid-column-gap: 0;
         grid-template-columns: repeat(2, 1fr);
@@ -81,9 +83,47 @@
     }
   }
 }
+@media (max-width: 1100px) {
+  .Block2 {
+    .Block2__wrapper {
+      .Block2__bText {
+        font-size: 30px;
+        text-align: start;
+      }
+      .Block2__grid {
+        grid-column-gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        .Block2__cell {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .Block2 {
+    .Block2__wrapper {
+         .Block2__bText {
+        font-size: 25px;
+        text-align: start;
+      }
+      .Block2__grid {
+        .Block2__cell {
+          max-width: 230px;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 850px) {
   .Block2 {
     .Block2__wrapper {
+         .Block2__bText {
+        font-size: 25px;
+        text-align: start;
+      }
       .Block2__grid {
         .Block2__cell {
           max-width: 230px;
@@ -101,6 +141,10 @@
         button {
           padding: 10px;
         }
+      }
+      .Block2__bText {
+        font-size: 22px;
+        text-align: start;
       }
       .Block2__grid {
         .Block2__cell {
@@ -136,6 +180,13 @@
 @media (max-width: 425px) {
   .Block2 {
     margin-bottom: 0px;
+    .Block2__wrapper {
+      margin-bottom: 40px;
+      .Block2__bText {
+        font-size: 22px;
+        text-align: start;
+      }
+    }
   }
 }
 @media (max-width: 375px) {
@@ -145,6 +196,13 @@
       .Block2__bText {
         font-size: 22px;
         text-align: start;
+      }
+    }
+    .Block2__grid {
+      grid-row-gap: 20px;
+      grid-column-gap: 10px;
+      .Block2__cell {
+        font-size: 18px;
       }
     }
   }
