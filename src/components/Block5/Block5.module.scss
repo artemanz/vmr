@@ -24,12 +24,30 @@
   &_List_Block {
     border: 2px solid transparent;
     border-radius: 80px;
-
     padding: 40px 40px 30px 40px;
     background-color: white;
+    ._Carousel{
+      display: block;
+      ul{
+        display: block;
+        li{
+          &::before {
+            content: none;
+          }
+        }
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+
+      }
+    }
     ul {
       max-width: 70%;
       list-style-type: none;
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
       li {
         font-size: 18px;
         margin-bottom: 10px;
