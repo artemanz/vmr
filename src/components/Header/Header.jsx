@@ -38,13 +38,13 @@ const Header = () => {
             <img src={Header_logo} alt="" /> ВИДЕО МОНИТОРИНГ
           </div>
           <div className={styles.Header__info}>
-            <div
+            {/* <div
               className={styles.Header__info__text}
               onClick={() => handleScrollTo("#Block1")}
             >
               Подробнее
               <div className={styles.Header__info__underline}></div>
-            </div>
+            </div> */}
             <div
               className={styles.Header__info__text}
               onClick={() => handleScrollTo("#Block34")}
@@ -56,7 +56,7 @@ const Header = () => {
               className={styles.Header__info__text}
               onClick={() => handleScrollTo("#Block5")}
             >
-              Какие задачи мы решаем
+              Наша задача
               <div className={styles.Header__info__underline}></div>
             </div>
             <div
@@ -66,17 +66,33 @@ const Header = () => {
               Цены
               <div className={styles.Header__info__underline}></div>
             </div>
+            <div
+              className={styles.Header__info__text}
+              onClick={() => handleScrollTo("#Block8")}
+            >
+              Кейсы
+              <div className={styles.Header__info__underline}></div>
+            </div>
+            <div
+              className={styles.Header__info__text}
+              onClick={() => handleScrollTo("#bitrix-form")}
+            >
+              Оставить заявку
+              <div className={styles.Header__info__underline}></div>
+            </div>
           </div>
           <div className={styles.Header__burger}>
             {isBurgerOpened ? (
               <div className={styles.Header__modal}>
                 <ul>
-                  <li onClick={() => handleScrollTo("#Block1")}>Подробнее</li>
+                  {/* <li onClick={() => handleScrollTo("#Block1")}>Подробнее</li> */}
                   <li onClick={() => handleScrollTo("#Block34")}>Для кого</li>
                   <li onClick={() => handleScrollTo("#Block5")}>
                     Какие задачи мы решаем
                   </li>
                   <li onClick={() => handleScrollTo("#Block7")}>Цены</li>
+                  <li onClick={() => handleScrollTo("#Block8")}>Кейсы</li>
+                  <li onClick={() => handleScrollTo("#bitrix-form")}> Оставить заявку</li>
                 </ul>
                 <div
                   className={styles.Header__burger__opened}
