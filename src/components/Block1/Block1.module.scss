@@ -44,7 +44,7 @@
     .Block1__row {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 100px;
+      margin-bottom: 80px;
       .Block1__column {
         font-weight: 500;
         max-width: 45%;
@@ -66,6 +66,28 @@
     }
     .Block1__carousel {
       display: none;
+    }
+    .Block1__button {
+      text-align: center;
+      margin-bottom: 50px;
+      button {
+        font-weight: 600;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        border: #00e6de;
+        background: linear-gradient(
+          193deg,
+          rgb(0, 230, 222) 0%,
+          rgb(0, 153, 173) 93%
+        );
+        border-radius: 10px;
+        transition: box-shadow 0.4s ease;
+        &:hover {
+          box-shadow: 1px 1px 20px #00E6De;
+        }
+      }
     }
   }
 }
@@ -128,6 +150,12 @@
       }
       .Block1__carousel {
         display: block;
+        margin-bottom: 80px;
+      }
+      .Block1__button {
+        button {
+          padding: 10px;
+        }
       }
     }
   }

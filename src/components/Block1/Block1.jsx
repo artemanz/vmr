@@ -6,11 +6,11 @@ import Img from "../../assets/img/Eye/eye.png";
 import Block1Carousel from "./Block1Carousel";
 
 const Block1 = () => {
-  // const scrollToForm = () => {
-  //   const form = document.querySelector("#bitrix-form");
-  //   const topOffset = form.offsetTop - 91;
-  //   window.scrollTo({ top: topOffset, behavior: "smooth" });
-  // };
+  const scrollToForm = () => {
+    const form = document.querySelector("#bitrix-form");
+    const topOffset = form.offsetTop - 91;
+    window.scrollTo({ top: topOffset, behavior: "smooth" });
+  };
 
   return (
     <div
@@ -46,6 +46,9 @@ const Block1 = () => {
         </div>
         <div className={styles.Block1__carousel}>
           <Block1Carousel />
+        </div>
+        <div className={styles.Block1__button}>
+          <button onClick={scrollToForm}>Узнать больше</button>
         </div>
       </div>
     </div>
