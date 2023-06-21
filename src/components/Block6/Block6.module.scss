@@ -10,7 +10,7 @@
   padding-bottom: 30px;
   .Block6__wrapper {
     padding: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
     .Block6__bText {
       font-weight: 700;
       text-align: center;
@@ -283,8 +283,10 @@
     background-position: 105% 50%;
     .Block6__wrapper {
       .Block6__bText {
+        text-align: start;
+        margin-bottom: 30px;
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 800;
       }
       .Block6__grid {
         display: block;
@@ -318,6 +320,7 @@
     .Block6__wrapper {
       .Block6__bText {
         font-size: 22px;
+        text-align: start;
         font-weight: 700;
       }
     }
