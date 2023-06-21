@@ -1,453 +1,148 @@
 .Block1 {
   width: 70%;
-  height: 669px;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px 0 20px;
-  background-image: url("../../assets/img/Background/back1.png");
-  background-size: 140%;
-  background-position: 190% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  margin-bottom: 40px;
-  &_Info {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    user-select: none;
-    button {
-      margin: auto;
-      margin-top: 20px;
-      font-weight: 600;
-      padding: 20px;
-      font-size: 20px;
-      cursor: pointer;
-      color: white;
-      border: #00e6de;
-      background: linear-gradient(
-        193deg,
-        rgb(0, 230, 222) 0%,
-        rgb(0, 153, 173) 93%
-      );
-      border-radius: 10px;
-      transition: box-shadow 0.4s ease;
-      &:hover {
-        box-shadow: 1px 1px 20px #00E6De;
-      }
-    }
-    &_Tee {
+  .Block1__wrapper {
+    padding: 0 20px;
+    .Block1__eye {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 150px;
       font-weight: 700;
       background: linear-gradient(
-        253deg,
-        rgb(0, 230, 222) 60%,
-        rgb(0, 153, 173) 99%
+        180deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
       );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      // Градиентный фон
+      -webkit-background-clip: text; // Задаем тексту свойство background-clip
+      -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+      img {
+        max-height: 150px;
+      }
     }
-    img {
+    .Block1__bText {
+      text-align: center;
+      margin-bottom: 80px;
+      font-size: 40px;
+      font-weight: 700;
+      background: linear-gradient(
+        180deg,
+        rgb(0, 230, 222) 0%,
+        rgb(0, 153, 173) 100%
+      );
+      // Градиентный фон
+      -webkit-background-clip: text; // Задаем тексту свойство background-clip
+      -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+    }
+    .Block1__question {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-left: 85px;
+    }
+    .Block1__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+      .Block1__column {
+        font-weight: 500;
+        max-width: 45%;
+        border: 2px solid #00e6de;
+        border-radius: 20px;
+        padding: 30px;
+        span {
+          background: linear-gradient(
+            180deg,
+            rgb(0, 230, 222) 0%,
+            rgb(0, 153, 173) 100%
+          );
+          // Градиентный фон
+          -webkit-background-clip: text; // Задаем тексту свойство background-clip
+          -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+          font-weight: 600;
+        }
+      }
+    }
+    .Block1__carousel {
       display: none;
-      user-select: none;
-    }
-    span {
-      font-size: 18px;
-      height: 50%;
-      margin-bottom: 40px;
-
-      strong {
-        font-size: 21px;
-      }
     }
   }
-
-  &_Img {
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    // text-align: center;
-    img {
-      width: 300px;
-    }
-  }
-
-  @media only screen and (max-width: 480px) {
-    // Ваши стили для мобильных устройств
-    width: 100%;
-    height: auto;
-    background-size: 80%;
-    background-position: -10% 100%;
-    background-image: none;
-    flex-direction: column-reverse;
-    padding: 10px;
-    &_Info {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      button {
-        padding: 10px;
-      }
-      &_Img {
-        background: linear-gradient(
-          193deg,
-          rgba(0, 230, 222, 1) 0%,
-          rgba(0, 153, 173, 1) 93%
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 15px 0;
+}
+@media (max-width: 1100px) {
+  .Block1 {
+    .Block1__wrapper {
+      .Block1__eye {
+        font-size: 130px;
         img {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 120px;
+          max-height: 130px;
         }
       }
-
-      span {
-        font-size: 18px;
-        line-height: 24px;
-        height: 10%;
-        margin-bottom: 0;
-        strong {
-          font-size: 17px;
+      .Block1__bText {
+        font-size: 30px;
+      }
+      .Block1__row {
+        .Block1__column {
+          max-width: 47%;
+          padding: 18px;
         }
       }
-    }
-
-    &_Img {
-      display: none;
     }
   }
-
-  @media only screen and (min-width: 480px) and (max-width: 571px) {
-    // Ваши стили для планшетов
+}
+@media (max-width: 900px) {
+  .Block1 {
+    .Block1__wrapper {
+      .Block1__eye {
+        font-size: 120px;
+        img {
+          max-height: 120px;
+        }
+      }
+      .Block1__bText {
+        font-size: 25px;
+      }
+      .Block1__row {
+        .Block1__column {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Block1 {
     width: 100%;
-    background-size: 80%;
-    background-position: -10% 100%;
-    background-image: none;
-    height: auto;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-      button {
-        padding: 10px;
-      }
-      span {
-        font-size: 18px;
-        height: 10%;
-        strong {
-          font-size: 17px;
+    .Block1__wrapper {
+      .Block1__eye {
+        font-size: 100px;
+        img {
+          max-height: 100px;
         }
       }
-    }
-
-    &_Img {
-      width: 50%;
-      text-align: center;
-      justify-content: center;
-      img {
-        width: 190px;
+      .Block1__bText {
+        font-size: 22px;
+      }
+      .Block1__row {
+        display: none;
+      }
+      .Block1__carousel {
+        display: block;
       }
     }
   }
-
-  @media only screen and (min-width: 571px) and (max-width: 768px) {
-    // Ваши стили для планшетов
-    width: 100%;
-    background-size: 80%;
-    background-position: -10% 100%;
-    background-image: none;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-      button {
-        padding: 10px;
-      }
-      span {
-        font-size: 18px;
-        height: 10%;
-
-        strong {
-          font-size: 19px;
+}
+@media (max-width: 375px) {
+  .Block1 {
+    .Block1__wrapper {
+      .Block1__eye {
+        font-size: 80px;
+        img {
+          max-height: 80px;
         }
       }
-    }
-
-    &_Img {
-      width: 50%;
-      text-align: center;
-      justify-content: center;
-
-      img {
-        width: 190px;
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 800px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-
-    background-size: 80%;
-    background-position: -10% 100%;
-    background-image: none;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 10%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 30%;
-      text-align: end;
-
-      img {
-        width: 140px;
-      }
-    }
-  }
-  @media only screen and (min-width: 800px) and (max-width: 990px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-
-    background-size: 80%;
-    background-position: -10% 100%;
-    background-image: none;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: end;
-
-      img {
-        width: 190px;
-      }
-    }
-  }
-  @media only screen and (min-width: 990px) and (max-width: 1024px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: end;
-
-      img {
-        width: 190px;
-      }
-    }
-  }
-  @media screen and (min-width: 1024px) and (max-width: 1100px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 70%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: end;
-
-      img {
-        width: 190px;
-      }
-    }
-  }
-  @media screen and (min-width: 1100px) and (max-width: 1200px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 60%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: center;
-
-      img {
-        width: 210px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1200px) and (max-width: 1300px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 60%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 19px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: center;
-
-      img {
-        width: 210px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1300px) and (max-width: 1400px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 50%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 21px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-
-      img {
-        width: 240px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1400px) and (max-width: 1600px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 50%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 21px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: center;
-
-      img {
-        width: 240px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1600px) and (max-width: 1920px) {
-    // Ваши стили для средних и больших десктопов
-    background-size: 140%;
-    background-position: 190% 100%;
-
-    &_Info {
-      width: 40%;
-      height: auto;
-
-      span {
-        font-size: 18px;
-        height: 50%;
-
-        strong {
-          font-size: 21px;
-        }
-      }
-    }
-
-    &_Img {
-      width: 40%;
-      text-align: center;
-
-      img {
-        width: 260px;
+      .Block1__bText {
+        font-size: 22px;
       }
     }
   }
