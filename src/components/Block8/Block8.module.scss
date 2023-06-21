@@ -71,13 +71,14 @@
           font-size: 18px;
           strong {
             font-size: 18px;
-            background: linear-gradient(
-              180deg,
-              rgb(0, 230, 222) 60%,
-              rgb(0, 153, 173) 99%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            // background: linear-gradient(
+            //   180deg,
+            //   rgb(0, 230, 222) 60%,
+            //   rgb(0, 153, 173) 99%
+            // );
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            color: #0099ad;
           }
         }
       }
@@ -108,13 +109,14 @@
           font-size: 18px;
           strong {
             font-size: 18px;
-            background: linear-gradient(
-              180deg,
-              rgb(0, 230, 222) 60%,
-              rgb(0, 153, 173) 99%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #0099ad;
+            // background: linear-gradient(
+            //   180deg,
+            //   rgb(0, 230, 222) 60%,
+            //   rgb(0, 153, 173) 99%
+            // );
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
           }
         }
       }

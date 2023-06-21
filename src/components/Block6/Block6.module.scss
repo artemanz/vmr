@@ -39,12 +39,14 @@
           display: block;
           .Block6__sbText {
             color: white;
+            color: #0099ad;
             background: white;
             -webkit-background-clip: text; // Задаем тексту свойство background-clip
             -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
             margin-bottom: 15px;
             font-size: 20px;
             font-weight: 800;
+            
           }
           .Block6__text {
             color: white;
@@ -83,14 +85,15 @@
         }
         .Block6__sbText {
           
-          background: linear-gradient(
-            180deg,
-            rgba(0, 230, 222, 1) 0%,
-            rgba(0, 153, 173, 1) 100%
-          );
-          // Градиентный фон
-          -webkit-background-clip: text; // Задаем тексту свойство background-clip
-          -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+          // background: linear-gradient(
+          //   180deg,
+          //   rgba(0, 230, 222, 1) 0%,
+          //   rgba(0, 153, 173, 1) 100%
+          // );
+          // // Градиентный фон
+          // -webkit-background-clip: text; // Задаем тексту свойство background-clip
+          // -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+          color: #0099ad;
           margin-bottom: 15px;
           font-size: 20px;
           font-weight: 800;
