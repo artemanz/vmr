@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./BitrixForm.scss";
 
@@ -9,12 +9,27 @@ const BitrixForm = () => {
   const [email, setEmail] = useState("");
   const [question, setQuestion] = useState("");
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn-ru.bitrix24.ru/b12896033/crm/form/loader_15.js';
+    script.async = true;
+    script.setAttribute('data-b24-form', 'inline/15/747ktj');
+    script.setAttribute('data-skip-moving', 'true');
+
+    const scriptTag = document.getElementsByTagName('script')[0];
+    scriptTag.parentNode.insertBefore(script, scriptTag);
+
+    return () => {
+      scriptTag.parentNode.removeChild(script);
+    };
+  }, []);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
       const response = await axios.post(
-        "https://servizoria.bitrix24.ru/rest/835/rb7btdk8jpicf7nk/",
+        "https://servizoria.bitrix24.ru/rest/835/rb7btdk8jpicf7nk/crm.lead.add.json",
         {
           fields: {
             TITLE: "Новый лид",
