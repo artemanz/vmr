@@ -3,4 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .MBlock2{
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+    .MBlock3{
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
 }
