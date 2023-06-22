@@ -1,17 +1,22 @@
 .Block34 {
-  width: 70%;
-  padding: 30px 20px 100px 20px;
-  // background-image: url("../../assets/img/Background/back2.png");
+  width: 100%;
+  margin: auto;
+  padding: 20px 20px 50px 20px;
   background-position-y: 113px;
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
+  
+
   &_button {
-    margin-top: 30px;
     text-align: center;
+    height: auto;
+    margin-top: 30px;
     button {
-      margin-top: 50px;
       font-weight: 600;
+      @media only screen and (max-width: 768px) {
+        padding: 10px;
+      }
       padding: 20px;
       font-size: 20px;
       cursor: pointer;
@@ -29,260 +34,122 @@
       }
     }
   }
-  @media screen and (min-width: 1470px) {
-    height: 1200px;
-  }
+
   h1 {
     font-size: 40px;
+    font-weight: 800;
+
+   
+    @media only screen and (max-width: 1800px) {
+      margin-bottom: 100px;
+    }
+    @media only screen and (max-width: 1120px) {
+      font-size: 30px;
+      margin-bottom: 140px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-size: 25px;
+      margin-bottom: 120px;
+    }
+    @media only screen and (max-width: 768px) {
+      text-align: left;
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+    @media only screen and (max-width: 400px) {
+      text-align: left;
+      font-size: 22px;
+      margin-bottom: 50px;
+    }
+    margin-bottom: 50px;
     text-align: center;
     background: linear-gradient(
       180deg,
       rgb(0, 230, 222) 0%,
       rgb(0, 153, 173) 100%
-    ); // Градиентный фон
-    -webkit-background-clip: text; // Задаем тексту свойство background-clip
-    -webkit-text-fill-color: transparent; // Устанавливаем цвет текста как прозрачный
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &_Info {
-    margin: 70px 20px 0 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    // flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 80px;
+    align-items: start;
 
+    @media only screen and (max-width: 1600px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+      grid-column-gap: 10px;
+      grid-row-gap: 180px;
+}
+
+@media only screen and (max-width: 1120px) {
+  grid-row-gap: 140px;
+}
+@media only screen and (max-width: 768px) {
+  grid-row-gap: 60px;
+}
+@media only screen and (max-width: 400px) {
+  grid-row-gap: 0px;
+}
+    
     &_Element {
+      text-align: center;
+      font-size: 18px;
       display: flex;
-      width: 400px;
-      height: 270px;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      margin-bottom: 50px;
-
+      @media only screen and (max-width: 768px) {
+        &:last-child{
+          grid-column: 1 / -1;
+        }
+      }
+     
       img {
-        max-width: 100px;
-        height: 100px;
+        margin-bottom: 20px;
+        width: 70px;
+        height: 70px;
+        @media only screen and (max-width: 1120px) {
+          width: 100px;
+          height: 100px;
+        }
+        @media only screen and (max-width: 860px) {
+          width: 80px;
+          height: 80px;
+        }
       }
 
       span {
-        font-size: 23px;
+        font-size: 18px;
       }
     }
   }
 
-  @media only screen and (max-width: 440px) {
-    // Ваши стили для мобильных устройств
-    padding: 20px 20px 40px 20px;
-    background-image: none;
-    width: 100%;
-    &_button {
-      button {
-        padding: 10px;
-      }
-    }
-    h1 {
-      text-align: start;
-      font-size: 22px;
-      font-weight: 700;
-    }
+  // @media (max-width: 1580px) {
+  //   // width: 90%;
 
-    &_Info {
-      max-width: 100%;
-      margin-top: 25px;
+  //   &_Info {
+  //     // grid-template-columns: repeat(2, 1fr);
+  //     // grid-template-rows: repeat(4, 1fr);
 
-      &_Element {
-        margin-bottom: 15px;
+  //     &_Element {
+  //       // margin-bottom: 30px;
+  //     }
+  //   }
+  // }
 
-        img {
-          max-width: 45px;
-          margin-right: 5px;
-        }
+  // @media (max-width: 480px) {
+  //   padding: 30px 10px 80px 10px;
 
-        span {
-          font-size: 18px;
-          font-weight: normal;
-        }
-      }
-    }
-  }
- 
-
-  @media only screen and (min-width: 440px) and (max-width: 768px) {
-    // Ваши стили для планшетов
-    padding: 20px 20px 40px 20px;
-    background-image: none;
-    width: 100%;
-    &_button {
-      button {
-        padding: 10px;
-      }
-    }
-    h1 {
-      font-size: 22px;
-      text-align: start;
-    }
-
-    &_Info {
-      max-width: 100%;
-      margin-top: 25px;
-
-      &_Element {
-        margin-bottom: 15px;
-
-        img {
-          max-width: 45px;
-          margin-right: 5px;
-        }
-
-        span {
-          font-size: 18px;
-          font-weight: normal;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 900px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-    padding: 20px 20px 30px 20px;
-    background-image: none;
-    h1 {
-      font-size: 25px;
-    }
-
-    &_Info {
-      max-width: 100%;
-      margin-top: 25px;
-
-      &_Element {
-        margin-bottom: 25px;
-
-        img {
-          max-width: 39px;
-          margin-right: 20px;
-        }
-
-        span {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 900px) and (max-width: 1020px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-    padding: 20px 20px 6px 20px;
-
-    h1 {
-      font-size: 30px;
-    }
-
-    &_Info {
-      max-width: 60%;
-      margin-top: 25px;
-
-      &_Element {
-        margin-bottom: 20px;
-
-        img {
-          max-width: 39px;
-          margin-right: 20px;
-        }
-
-        span {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1020px) and (max-width: 1120px) {
-    height: auto;
-    // Ваши стили для небольших ноутбуков и десктопов
-    h1 {
-      font-size: 30px;
-    }
-
-    &_Info {
-      max-width: 60%;
-      margin-top: 70px;
-
-      &_Element {
-        margin-bottom: 20px;
-
-        img {
-          max-width: 43px;
-        }
-
-        span {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1120px) and (max-width: 1220px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-    padding: 20px 20px 70px 20px;
-    &_Info {
-      max-width: 50%;
-      margin-top: 8c0px;
-
-      &_Element {
-        margin-bottom: 20px;
-
-        img {
-          max-width: 48px;
-        }
-
-        span {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1220px) and (max-width: 1620px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-
-    &_Info {
-      max-width: 50%;
-      margin-top: 60px;
-
-      &_Element {
-        margin-bottom: 30px;
-
-        img {
-          max-width: 65px;
-        }
-
-        span {
-          font-size: 18px;
-         
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: 1620px) and (max-width: 1820px) {
-    // Ваши стили для небольших ноутбуков и десктопов
-    background-position-x: -30px;
-    &_Info {
-      max-width: 50%;
-      margin-top: 100px;
-
-      &_Element {
-        margin-bottom: 50px;
-
-        img {
-          max-width: 55px;
-        }
-
-        span {
-          font-size: 20px;
-        }
-      }
-    }
-  }
+  //   // &_Info {
+  //   //   grid-template-columns: repeat(4, 1fr);
+  //   //   grid-template-rows: repeat(2, 1fr);
+  //   // }
+  // }
 }

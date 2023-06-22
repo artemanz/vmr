@@ -1,15 +1,32 @@
 .Block2 {
-  width: 70%;
+  width: 100%;
   background-color: white;
   margin: auto;
   overflow: hidden;
   margin-bottom: 40px;
+  
   .Block2__wrapper {
     padding: 20px 20px 50px 20px;
     .Block2__bText {
       text-align: center;
       font-size: 40px;
       font-weight: 700;
+      @media only screen and (max-width: 1120px) {
+        font-size: 30px;
+        margin-bottom: 120px;
+      }
+      @media only screen and (max-width: 900px) {
+        font-size: 25px;
+        margin-bottom: 120px;
+      }
+      @media only screen and (max-width: 768px) {
+        font-size: 22px;
+        margin-bottom: 120px;
+      }
+      @media only screen and (max-width: 500px) {
+        font-size: 22px;
+        margin-bottom: 50px;
+      }
       background: linear-gradient(
         180deg,
         rgb(0, 230, 222) 0%,

@@ -17,21 +17,26 @@ import Block23 from "../../components/Block23Slide/Block23";
 
 const MainPage = () => {
   React.useEffect(() => {
-    AOS.init({disable: 'mobile'})
+    AOS.init({ disable: "mobile" });
   }, []);
 
   return (
     <div className={styles.MainPage}>
       <Block1 />
-      <Block2 />
-      <Block34 />
+      <div className={styles.MBlock2}>
+        <Block2 />
+      </div>
+      <div className={styles.MBlock3}>
+        <Block34 />
+      </div>
+      <Block23 />
       <Block5 />
       <Block6 />
       <Block7 />
       <Block8 />
       <Block9 />
       <Block10 />
-      <Block23/>
+
       <BitrixForm />
     </div>
   );

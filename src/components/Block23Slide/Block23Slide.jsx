@@ -6,12 +6,12 @@ import Block2 from "../../components/Block2/Block2";
 import Block34 from "../../components/Block34/Block34";
 
 const responsive = {
-    525: { items2: 1 },
+    0: { items2: 1 },
   };
   
-const items3 = [
-    <Block2  className="item3" data-value="1"/>,
-    <Block34  className="item3" data-value="2"/>
+const items5 = [
+    <Block2  className="item5" data-value="1"/>,
+    <Block34  className="item5 item31" data-value="2"/>
   ];
 
 
@@ -23,7 +23,7 @@ const Block23Slide = () => {
         disableButtonsControls=" false"
         infinite="true"
         mouseTracking
-        items={items3}
+        items={items5}
         responsive={responsive}
         controlsStrategy="alternate"
       />

@@ -1,6 +1,17 @@
-.item3{
+.item5{
     width: 70%;
+    margin-right: 40px;
+    display: block;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 .Block23{
     width: 70%;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 768px) {
+display: none;
+    }
 }
