@@ -13,6 +13,7 @@ import Block8 from "../../components/Block8/Block8";
 import Block9 from "../../components/Block9/Block9";
 import Block10 from "../../components/Block10/Block10";
 import BitrixForm from "../../components/Form/Form";
+import Block23 from "../../components/Block23Slide/Block23";
 
 const MainPage = () => {
   React.useEffect(() => {
@@ -30,6 +31,7 @@ const MainPage = () => {
       <Block8 />
       <Block9 />
       <Block10 />
+      <Block23/>
       <BitrixForm />
     </div>
   );
