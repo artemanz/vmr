@@ -17,7 +17,7 @@ const BitrixForm = () => {
   }, []);
 
   return (
-    <div className='formBit'>
+    <div className='formBit' id='bitrix-form'>
       <div dangerouslySetInnerHTML={{ __html: `
         <script data-b24-form="inline/15/747ktj" data-skip-moving="true">
         (function(w,d,u){
