@@ -10,8 +10,8 @@ const responsive = {
   };
   
 const items5 = [
-    <Block2  className="item5" data-value="1"/>,
-    <Block34  className="item5 item31" data-value="2"/>
+  <Block34  className="item5 item31" data-value="1"/>,
+    <Block2  className="item5" data-value="2"/>
   ];
 
 

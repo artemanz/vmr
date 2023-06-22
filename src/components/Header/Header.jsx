@@ -47,7 +47,7 @@ const Header = () => {
             </div> */}
             <div
               className={styles.Header__info__text}
-              onClick={() => handleScrollTo("#Block34")}
+              onClick={() => handleScrollTo("#Block23")}
             >
               Для кого
               <div className={styles.Header__info__underline}></div>
