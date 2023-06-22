@@ -20,12 +20,14 @@ const Block23Slide = () => {
   return (
     <div>
       <AliceCarousel
-        disableButtonsControls=" false"
+        // disableButtonsControls="true"
+        mouseTracking= 'true'
         infinite="true"
-        mouseTracking
+        autoWidth
+        disableDotsControls
         items={items5}
         responsive={responsive}
-        controlsStrategy="alternate"
+        controlsStrategy="default"
       />
     </div>
   );
