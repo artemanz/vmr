@@ -86,7 +86,7 @@ const Header = () => {
               <div className={styles.Header__modal}>
                 <ul>
                   {/* <li onClick={() => handleScrollTo("#Block1")}>Подробнее</li> */}
-                  <li onClick={() => handleScrollTo("#Block34")}>Для кого</li>
+                  <li onClick={() => handleScrollTo("#Block23")}>Для кого</li>
                   <li onClick={() => handleScrollTo("#Block5")}>
                     Какие задачи мы решаем
                   </li>
