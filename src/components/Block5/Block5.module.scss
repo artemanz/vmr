@@ -7,7 +7,7 @@
   padding: 0 20px;
   padding: 2%;
   padding-bottom: 2%;
-  background-color: white;
+  // background-color: white;
   h1 {
     font-size: 40px;
     text-align: center;
@@ -30,6 +30,7 @@
       display: block;
       ul {
         display: block;
+     
         li {
           &::before {
             display: inline-block;
@@ -48,16 +49,21 @@
       }
     }
     ul {
-      max-width: 70%;
+      max-width: 100%;
       list-style-type: none;
       display: none;
-      @media screen and (min-width: 768px) {
-        display: block;
+      @media screen and (min-width:768px) {
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 20px;
+        justify-items: normal;
+        align-items: start;
       }
       li {
         font-size: 18px;
         margin-bottom: 10px;
-        line-height: 51px;
 
         &::before {
           content: "▶";
@@ -244,10 +250,10 @@
       ul {
         max-width: 100%;
 
-        li {
-          // font-size: 16px;
-          line-height: 25px;
-        }
+        // li {
+        //   // font-size: 16px;
+        //   // line-height: 25px;
+        // }
       }
       &_Button {
         margin-top: 35px;
@@ -271,7 +277,7 @@
 
         li {
           // font-size: 16px;
-          line-height: 40px;
+          // line-height: 40px;
           margin-bottom: 5px;
         }
       }
@@ -294,7 +300,7 @@
         li {
           // font-size: 18px;
           margin-bottom: 5px;
-          line-height: 40px;
+          // line-height: 40px;
         }
       }
       &_Button {
@@ -340,9 +346,9 @@
       ul {
         max-width: 100%;
 
-        li {
-          // font-size: 25px;
-        }
+        // li {
+        //   // font-size: 25px;
+        // }
       }
       &_Button {
         margin-top: 35px;
@@ -363,9 +369,9 @@
       ul {
         max-width: 100%;
 
-        li {
-          // font-size: 25px;
-        }
+        // li {
+        //   // font-size: 25px;
+        // }
       }
       &_Button {
         margin-top: 35px;
@@ -386,9 +392,9 @@
       ul {
         max-width: 100%;
 
-        li {
-          // font-size: 25px;
-        }
+        // li {
+        //   // font-size: 25px;
+        // }
       }
     }
   }
@@ -405,11 +411,11 @@
 
     &_List_Block {
       ul {
-        max-width: 70%;
+        max-width: 100%;
 
-        li {
-          // font-size: 25px;
-        }
+        // li {
+        //   // font-size: 25px;
+        // }
       }
     }
   }
@@ -426,11 +432,11 @@
 
     &_List_Block {
       ul {
-        max-width: 70%;
+        max-width: 100%;
 
-        li {
-          // font-size: 25px;
-        }
+        // li {
+        //   // font-size: 25px;
+        // }
       }
     }
   }
