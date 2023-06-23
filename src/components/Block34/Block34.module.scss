@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
-  
 
   &_button {
     text-align: center;
@@ -30,7 +29,7 @@
       border-radius: 10px;
       transition: box-shadow 0.4s ease;
       &:hover {
-        box-shadow: 1px 1px 20px #00E6De;
+        box-shadow: 1px 1px 20px #00e6de;
       }
     }
   }
@@ -38,10 +37,10 @@
   h1 {
     font-size: 40px;
     font-weight: 800;
+    height: 98px;
 
-   
     @media only screen and (max-width: 1800px) {
-      margin-bottom: 100px;
+      margin-bottom: 25px;
     }
     @media only screen and (max-width: 1120px) {
       font-size: 30px;
@@ -77,7 +76,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 80px;
+    grid-row-gap: 50px;
     align-items: start;
 
     @media only screen and (max-width: 1600px) {
@@ -85,19 +84,19 @@
       grid-template-rows: repeat(3, 1fr);
       justify-items: center;
       grid-column-gap: 10px;
-      grid-row-gap: 180px;
-}
+      grid-row-gap: 30px;
+    }
 
-@media only screen and (max-width: 1120px) {
-  grid-row-gap: 140px;
-}
-@media only screen and (max-width: 768px) {
-  grid-row-gap: 60px;
-}
-@media only screen and (max-width: 400px) {
-  grid-row-gap: 0px;
-}
-    
+    @media only screen and (max-width: 1120px) {
+      grid-row-gap: 140px;
+    }
+    @media only screen and (max-width: 768px) {
+      grid-row-gap: 60px;
+    }
+    @media only screen and (max-width: 400px) {
+      grid-row-gap: 0px;
+    }
+
     &_Element {
       text-align: center;
       font-size: 18px;
@@ -106,19 +105,19 @@
       align-items: center;
       justify-content: flex-start;
       @media only screen and (max-width: 768px) {
-        &:last-child{
+        &:last-child {
           grid-column: 1 / -1;
         }
       }
-     
+
       img {
         margin-bottom: 20px;
         width: 70px;
         height: 70px;
-        @media only screen and (max-width: 1120px) {
-          width: 100px;
-          height: 100px;
-        }
+        // @media only screen and (max-width: 1120px) {
+        //   width: 100px;
+        //   height: 100px;
+        // }
         @media only screen and (max-width: 860px) {
           width: 80px;
           height: 80px;
@@ -130,7 +129,31 @@
       }
     }
   }
-
+  @media only screen and (max-width: 1600px) {
+    padding-bottom: 0;
+  }
+  @media only screen and (max-width: 1420px) {
+    h1 {
+      margin-bottom: 0;
+    }
+    .Block34_Info {
+      grid-row-gap: 20px;
+    }
+  }
+  @media only screen and (max-width: 1120px) {
+    h1 {
+      height: 100%;
+    }
+    .Block34_Info {
+      grid-row-gap: 0;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    padding-top: 10px;
+    .Block34_button {
+      margin-top: 10px;
+    }
+  }
   // @media (max-width: 1580px) {
   //   // width: 90%;
 

@@ -4,16 +4,17 @@
   margin: auto;
   overflow: hidden;
   margin-bottom: 40px;
-  
   .Block2__wrapper {
     padding: 20px 20px 50px 20px;
     .Block2__bText {
       text-align: center;
       font-size: 40px;
       font-weight: 700;
+      @media only screen and (max-width: 1800px) {
+        margin-bottom: 25px;
+      }
       @media only screen and (max-width: 1120px) {
         font-size: 30px;
-        margin-bottom: 120px;
       }
       @media only screen and (max-width: 900px) {
         font-size: 25px;
@@ -74,7 +75,7 @@
         border-radius: 10px;
         transition: box-shadow 0.4s ease;
         &:hover {
-          box-shadow: 1px 1px 20px #00E6De;
+          box-shadow: 1px 1px 20px #00e6de;
         }
       }
     }
@@ -82,12 +83,14 @@
 }
 @media (max-width: 1600px) {
   .Block2 {
+    margin-bottom: 10px;
     .Block2__wrapper {
-  
+      padding-bottom: 0;
       .Block2__grid {
         grid-column-gap: 0;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 30px;
         justify-items: center;
         .Block2__cell {
           max-width: 300px;
@@ -96,21 +99,20 @@
     }
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1310px) {
+  .Block2 {
+    .Block2__wrapper {
+      .Block2__grid {
+        grid-row-gap: 0;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
   .Block2 {
     .Block2__wrapper {
       .Block2__bText {
-        font-size: 30px;
-        text-align: start;
-      }
-      .Block2__grid {
-        grid-column-gap: 0;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        justify-items: center;
-        .Block2__cell {
-          max-width: 300px;
-        }
+        margin-bottom: 0;
       }
     }
   }
@@ -118,9 +120,13 @@
 @media (max-width: 900px) {
   .Block2 {
     .Block2__wrapper {
-         .Block2__bText {
+      padding-top: 10px;
+      .Block2__bText {
         font-size: 25px;
         text-align: start;
+      }
+      .Block2__button {
+        margin-top: 10px;
       }
       .Block2__grid {
         .Block2__cell {
@@ -133,7 +139,7 @@
 @media (max-width: 850px) {
   .Block2 {
     .Block2__wrapper {
-         .Block2__bText {
+      .Block2__bText {
         font-size: 25px;
         text-align: start;
       }

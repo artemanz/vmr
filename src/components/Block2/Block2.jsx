@@ -16,7 +16,6 @@ const Block2 = () => {
     const topOffset = form.offsetTop - 91;
     window.scrollTo({ top: topOffset, behavior: "smooth" });
   };
-
   return (
     <div
       className={styles.Block2}
