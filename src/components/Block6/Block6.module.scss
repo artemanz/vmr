@@ -4,6 +4,7 @@
   @media screen and (max-width: 768px) {
     background-image: none;
   }
+  background-color: white;
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -31,7 +32,10 @@
       grid-template-rows: repeat(3, 1fr);
       justify-items: center;
       align-items: start;
-      grid-row-gap: 140px;
+      grid-row-gap: 60px;
+      @media screen and (min-width: 1940px) {
+        grid-row-gap: 100px;
+      }
 
       .BlockCarousel6 {
         display: block;
