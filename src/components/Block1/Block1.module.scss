@@ -25,6 +25,9 @@
       text-align: center;
       margin-bottom: 80px;
       font-size: 40px;
+      @media screen and (min-width: 1000px) {
+        margin-bottom: 30px;
+      }
       font-weight: 700;
       background: linear-gradient(
         180deg,
@@ -45,6 +48,9 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 80px;
+      @media screen and (min-width: 1000px) {
+        margin-bottom: 50px;
+      }
       .Block1__column {
         font-weight: 500;
         max-width: 45%;
