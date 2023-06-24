@@ -52,7 +52,7 @@
       max-width: 100%;
       list-style-type: none;
       display: none;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width:1200px) {
         display: grid;
         margin: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -61,9 +61,16 @@
         justify-items: normal;
         align-items: start;
       }
+      @media screen and (min-width:768px) {
+        display: block;
+        margin-bottom: 20px;
+      }
       li {
         font-size: 18px;
         margin-bottom: 10px;
+        @media screen and (min-width:768px) {
+          margin-bottom: 15px;
+        }
 
         &::before {
           content: "▶";
