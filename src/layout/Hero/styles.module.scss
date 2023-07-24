@@ -1,0 +1,72 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  @include GradientText;
+  font-size: 8rem;
+  font-weight: bold;
+
+  @media ($tablet) {
+    font-size: 10rem;
+  }
+}
+
+.subtitle {
+  @include GradientText;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+
+  @media ($tablet) {
+    font-size: 2.8rem;
+  }
+}
+
+.cards {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 80rem;
+  margin-inline: auto;
+
+  @media ($tablet) {
+    flex-direction: row;
+  }
+}
+
+.card {
+  border: 2px solid #00e6de;
+  border-radius: 20px;
+  font-weight: 500;
+  padding: 3rem;
+
+  span {
+    display: block;
+    @include GradientText;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+.button {
+  margin-top: 4rem;
+  display: inline-block;
+  // margin-inline: auto;
+  @include Button;
+}

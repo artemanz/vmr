@@ -1,0 +1,80 @@
+@use "@/sass" as *;
+
+.section {
+  position: relative;
+}
+
+.background {
+  left: 50%;
+  translate: -50% 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  max-width: 160rem;
+  scale: 1.5;
+  top: 10%;
+  display: none;
+
+  @media ($tablet) {
+    display: block;
+    scale: 1;
+  }
+}
+
+.container {
+  @include Container;
+
+  display: grid;
+  place-content: center;
+}
+
+.list {
+  margin-top: 6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media ($tablet) {
+    max-width: 80rem;
+    margin-inline: auto;
+    padding: 4rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+  }
+}
+
+.listItem {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(253deg, #00e6de 60%, #0099ad 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    content: "▶";
+  }
+}
+
+.button {
+  @include Button;
+  margin-inline: auto;
+  margin-top: 4rem;
+}
+
+.offer {
+  text-align: center;
+  margin-top: 4rem;
+
+
+  p:first-child {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}

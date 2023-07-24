@@ -1,0 +1,86 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricesContainer {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+
+  @media ($tablet) {
+    margin-top: 2rem;
+    flex-direction: row;
+  }
+}
+
+.prices {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+
+  @media ($tablet) {
+    padding-block: 3rem;
+  }
+}
+
+.price {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &_title {
+    @include GradientText;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.priceInfluence {
+  margin-top: 4rem;
+  background: var(--primary-gradient);
+  color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  max-width: 80rem;
+  margin-inline: auto;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  &_title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &_list {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &_item_title {
+    font-weight: bold;
+  }
+}
+
+.button {
+  margin-inline: auto;
+  margin-top: 4rem;
+  display: block;
+  @include Button;
+}

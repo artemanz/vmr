@@ -1,0 +1,41 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+  display: flex;
+  flex-direction: column;
+}
+
+.processGrid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  @media ($tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 7rem;
+  }
+
+  p {
+    max-width: 30rem;
+    text-align: center;
+  }
+}
+
+.button {
+  margin-inline: auto;
+  display: block;
+  margin-top: 6rem;
+  @include Button;
+}

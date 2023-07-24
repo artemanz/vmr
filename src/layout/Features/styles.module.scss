@@ -1,0 +1,36 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+}
+
+.featuresGrid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  @media ($tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .feature:last-child {
+      // grid-column: span 2;
+    }
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 7rem;
+  }
+
+  p {
+    max-width: 30rem;
+    text-align: center;
+  }
+}

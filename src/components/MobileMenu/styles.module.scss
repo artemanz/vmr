@@ -1,0 +1,60 @@
+@use "@/sass" as *;
+
+.mobileMenu {
+  color: #fff;
+
+  position: fixed;
+  background: var(--primary-gradient);
+  inset: 0;
+  transition: translate 500ms ease-in-out;
+
+  &.hidden {
+    visibility: hidden;
+    translate: 0 -100vh;
+  }
+
+  &.active {
+    visibility: visible;
+    translate: 0 0;
+  }
+}
+
+.container {
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 100%;
+  z-index: 2;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  gap: 3rem;
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  z-index: 2;
+  right: 2rem;
+  top: 2rem;
+}
+
+.button {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  span {
+    @include GradientText;
+  }
+
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+}

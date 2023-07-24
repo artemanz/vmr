@@ -1,0 +1,29 @@
+@use "@/sass" as *;
+
+.footer {
+  background: var(--primary-gradient);
+  color: #fff;
+}
+
+.container {
+  @include Container;
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (width >= 400px) {
+     flex-direction: row;
+     justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

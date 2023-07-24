@@ -1,0 +1,55 @@
+@use "@/sass" as *;
+
+:root {
+  --accent-color: #0099ad;
+  --primary-gradient: linear-gradient(0deg, #00bfb9, #0099ad);
+  font-size: 10px;
+  --shadow: 0 4px 16px rgb(0, 0, 0, 0.15);
+
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background: #fbfcff;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section {
+  padding-block: 6rem;
+}
+
+h2 {
+  @include GradientText;
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  @media ($tablet) {
+    font-size: 3rem;
+  }
+}
