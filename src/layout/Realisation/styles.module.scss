@@ -1,7 +1,24 @@
 @use "@/sass" as *;
 
+.section {
+  background: var(--accent-color);
+  color: #fff;
+}
+
 .container {
   @include Container;
+}
+
+.title {
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+
+  @media ($tablet) {
+    font-size: 3rem;
+  }
 }
 
 .image {
@@ -25,7 +42,7 @@
   &_title {
     font-size: 2.4rem;
     font-weight: bold;
-    color: var(--accent-color);
+
 
     @media ($tablet) {
       font-size: 3.2rem;
@@ -35,7 +52,7 @@
   &_number {
     font-weight: bold;
     font-size: 128px;
-    @include GradientText;
+    // @include GradientText;/
   }
 
   &_text {

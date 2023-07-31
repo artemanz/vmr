@@ -21,12 +21,19 @@ const MobileMenu = ({ visible, setVisible }: Props) => {
           <a href="#tasks">Наша задача</a>
           <a href="#prices">Цены</a>
           <a href="#cases">Кейсы</a>
-          <a className={c.button} href="#form"><span>Оставить заявку</span></a>
+          <a className={c.button} href="#form">
+            <span>Оставить заявку</span>
+          </a>
         </nav>
 
         <button onClick={() => setVisible(false)} className={c.closeButton}>
           <HiX size={48} color="currentColor" />
         </button>
+
+        <div className={c.contacts}>
+          <a href="mailto:info@servizoria.ru">info@servizoria.ru</a>
+          <a href="tel:74952680244">+7 (495) 268 02 44</a>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { logo } from "@images";
 import c from "./styles.module.scss";
+import { Logo } from "@/components";
 
 type Props = {};
 
@@ -10,7 +11,7 @@ const Hero = (props: Props) => {
       <div className={c.container}>
         <div className={c.offer}>
           <div className={c.titleWrapper}>
-            <img className={c.image} src={logo} alt="Logo" />
+            <Logo />
             <h1 className={c.title}>ВМР</h1>
           </div>
           <p className={c.subtitle}>Глаз, который не устаёт следить</p>

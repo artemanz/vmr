@@ -1,16 +1,15 @@
 import React from "react";
 import c from "./styles.module.scss";
-import img from "@images/realisation.png";
 
 type Props = {};
 
 const Realisation = (props: Props) => {
   return (
-    <section id="realisation">
+    <section className={c.section} id="realisation">
       <div className={c.container}>
-        <h2 className={c.title}>Процесс реализации</h2>
+        <h3 className={c.title}>Механика реализации</h3>
         <div className={c.grid}>
-          <div className={c.grid_item}>
+          <div className={c.grid_item} data-aos="fade-up">
             <p className={c.grid_item_number}>1</p>
             <p className={c.grid_item_title}>Разработка инструментария</p>
             <p className={c.grid_item_text}>
@@ -18,7 +17,7 @@ const Realisation = (props: Props) => {
               сотрудников и разрабатываем и согласовываем чек лист для оценки
             </p>
           </div>
-          <div className={c.grid_item}>
+          <div className={c.grid_item} data-aos="fade-up">
             <p className={c.grid_item_number}>2</p>
             <p className={c.grid_item_title}>Подготовка к запуску</p>
             <p className={c.grid_item_text}>
@@ -28,7 +27,7 @@ const Realisation = (props: Props) => {
               примут участие в мониторинге
             </p>
           </div>
-          <div className={c.grid_item}>
+          <div className={c.grid_item} data-aos="fade-up">
             <p className={c.grid_item_number}>3</p>
             <p className={c.grid_item_title}>Реализация</p>
             <p className={c.grid_item_text}>
@@ -37,7 +36,7 @@ const Realisation = (props: Props) => {
               чек-лист, по итогу готовим аналитический отчет
             </p>
           </div>
-          <div className={c.grid_item}>
+          <div className={c.grid_item} data-aos="fade-up">
             <p className={c.grid_item_number}>4</p>
             <p className={c.grid_item_title}>Результат</p>
             <p className={c.grid_item_text}>

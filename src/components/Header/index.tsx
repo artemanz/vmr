@@ -1,4 +1,3 @@
-import React from "react";
 import c from "./styles.module.scss";
 import { HiMenu } from "react-icons/hi";
 import { logoWhite } from "@images";
@@ -26,6 +25,11 @@ const Header = ({ setMobileMenu }: Props) => {
           <a href="#cases">Кейсы</a>
           <a href="#form">Оставить заявку</a>
         </nav>
+
+        <div className={c.contacts}>
+          <a href="mailto:info@servizoria.ru">info@servizoria.ru</a>
+          <a href="tel:74952680244">+7 (495) 268 02 44</a>
+        </div>
 
         <button onClick={() => setMobileMenu(true)} className={c.mobileMenu}>
           <HiMenu size={32} />
