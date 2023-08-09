@@ -6,7 +6,7 @@ import "@fontsource/montserrat/700.css";
 import "swiper/css";
 import "./style.scss";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { Blog, CreatePost, Login, Post, Root } from "./routes";
 import { AuthProvider, User } from "./firebase";
 
@@ -22,11 +22,13 @@ function App() {
         <BrowserRouter>
           <Header setMobileMenu={setMobileMenu} />
           <Routes>
-            <Route path="/" element={<Root />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:postId" element={<Post />} />
-            <Route path="/login" element={<Login />} />
-            {user && <Route path="/create-post" element={<CreatePost />} />}
+            <Route path="/" element={<Outlet />}>
+              <Route index element={<Root />}></Route>
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:postId" element={<Post />} />
+              <Route path="/login" element={<Login />} />
+              {user && <Route path="/create-post" element={<CreatePost />} />}
+            </Route>
           </Routes>
           <Footer />
 
