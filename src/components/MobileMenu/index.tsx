@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import c from "./styles.module.scss";
 import { HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 type Props = {
   visible: boolean;
@@ -17,10 +18,11 @@ const MobileMenu = ({ visible, setVisible }: Props) => {
     <div className={[c.mobileMenu, visible ? c.active : c.hidden].join(" ")}>
       <div className={c.container}>
         <nav className={c.nav} onClick={() => setVisible(false)}>
-          <a href="#features">Для кого</a>
-          <a href="#tasks">Наша задача</a>
-          <a href="#prices">Цены</a>
-          <a href="#cases">Кейсы</a>
+          <a href="/#features">Для кого</a>
+          <a href="/#tasks">Наша задача</a>
+          <a href="/#prices">Цены</a>
+          <a href="/#cases">Кейсы</a>
+          <Link to="/blog">Блог</Link>
           <a className={c.button} href="#form">
             <span>Оставить заявку</span>
           </a>
@@ -31,7 +33,7 @@ const MobileMenu = ({ visible, setVisible }: Props) => {
         </button>
 
         <div className={c.contacts}>
-          <a href="mailto:info@servizoria.ru">info@servizoria.ru</a>
+          <a href="mailto:sales@servizoria.ru">sales@servizoria.ru</a>
           <a href="tel:74952680244">+7 (495) 268 02 44</a>
         </div>
       </div>

@@ -1,0 +1,59 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+  display: grid;
+  place-content: center;
+  grid-auto-columns: minmax(30rem, auto);
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid var(--neutral-color);
+  border-radius: 12px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.button {
+  @include Button;
+}
+.errorMessage {
+  text-align: center;
+  color: #ff0000;
+}
+.completeLogin {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .group {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  a,
+  button {
+    @include Button;
+  }
+}

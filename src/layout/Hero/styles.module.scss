@@ -17,13 +17,7 @@
 }
 
 .title {
-  @include GradientText;
-  font-size: 8rem;
-  font-weight: bold;
-
-  @media ($tablet) {
-    font-size: 10rem;
-  }
+  @include H1;
 }
 
 .subtitle {

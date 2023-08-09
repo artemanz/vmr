@@ -30,3 +30,13 @@ $desktop: "width >= 1024px";
     box-shadow: 1px 1px 20px #00e6de;
   }
 }
+
+@mixin H1 {
+  @include GradientText;
+  font-size: 8rem;
+  font-weight: bold;
+
+  @media ($tablet) {
+    font-size: 10rem;
+  }
+}

@@ -1,42 +1,39 @@
-import { useState } from "react";
+import React from "react";
 import { Footer, Header, MobileMenu } from "./components";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "swiper/css";
 import "./style.scss";
-import {
-  Cases,
-  Features,
-  Form,
-  Hero,
-  Prices,
-  Process,
-  Realisation,
-  Tasks,
-} from "./layout";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Blog, CreatePost, Login, Post, Root } from "./routes";
+import { AuthProvider, User } from "./firebase";
 
 function App() {
-  const [mobileMenu, setMobileMenu] = useState(false);
-
+  const initialUser = localStorage.getItem("user");
+  const [mobileMenu, setMobileMenu] = React.useState(false);
+  const [user, setUser] = React.useState<User | null>(
+    initialUser ? JSON.parse(initialUser) : null
+  );
   return (
-    <div className="App">
-      <Header setMobileMenu={setMobileMenu} />
-      <main>
-        <Hero />
-        <Features />
-        <Process />
-        <Realisation />
-        <Tasks />
-        <Prices />
-        <Cases />
-        <Form />
-      </main>
+    <AuthProvider.Provider value={{ user, setUser }}>
+      <div className="App">
+        <BrowserRouter>
+          <Header setMobileMenu={setMobileMenu} />
+          <Routes>
+            <Route path="/" element={<Root />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:postId" element={<Post />} />
+            <Route path="/login" element={<Login />} />
+            {user && <Route path="/create-post" element={<CreatePost />} />}
+          </Routes>
+          <Footer />
 
-      <Footer />
-
-      <MobileMenu visible={mobileMenu} setVisible={setMobileMenu} />
-    </div>
+          <MobileMenu visible={mobileMenu} setVisible={setMobileMenu} />
+        </BrowserRouter>
+      </div>
+    </AuthProvider.Provider>
   );
 }
 

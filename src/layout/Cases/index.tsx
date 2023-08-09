@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -14,7 +15,6 @@ const Cases = (props: Props) => {
     <section className={c.section} id="cases">
       <div className={c.container}>
         <h2 className={c.title}>Наши кейсы</h2>
-
         <Swiper
           className={c.slider}
           slidesPerView={1}

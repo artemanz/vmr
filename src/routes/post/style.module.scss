@@ -1,0 +1,128 @@
+@use "@/sass" as *;
+
+.container {
+  @include Container;
+  position: relative;
+  min-height: 100%;
+}
+
+.postControls {
+  @include Container;
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editorHandler,
+.saveButton {
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+.saveButton {
+  margin-top: 4rem;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.saveButtonSpan {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.deleteButton {
+  background-color: #dc2626;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.confirmationButton {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+
+  &:first-child {
+    @extend .deleteButton;
+  }
+
+  &:last-child {
+    border: 1px solid black;
+    &:hover {
+      background-color: black;
+      color: #fff;
+    }
+  }
+}
+
+.confirmationGroup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.loader {
+  margin-inline: auto;
+}
+
+.inputsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-block: 2rem 4rem;
+}
+
+.input {
+  padding: 1rem;
+  border: 1px solid #cacaca;
+  width: 100%;
+
+  &:focus {
+    outline: 1px solid black;
+  }
+}
+
+.fileInput {
+  cursor: pointer;
+  max-width: fit-content;
+  img {
+    max-height: 20rem;
+  }
+}
+
+.caption {
+  color: #acacac;
+}
+
+//
+.post {
+  font-size: 16px;
+  h1 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: var(--accent-color);
+  }
+
+}
