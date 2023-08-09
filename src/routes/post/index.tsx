@@ -19,6 +19,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 const Post = () => {
   const { postId } = useParams();
   const { user } = useContext(AuthProvider);
+
   const [previewMode, setPreviewMode] = useState(true);
   const [confirmDeleteModal, setConfirmDeleteModal] = useState(false);
   const postRef = useRef<HTMLDivElement>(null);
@@ -103,9 +104,7 @@ const Post = () => {
             </button>
           </div>
         )}
-        {user && previewMode ? (
-          <div ref={postRef} className={c.post}></div>
-        ) : (
+        {user && !previewMode ? (
           <form onSubmit={savePostHandler}>
             <div className={c.inputsGroup}>
               <div>
@@ -169,6 +168,8 @@ const Post = () => {
               </div>
             )}
           </form>
+        ) : (
+          <div ref={postRef} className={c.post}></div>
         )}
       </section>
 
