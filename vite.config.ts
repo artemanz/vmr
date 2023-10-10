@@ -9,16 +9,6 @@ export default defineConfig({
     outDir: resolve("dist"),
     emptyOutDir: true,
   },
-  server: {
-    port: 3333,
-    host: true,
-    open: true,
-  },
-  preview: {
-    port: 3333,
-    host: true,
-    open: true,
-  },
   resolve: {
     alias: {
       "@": resolve("src"),

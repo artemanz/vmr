@@ -8,7 +8,7 @@ const Features = (props: Props) => {
   return (
     <section className={c.section} id="features">
       <div className={c.container}>
-        <h2 className={c.title}>Кому подходит ВМР</h2>
+        <h2 className={c.title}>Кому подходит Видеомониторинг</h2>
 
         <ul className={c.featuresGrid}>
           <li className={c.feature} data-aos="fade-up">

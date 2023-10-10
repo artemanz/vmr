@@ -17,15 +17,18 @@ const Prices = (props: Props) => {
               </p>
             </li>
             <li className={c.price}>
-              <p className={c.price_title}>ВИДЕОАНАЛИТИКА</p>
+              <p className={c.price_title}>АНАЛИТИЧЕСКИЙ ОТЧЕТ</p>
               <p className={c.price_info}>
-                Стоимость 1 минуты <br /> <span>от 7 рублей</span>
+                Стоимость
+                <br /> <span>от 15000 рублей</span>
               </p>
             </li>
             <li className={c.price}>
               <p className={c.price_title}>УСТАНОВКА ВИДЕО КАМЕР</p>
               <p className={c.price_info}>
-                <span>от 220 рублей</span>
+                Стоимость
+                <br />
+                <span>от 8000 рублей</span>
               </p>
             </li>
           </ul>

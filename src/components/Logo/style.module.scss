@@ -1,7 +1,6 @@
 @use "@/sass" as *;
 
 .logo {
-  max-width: 6rem;
 
   @media ($tablet) {
     max-width: 12rem;

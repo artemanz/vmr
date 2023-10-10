@@ -10,7 +10,7 @@ const Tasks = (props: Props) => {
       <img src={tasks} alt="Background image" className={c.background} />
 
       <div className={c.container}>
-        <h2 className={c.title}>ЗАДАЧИ, РЕШАЕМЫЕ С ПОМОЩЬЮ ВМР</h2>
+        <h2 className={c.title}>ЗАДАЧИ, РЕШАЕМЫЕ С ПОМОЩЬЮ ВИДЕОМОНИТОРИНГА</h2>
 
         <ul className={c.list}>
           <li className={c.listItem} data-aos="fade-right">
