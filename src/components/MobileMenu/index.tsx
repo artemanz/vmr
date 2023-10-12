@@ -21,7 +21,7 @@ const MobileMenu = ({ visible, setVisible }: Props) => {
   return (
     <div className={[c.mobileMenu, visible ? c.active : c.hidden].join(" ")}>
       <div className={c.container}>
-        {location.pathname === "/blog" ? (
+        {location.pathname.startsWith("/blog") ? (
           <nav className={c.nav} onClick={() => setVisible(false)}>
             <Link to="/">На главную</Link>
             <Link to={"/login"}>{user ? "Выйти" : "Войти"}</Link>

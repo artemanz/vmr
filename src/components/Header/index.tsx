@@ -24,7 +24,7 @@ const Header = ({ setMobileMenu }: Props) => {
           </p>
         </Link>
 
-        {location.pathname == "/blog" ? (
+        {location.pathname.startsWith("/blog") ? (
           <nav className={c.nav}>
             <Link to={"/"}>На главную</Link>
             <Link to={"/login"}>{user ? "Выйти" : "Войти"}</Link>

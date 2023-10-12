@@ -18,6 +18,9 @@ import tasks from "./tasks.png";
 import case1 from "./case1.png";
 import case2 from "./case2.png";
 import case3 from "./case3.png";
+import case4 from "./case4.png";
+import case5 from "./case5.png";
+import case7 from "./case7.png";
 
 export {
   logo,
@@ -37,4 +40,7 @@ export {
   case1,
   case2,
   case3,
+  case4,
+  case5,
+  case7
 };
